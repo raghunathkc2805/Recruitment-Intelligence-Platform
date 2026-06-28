@@ -1,25 +1,33 @@
 import json
 from pathlib import Path
 
-# Project Root
-ROOT = Path(__file__).resolve().parent.parent
-
-# Knowledge Base Folder
-KB_FOLDER = ROOT / "knowledge_base"
+BASE_DIR = Path(__file__).resolve().parent.parent
+KB_DIR = BASE_DIR / "knowledge_base"
 
 
 def load_json(filename):
-    """
-    Load a JSON file from the Knowledge Base folder.
-    """
-    file_path = KB_FOLDER / filename
-
-    with open(file_path, "r", encoding="utf-8") as file:
+    with open(KB_DIR / filename, "r", encoding="utf-8") as file:
         return json.load(file)
 
 
-# Load Knowledge Base Files
+# Skills
 SKILLS = load_json("skills_master.json")
+
+TECHNICAL_SKILLS = SKILLS["technical_skills"]
+FUNCTIONAL_SKILLS = SKILLS["functional_skills"]
+SOFT_SKILLS = SKILLS["soft_skills"]
+
+# Designations
 DESIGNATIONS = load_json("designation_master.json")
+
+# Keyword Synonyms
 KEYWORD_SYNONYMS = load_json("keyword_synonyms.json")
+
+# Domains
 DOMAINS = load_json("domain_master.json")
+
+# Universities
+UNIVERSITIES = load_json("universities.json")
+
+# Certifications
+CERTIFICATIONS = load_json("certification_master.json")

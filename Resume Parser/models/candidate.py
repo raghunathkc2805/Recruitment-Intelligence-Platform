@@ -31,10 +31,12 @@ class Candidate:
 
     # Education
     education: list = field(default_factory=list)
+    highest_qualification: str = ""
+    education_confidence: int = 0
 
     # Certifications
     certifications: list = field(default_factory=list)
 
-    # File
+    # Files
     resume_file: str = ""
     parser_version: str = ""
