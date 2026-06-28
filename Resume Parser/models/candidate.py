@@ -3,7 +3,8 @@ from dataclasses import dataclass, field
 
 @dataclass
 class Candidate:
-    # Contact Details
+
+    # Contact
     name: str = ""
     email: str = ""
     mobile: str = ""
@@ -21,15 +22,19 @@ class Candidate:
     functional_skills: list = field(default_factory=list)
     soft_skills: list = field(default_factory=list)
 
-    # Future Modules
+    # Search
     search_keywords: list = field(default_factory=list)
 
+    # Domains
     primary_domain: str = ""
     secondary_domain: str = ""
 
+    # Education
     education: list = field(default_factory=list)
+
+    # Certifications
     certifications: list = field(default_factory=list)
 
-    # File Information
+    # File
     resume_file: str = ""
     parser_version: str = ""
