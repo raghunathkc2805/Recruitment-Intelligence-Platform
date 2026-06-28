@@ -14,14 +14,16 @@ from extractors.experience_extractor import (
 from extractors.skills_extractor import extract_skills
 from extractors.keyword_extractor import extract_search_keywords
 from extractors.domain_extractor import extract_domains
-
 from extractors.education_extractor import (
     extract_education,
     highest_qualification
 )
-
 from extractors.certification_extractor import (
     extract_certifications
+)
+from extractors.company_extractor import (
+    normalize_company,
+    normalize_company_list
 )
 
 from models.candidate import Candidate
@@ -48,11 +50,15 @@ def build_candidate(text, resume_file, parser_version):
 
     experience_type = get_experience_type(history)
 
-    current_company = extract_current_company(history)
+    current_company = normalize_company(
+        extract_current_company(history)
+    )
 
     current_designation = extract_current_designation(history)
 
-    companies = [item["company"] for item in history]
+    companies = normalize_company_list(
+        [item["company"] for item in history]
+    )
 
     # ---------------------------------
     # Skills
@@ -83,7 +89,7 @@ def build_candidate(text, resume_file, parser_version):
     certifications = extract_certifications(text)
 
     # ---------------------------------
-    # Candidate Object
+    # Candidate
     # ---------------------------------
 
     candidate = Candidate(
@@ -115,10 +121,6 @@ def build_candidate(text, resume_file, parser_version):
         resume_file=resume_file,
         parser_version=parser_version
     )
-
-    # ---------------------------------
-    # Search Keywords
-    # ---------------------------------
 
     candidate.search_keywords = extract_search_keywords(candidate)
 

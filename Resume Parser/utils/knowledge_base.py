@@ -12,7 +12,6 @@ def load_json(filename):
 
 # Skills
 SKILLS = load_json("skills_master.json")
-
 TECHNICAL_SKILLS = SKILLS["technical_skills"]
 FUNCTIONAL_SKILLS = SKILLS["functional_skills"]
 SOFT_SKILLS = SKILLS["soft_skills"]
@@ -31,3 +30,6 @@ UNIVERSITIES = load_json("universities.json")
 
 # Certifications
 CERTIFICATIONS = load_json("certification_master.json")
+
+# Companies
+COMPANIES = load_json("companies_master.json")
