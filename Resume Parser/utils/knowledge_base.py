@@ -18,6 +18,7 @@ SOFT_SKILLS = SKILLS["soft_skills"]
 
 # Designations
 DESIGNATIONS = load_json("designation_master.json")
+DESIGNATION_ALIASES = load_json("designation_aliases.json")
 
 # Keyword Synonyms
 KEYWORD_SYNONYMS = load_json("keyword_synonyms.json")

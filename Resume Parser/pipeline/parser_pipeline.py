@@ -25,6 +25,9 @@ from extractors.company_extractor import (
     normalize_company,
     normalize_company_list
 )
+from extractors.designation_extractor import (
+    normalize_designation
+)
 
 from models.candidate import Candidate
 
@@ -54,7 +57,9 @@ def build_candidate(text, resume_file, parser_version):
         extract_current_company(history)
     )
 
-    current_designation = extract_current_designation(history)
+    current_designation = normalize_designation(
+        extract_current_designation(history)
+    )
 
     companies = normalize_company_list(
         [item["company"] for item in history]
@@ -89,7 +94,7 @@ def build_candidate(text, resume_file, parser_version):
     certifications = extract_certifications(text)
 
     # ---------------------------------
-    # Candidate
+    # Candidate Object
     # ---------------------------------
 
     candidate = Candidate(
