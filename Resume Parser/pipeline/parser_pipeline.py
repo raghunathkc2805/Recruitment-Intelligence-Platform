@@ -32,6 +32,8 @@ from extractors.location_extractor import (
     extract_locations
 )
 
+from scorers.resume_scorer import calculate_resume_score
+
 from models.candidate import Candidate
 
 
@@ -40,18 +42,12 @@ def build_candidate(text, resume_file, parser_version):
     Build Candidate object from resume text.
     """
 
-    # ---------------------------------
     # Contact
-    # ---------------------------------
-
     name = extract_name(text)
     email = extract_email(text)
     mobile = extract_mobile(text)
 
-    # ---------------------------------
     # Experience
-    # ---------------------------------
-
     history = extract_employment_history(text)
 
     experience_type = get_experience_type(history)
@@ -68,46 +64,25 @@ def build_candidate(text, resume_file, parser_version):
         [item["company"] for item in history]
     )
 
-    # ---------------------------------
     # Skills
-    # ---------------------------------
-
     skills = extract_skills(text)
 
-    # ---------------------------------
     # Domains
-    # ---------------------------------
-
     primary_domain, secondary_domain = extract_domains(text)
 
-    # ---------------------------------
     # Education
-    # ---------------------------------
-
     education = extract_education(text)
-
     highest = highest_qualification(education)
-
     education_confidence = 100 if education else 0
 
-    # ---------------------------------
     # Certifications
-    # ---------------------------------
-
     certifications = extract_certifications(text)
 
-    # ---------------------------------
     # Locations
-    # ---------------------------------
-
     locations = extract_locations(text)
 
-    # ---------------------------------
-    # Candidate Object
-    # ---------------------------------
-
+    # Candidate
     candidate = Candidate(
-
         name=name,
         email=email,
         mobile=mobile,
@@ -142,5 +117,19 @@ def build_candidate(text, resume_file, parser_version):
     )
 
     candidate.search_keywords = extract_search_keywords(candidate)
+
+    # Resume Score
+    candidate.resume_score = calculate_resume_score(candidate)
+
+    if candidate.resume_score >= 90:
+        candidate.resume_grade = "A+"
+    elif candidate.resume_score >= 80:
+        candidate.resume_grade = "A"
+    elif candidate.resume_score >= 70:
+        candidate.resume_grade = "B"
+    elif candidate.resume_score >= 60:
+        candidate.resume_grade = "C"
+    else:
+        candidate.resume_grade = "D"
 
     return candidate

@@ -43,6 +43,10 @@ class Candidate:
     cities: list = field(default_factory=list)
     states: list = field(default_factory=list)
 
+    # Resume Intelligence
+    resume_score: int = 0
+    resume_grade: str = ""
+
     # Files
     resume_file: str = ""
     parser_version: str = ""

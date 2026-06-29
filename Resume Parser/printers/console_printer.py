@@ -32,3 +32,8 @@ def print_candidate(candidate):
     print(f"Soft Skills            : {len(candidate.soft_skills)}")
 
     print(f"Search Keywords        : {len(candidate.search_keywords)}")
+
+    print("-" * 60)
+
+    print(f"Resume Score           : {candidate.resume_score}/100")
+    print(f"Resume Grade           : {candidate.resume_grade}")
