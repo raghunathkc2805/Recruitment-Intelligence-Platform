@@ -20,6 +20,11 @@ def print_candidate(candidate):
 
     print(f"Certifications         : {len(candidate.certifications)}")
 
+    print(f"Primary City           : {candidate.primary_city}")
+    print(f"Primary State          : {candidate.primary_state}")
+    print(f"Cities Found           : {len(candidate.cities)}")
+    print(f"States Found           : {len(candidate.states)}")
+
     print(f"Companies Found        : {len(candidate.companies)}")
 
     print(f"Technical Skills       : {len(candidate.technical_skills)}")

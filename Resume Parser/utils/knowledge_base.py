@@ -34,3 +34,7 @@ CERTIFICATIONS = load_json("certification_master.json")
 
 # Companies
 COMPANIES = load_json("companies_master.json")
+
+# Locations
+INDIA_STATES = load_json("india_states.json")
+INDIA_CITIES = load_json("india_cities.json")

@@ -37,6 +37,12 @@ class Candidate:
     # Certifications
     certifications: list = field(default_factory=list)
 
+    # Locations
+    primary_city: str = ""
+    primary_state: str = ""
+    cities: list = field(default_factory=list)
+    states: list = field(default_factory=list)
+
     # Files
     resume_file: str = ""
     parser_version: str = ""

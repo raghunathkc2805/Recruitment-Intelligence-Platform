@@ -28,6 +28,9 @@ from extractors.company_extractor import (
 from extractors.designation_extractor import (
     normalize_designation
 )
+from extractors.location_extractor import (
+    extract_locations
+)
 
 from models.candidate import Candidate
 
@@ -94,6 +97,12 @@ def build_candidate(text, resume_file, parser_version):
     certifications = extract_certifications(text)
 
     # ---------------------------------
+    # Locations
+    # ---------------------------------
+
+    locations = extract_locations(text)
+
+    # ---------------------------------
     # Candidate Object
     # ---------------------------------
 
@@ -122,6 +131,11 @@ def build_candidate(text, resume_file, parser_version):
         education_confidence=education_confidence,
 
         certifications=certifications,
+
+        primary_city=locations["primary_city"],
+        primary_state=locations["primary_state"],
+        cities=locations["cities"],
+        states=locations["states"],
 
         resume_file=resume_file,
         parser_version=parser_version
