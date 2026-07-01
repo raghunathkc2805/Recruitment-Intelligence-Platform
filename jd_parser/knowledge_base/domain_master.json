@@ -1,0 +1,131 @@
+{
+    "Telecom": [
+        "Telecom",
+        "Telecommunications",
+        "Nokia",
+        "Ericsson",
+        "Huawei",
+        "ZTE",
+        "Ciena",
+        "Cisco",
+        "Juniper",
+        "DWDM",
+        "OTN",
+        "GPON",
+        "MPLS",
+        "RF",
+        "BTS",
+        "Microwave",
+        "Submarine"
+    ],
+
+    "Networking": [
+        "Routing",
+        "Switching",
+        "TCP/IP",
+        "BGP",
+        "OSPF",
+        "LAN",
+        "WAN",
+        "Firewall",
+        "VPN",
+        "NOC"
+    ],
+
+    "Cloud": [
+        "AWS",
+        "Azure",
+        "GCP",
+        "Cloud",
+        "VMware",
+        "Docker",
+        "Kubernetes",
+        "Terraform",
+        "Ansible"
+    ],
+
+    "Datacenter": [
+        "Data Centre",
+        "Data Center",
+        "Storage",
+        "Backup",
+        "Disaster Recovery",
+        "Server",
+        "Virtualization"
+    ],
+
+    "Software": [
+        "Python",
+        "Java",
+        "C#",
+        ".NET",
+        "SQL",
+        "Oracle",
+        "API",
+        "Git"
+    ],
+
+    "Testing": [
+        "Manual Testing",
+        "Automation Testing",
+        "Selenium",
+        "JMeter",
+        "QA",
+        "Quality Assurance"
+    ],
+
+    "DevOps": [
+        "CI/CD",
+        "Docker",
+        "Kubernetes",
+        "Jenkins",
+        "GitLab",
+        "Terraform",
+        "Ansible"
+    ],
+
+    "HR": [
+        "Recruitment",
+        "Talent Acquisition",
+        "HR",
+        "HRMS",
+        "Payroll",
+        "Employee Relations",
+        "Onboarding",
+        "NATS",
+        "NAPS"
+    ],
+
+    "Finance": [
+        "Accounts",
+        "Finance",
+        "GST",
+        "TDS",
+        "MIS",
+        "SAP FICO"
+    ],
+
+    "Sales": [
+        "Sales",
+        "Business Development",
+        "Account Management",
+        "Enterprise Sales",
+        "Inside Sales"
+    ],
+
+    "Project Management": [
+        "Project Management",
+        "Program Management",
+        "PMP",
+        "Prince2",
+        "Scrum"
+    ],
+
+    "Electrical": [
+        "Electrical",
+        "Solar",
+        "Power",
+        "Transformer",
+        "Substation"
+    ]
+}

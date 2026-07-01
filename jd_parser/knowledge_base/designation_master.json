@@ -1,0 +1,70 @@
+{
+    "executive": [
+        "Executive",
+        "Associate",
+        "Coordinator",
+        "Analyst",
+        "Engineer",
+        "Administrator",
+        "Specialist",
+        "Officer",
+        "Technician"
+    ],
+
+    "senior": [
+        "Senior Executive",
+        "Senior Engineer",
+        "Senior Analyst",
+        "Senior Consultant",
+        "Senior Specialist",
+        "Senior Manager"
+    ],
+
+    "lead": [
+        "Lead",
+        "Team Lead",
+        "Technical Lead",
+        "Project Lead",
+        "Lead Engineer"
+    ],
+
+    "manager": [
+        "Manager",
+        "Assistant Manager",
+        "Deputy Manager",
+        "Senior Manager",
+        "Program Manager",
+        "Project Manager",
+        "Delivery Manager",
+        "Operations Manager"
+    ],
+
+    "head": [
+        "Head",
+        "Department Head",
+        "Practice Head",
+        "Business Head"
+    ],
+
+    "director": [
+        "Director",
+        "Associate Director",
+        "Executive Director"
+    ],
+
+    "vp": [
+        "Vice President",
+        "AVP",
+        "SVP",
+        "EVP"
+    ],
+
+    "cxo": [
+        "CEO",
+        "COO",
+        "CTO",
+        "CFO",
+        "CHRO",
+        "CIO"
+    ]
+}
