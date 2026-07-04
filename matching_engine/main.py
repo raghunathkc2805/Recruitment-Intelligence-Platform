@@ -1,26 +1,68 @@
-from models.match_result import MatchResult
-from scorers.overall_scorer import calculate_overall_score
+from services.matching_service import MatchingService
 
 
 def main():
-
-    result = MatchResult()
-
-    result.skills_score = 0.95
-    result.experience_score = 1.00
-    result.education_score = 1.00
-    result.certification_score = 0.70
-    result.domain_score = 1.00
-    result.location_score = 0.90
-
-    result = calculate_overall_score(result)
 
     print("=" * 60)
     print("Recruitment Matching Engine")
     print("=" * 60)
 
-    print(f"Overall Score : {result.overall_score}%")
-    print(f"Grade         : {result.grade}")
+    print()
+
+    # -------------------------------------------------
+    # Skills
+    # -------------------------------------------------
+
+    candidate_skills = [
+        "Python",
+        "Linux",
+        "AWS",
+        "Docker",
+        "VMware",
+        "Git"
+    ]
+
+    jd_skills = [
+        "Python",
+        "Linux",
+        "AWS",
+        "Terraform",
+        "Docker"
+    ]
+
+    skills = MatchingService.match_skills(
+        candidate_skills,
+        jd_skills
+    )
+
+    # -------------------------------------------------
+    # Experience
+    # -------------------------------------------------
+
+    experience = MatchingService.match_experience(
+        candidate_experience=4.5,
+        minimum_required=3,
+        maximum_required=6
+    )
+
+    # -------------------------------------------------
+
+    print(f"Skill Score        : {skills['skills_score']}%")
+
+    print(
+        f"Experience Score   : "
+        f"{experience['experience_score']}%"
+    )
+
+    print(
+        f"Qualified          : "
+        f"{experience['qualified']}"
+    )
+
+    print(
+        f"Experience Gap     : "
+        f"{experience['experience_gap']} Years"
+    )
 
 
 if __name__ == "__main__":
