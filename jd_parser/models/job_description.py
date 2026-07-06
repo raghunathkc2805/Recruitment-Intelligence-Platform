@@ -33,6 +33,7 @@ class JobDescription:
 
     # Employment
     employment_type: str = ""
+    work_mode: str = ""
     notice_period: str = ""
     salary: str = ""
 
