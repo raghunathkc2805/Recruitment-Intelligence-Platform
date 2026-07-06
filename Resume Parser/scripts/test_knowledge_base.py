@@ -5,7 +5,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
-from utils.knowledge_base import (
+from jd_parser.utils.knowledge_base import (
     SKILLS,
     DESIGNATIONS,
     KEYWORD_SYNONYMS,

@@ -1,4 +1,4 @@
-from pipeline.parser_pipeline import build_candidate
+from jd_parser.pipeline.parser_pipeline import build_candidate
 
 
 class CandidateService:

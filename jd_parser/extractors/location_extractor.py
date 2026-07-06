@@ -1,6 +1,6 @@
 import re
 
-from utils.knowledge_base import INDIA_CITIES
+from jd_parser.utils.knowledge_base import INDIA_CITIES
 
 
 FIELD_PATTERNS = [

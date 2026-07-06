@@ -1,4 +1,4 @@
-from pipeline.jd_pipeline import build_job_description
+from jd_parser.pipeline.jd_pipeline import build_job_description
 
 
 class JDService:

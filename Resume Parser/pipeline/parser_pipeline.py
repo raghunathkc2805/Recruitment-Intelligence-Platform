@@ -1,40 +1,40 @@
-from extractors.contact_extractor import (
+from jd_parser.extractors.contact_extractor import (
     extract_name,
     extract_email,
     extract_mobile
 )
 
-from extractors.experience_extractor import (
+.experience_extractor import (
     extract_employment_history,
     extract_current_company,
     extract_current_designation,
     get_experience_type
 )
 
-from extractors.skills_extractor import extract_skills
-from extractors.keyword_extractor import extract_search_keywords
-from extractors.domain_extractor import extract_domains
-from extractors.education_extractor import (
+from jd_parser.extractors.skills_extractor import extract_skills
+from jd_parser.extractors.keyword_extractor import extract_search_keywords
+from jd_parser.extractors.domain_extractor import extract_domains
+from jd_parser.extractors.education_extractor import (
     extract_education,
     highest_qualification
 )
-from extractors.certification_extractor import (
+from jd_parser.extractors.certification_extractor import (
     extract_certifications
 )
-from extractors.company_extractor import (
+from jd_parser.extractors.company_extractor import (
     normalize_company,
     normalize_company_list
 )
-from extractors.designation_extractor import (
+from jd_parser.extractors.designation_extractor import (
     normalize_designation
 )
-from extractors.location_extractor import (
+from jd_parser.extractors.location_extractor import (
     extract_locations
 )
 
 from scorers.resume_scorer import calculate_resume_score
 
-from models.candidate import Candidate
+from jd_parser.models.candidate import Candidate
 
 
 def build_candidate(text, resume_file, parser_version):

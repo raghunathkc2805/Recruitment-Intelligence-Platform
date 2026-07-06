@@ -1,14 +1,14 @@
-from extractors.title_extractor import extract_job_title
-from extractors.company_extractor import extract_company
-from extractors.location_extractor import extract_location
-from extractors.experience_extractor import extract_experience
-from extractors.openings_extractor import extract_openings
-from extractors.education_extractor import extract_education
-from extractors.skills_extractor import extract_skills
-from extractors.domain_extractor import extract_domains
-from extractors.certification_extractor import extract_certifications
+from jd_parser.extractors.title_extractor import extract_job_title
+from jd_parser.extractors.company_extractor import extract_company
+from jd_parser.extractors.location_extractor import extract_location
+from jd_parser.extractors.experience_extractor import extract_experience
+from jd_parser.extractors.openings_extractor import extract_openings
+from jd_parser.extractors.education_extractor import extract_education
+from jd_parser.extractors.skills_extractor import extract_skills
+from jd_parser.extractors.domain_extractor import extract_domains
+from jd_parser.extractors.certification_extractor import extract_certifications
 
-from models.job_description import JobDescription
+from jd_parser.models.job_description import JobDescription
 
 
 def build_job_description(text, jd_file, parser_version):

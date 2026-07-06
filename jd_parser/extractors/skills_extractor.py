@@ -1,11 +1,10 @@
 import re
 
-from utils.knowledge_base import (
+from jd_parser.utils.knowledge_base import (
     TECHNICAL_SKILLS,
     FUNCTIONAL_SKILLS,
-    SOFT_SKILLS
+    SOFT_SKILLS,
 )
-
 
 def _find_matches(text, skill_list):
     """

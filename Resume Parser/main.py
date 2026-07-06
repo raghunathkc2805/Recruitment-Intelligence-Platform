@@ -1,12 +1,12 @@
 from config.settings import *
 
-from core.pdf_reader import extract_pdf_text
-from core.docx_reader import extract_docx_text
+from jd_parser.core.pdf_reader import extract_pdf_text
+from jd_parser.core.docx_reader import extract_docx_text
 
-from services.candidate_service import CandidateService
+from jd_parser.services.candidate_service import CandidateService
 from printers.console_printer import print_candidate
 
-from utils.json_writer import save_candidate
+from jd_parser.utils.json_writer import save_candidate
 
 
 def read_resume(file):
