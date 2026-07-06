@@ -1,4 +1,4 @@
-from utils.knowledge_base import DOMAINS
+from jd_parser.utils.knowledge_base import DOMAINS
 
 
 def extract_domains(text):

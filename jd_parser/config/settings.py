@@ -1,7 +1,7 @@
 from pathlib import Path
 
 APP_NAME = "Recruitment Intelligence Engine"
-VERSION = "3.0.1"
+VERSION = "4.8.0"
 
 ROOT = Path(__file__).resolve().parent.parent
 

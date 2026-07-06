@@ -1,4 +1,4 @@
-from utils.knowledge_base import INDIA_CITIES, INDIA_STATES
+from jd_parser.utils.knowledge_base import INDIA_CITIES, INDIA_STATES
 
 
 def extract_locations(text):

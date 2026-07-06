@@ -1,6 +1,6 @@
 import re
 
-from utils.knowledge_base import UNIVERSITIES
+from jd_parser.utils.knowledge_base import UNIVERSITIES
 
 
 DEGREES = [

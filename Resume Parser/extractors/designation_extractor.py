@@ -1,4 +1,4 @@
-from utils.knowledge_base import DESIGNATION_ALIASES
+from jd_parser.utils.knowledge_base import DESIGNATION_ALIASES
 
 
 def normalize_designation(designation):

@@ -1,4 +1,4 @@
-from utils.knowledge_base import (
+from jd_parser.utils.knowledge_base import (
     SKILLS,
     DESIGNATIONS,
     DOMAINS,

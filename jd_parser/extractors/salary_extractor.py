@@ -5,21 +5,21 @@ SALARY_PATTERNS = [
 
     r"₹\s?[\d,]+(?:\.\d+)?",
 
-    r"INR\s?[\d,]+(?:\.\d+)?",
+    r"\bINR\s?[\d,]+(?:\.\d+)?",
 
-    r"CTC\s*:?\s*[\d.,]+\s?LPA",
+    r"\bCTC\s*:?\s*[\d.,]+\s?LPA",
 
-    r"[\d.]+\s?LPA",
+    r"\b[\d.]+\s?Lakhs Per Annum\b",
 
-    r"[\d.]+\s?Lakhs",
+    r"\b[\d.]+\s?Lakhs/Annum\b",
 
-    r"[\d.]+\s?Lakhs Per Annum",
+    r"\b[\d.]+\s?Lakhs?\b",
 
-    r"[\d.]+\s?Lakhs/Annum",
+    r"\b[\d.]+\s?Lacs?\b",
 
-    r"[\d.]+\s?Lacs",
+    r"\b[\d.]+\s?LPA\b",
 
-    r"Rs\.?\s?[\d,]+"
+    r"\bRs\.?\s?[\d,]+"
 
 ]
 
@@ -44,6 +44,13 @@ def extract_salary(text):
         )
 
         if match:
-            return match.group().strip()
+            salary = match.group().strip()
+
+            # Strip informal suffixes (case-sensitive to preserve formal patterns)
+            salary = re.sub(r'\s+per\s+annum\b', '', salary)
+            salary = re.sub(r'\s+per\s+year\b', '', salary)
+            salary = re.sub(r'\s+annually\b', '', salary)
+
+            return salary.strip()
 
     return ""
