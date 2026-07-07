@@ -23,7 +23,7 @@
     "ITIL Foundation",
     "ITIL Intermediate",
     "PMP",
-    "PRINCE2",
+    "Prince2",
     "Prince2 Practitioner",
     "Scrum Master",
     "CSM",
@@ -48,5 +48,9 @@
     "SAP FICO",
     "SAP MM",
     "SAP SD",
-    "SAP HANA"
+    "SAP HANA",
+    "AWS Certified Solutions Architect",
+    "Google Cloud Professional",
+    "ITIL",
+    "CompTIA Security+"
 ]

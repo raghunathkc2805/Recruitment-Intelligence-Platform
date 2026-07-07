@@ -1,25 +1,6 @@
-import json
-import os
 import re
 
-
-def _load_certifications():
-    """
-    Load certification master.
-    """
-
-    kb_path = os.path.join(
-        os.path.dirname(__file__),
-        "..",
-        "knowledge_base",
-        "certification_master.json"
-    )
-
-    with open(kb_path, "r", encoding="utf-8") as file:
-        return json.load(file)
-
-
-CERTIFICATIONS = _load_certifications()
+from jd_parser.utils.knowledge_base import CERTIFICATIONS
 
 
 def extract_certifications(text):
@@ -30,16 +11,16 @@ def extract_certifications(text):
     if not text:
         return []
 
-    text = text.lower()
-
-    found = []
+    matches = []
 
     for certification in CERTIFICATIONS:
 
-        pattern = r"\b" + re.escape(certification.lower()) + r"\b"
+        if certification.endswith("+"):
+            pattern = r"(?<!\w)" + re.escape(certification) + r"(?!\w)"
+        else:
+            pattern = r"\b" + re.escape(certification) + r"\b"
 
-        if re.search(pattern, text):
+        if re.search(pattern, text, re.IGNORECASE):
+            matches.append(certification)
 
-            found.append(certification)
-
-    return sorted(set(found))
+    return sorted(set(matches))
