@@ -18,9 +18,14 @@ TECHNICAL_SKILL_PATTERNS = [
     ("Java", [r"\bJava\b"]),
     ("JavaScript", [r"\bJavaScript\b", r"\bJava\s*Script\b"]),
     ("TypeScript", [r"\bTypeScript\b", r"\bType\s*Script\b"]),
-    ("C++", [r"\bC\+\+\b"]),
-    ("C#", [r"\bC#\b"]),
-    ("C", [r"(?<![+#A-Za-z0-9_])C(?![+#A-Za-z0-9_])"]),
+    ("C", [
+    r"(?<![A-Za-z0-9_+#])C(?!\s*Sharp)(?![A-Za-z0-9_+#])",
+]),
+    ("C++", [r"(?<![A-Za-z0-9_])C\+\+(?![A-Za-z0-9_])"]),
+    ("C#", [
+    r"(?<![A-Za-z0-9_])C#(?![A-Za-z0-9_])",
+    r"\bC\s*Sharp\b",
+]),
     ("Go", [r"\bGolang\b", r"\bGo\b"]),
     ("Rust", [r"\bRust\b"]),
     ("PHP", [r"\bPHP\b"]),
@@ -74,7 +79,11 @@ TECHNICAL_SKILL_PATTERNS = [
     ("Routing", [r"\bRouting\b"]),
     ("Switching", [r"\bSwitching\b"]),
     ("5G", [r"\b5G\b"]),
-    ("4G LTE", [r"\b4G\s*LTE\b", r"\b4G\s*L\s*T\s*E\b"]),
+    ("4G LTE", [
+    r"\b4G\s*LTE\b",
+    r"\b4G\s*L\s*T\s*E\b",
+    r"\bLTE\b",
+]),
     ("VoLTE", [r"\bVoLTE\b"]),
     ("IMS", [r"\bIMS\b"]),
     ("GPON", [r"\bGPON\b"]),
@@ -107,7 +116,10 @@ TECHNICAL_SKILL_PATTERNS = [
     ("OpenAI API", [r"\bOpenAI\s*API\b", r"\bOpenAI\b"]),
     ("SAP", [r"\bSAP\b"]),
     ("Oracle ERP", [r"\bOracle\s*ERP\b", r"\bOracleERP\b"]),
-    ("Salesforce", [r"\bSalesforce\b"]),
+    ("Salesforce", [
+    r"\bSalesforce\b",
+    r"\bSales\s*Force\b",
+]),
     ("Workday", [r"\bWorkday\b"]),
     ("ServiceNow", [r"\bServiceNow\b", r"\bService\s*Now\b"]),
 ]
@@ -173,12 +185,25 @@ def _find_technical_skills(text):
 
     matches.sort(key=lambda item: (item[0], item[1]))
 
+    ...
     normalized = []
     seen = set()
+
     for _, _, skill in matches:
         if skill not in seen:
             normalized.append(skill)
             seen.add(skill)
+
+    # Remove generic skills when specific skills exist
+   
+    if "SQL Server" in normalized and "SQL" in normalized:
+        normalized.remove("SQL")
+
+    if "Oracle ERP" in normalized and "Oracle" in normalized:
+        normalized.remove("Oracle")
+
+    if "MPLS-TP" in normalized and "MPLS" in normalized:
+        normalized.remove("MPLS")
 
     return normalized
 
