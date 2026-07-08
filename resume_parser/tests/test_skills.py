@@ -1,10 +1,10 @@
 import sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
+ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT))
 
-from extractors.skills_extractor import extract_skills
+from resume_parser.extractors.skills_extractor import extract_skills
 
 sample = """
 AWS Azure GCP VMware
@@ -14,6 +14,4 @@ Leadership
 Communication
 """
 
-skills = extract_skills(sample)
-
-print(skills)
+print(extract_skills(sample))
