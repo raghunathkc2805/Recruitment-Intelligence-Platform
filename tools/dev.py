@@ -1,4 +1,4 @@
-﻿import argparse
+import argparse
 import pathlib
 import subprocess
 import sys
@@ -30,6 +30,15 @@ def test(args):
 def build(args):
     print("Build Successful")
 
+
+
+def new(args):
+    obj_type = args.type
+    name = args.name
+
+    print(f"Creating {obj_type}: {name}")
+
+
 def backup(args):
     backup_root = ROOT / "backups"
     backup_root.mkdir(exist_ok=True)
@@ -59,13 +68,19 @@ COMMANDS = {
     "test": test,
     "build": build,
     "backup": backup,
+    "new": new,
 }
 
 parser = argparse.ArgumentParser(prog="dev.py")
 sub = parser.add_subparsers(dest="command")
 
 for cmd in COMMANDS:
-    sub.add_parser(cmd)
+    if cmd == "new":
+        p = sub.add_parser("new")
+        p.add_argument("type")
+        p.add_argument("name")
+    else:
+        sub.add_parser(cmd)
 
 args = parser.parse_args()
 
