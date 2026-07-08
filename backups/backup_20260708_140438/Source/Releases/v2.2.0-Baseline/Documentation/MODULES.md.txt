@@ -1,0 +1,362 @@
+# Recruitment Automation Suite (RAS)
+
+# MODULE DOCUMENTATION
+
+**Version:** 2.2.0 Baseline
+
+---
+
+# Overview
+
+The Recruitment Automation Suite is organized into independent modules. Each module has a single responsibility and communicates with other modules through public procedures.
+
+---
+
+# Module Architecture
+
+```text
+RunRecruitmentAutomation
+        │
+        ▼
+modMain
+        │
+        ▼
+modConfiguration
+        │
+        ▼
+modMailScanner
+        │
+        ▼
+modDispatcher
+        │
+ ┌──────┼─────────┬──────────┬──────────┬─────────┐
+ ▼      ▼         ▼          ▼          ▼         ▼
+Resources Offer Interview    BGV     NATS/NAPS Resume
+        │
+        ▼
+Candidate Engine
+        │
+        ▼
+Excel Database
+```
+
+---
+
+# Core Modules
+
+## modMain
+
+**Purpose**
+
+* Application entry point.
+
+**Public Procedures**
+
+* RunRecruitmentAutomation
+
+**Dependencies**
+
+* modConfiguration
+* modMailScanner
+
+---
+
+## modConstants
+
+**Purpose**
+
+* Global constants
+* Sheet names
+* Fixed application values
+
+---
+
+## modGlobals
+
+**Purpose**
+
+* Global variables
+* Excel objects
+* Runtime counters
+
+---
+
+## modConfiguration
+
+**Purpose**
+
+* Initialize application
+* Open database
+* Load worksheets
+* Close application
+
+---
+
+## modSettingsEngine
+
+**Purpose**
+
+* Read settings from `01_Settings`
+
+**Public Functions**
+
+* GetSetting()
+* GetSettingBoolean()
+* GetSettingNumber()
+
+---
+
+## modExcel
+
+**Purpose**
+
+* Excel helper functions
+* Workbook operations
+* Worksheet utilities
+
+---
+
+## modLogger
+
+**Purpose**
+
+* Error logging
+* Audit logging
+* Execution logging
+
+**Public Procedures**
+
+* LogError()
+
+---
+
+## modUtilities
+
+**Purpose**
+
+* Common helper functions
+
+**Examples**
+
+* CleanText()
+* GetNextRow()
+* GenerateNextCandidateID()
+* GenerateNextOfferID()
+* GenerateNextInterviewID()
+* ExtractCandidateName()
+
+---
+
+# Outlook Modules
+
+## modMailScanner
+
+**Purpose**
+
+* Scan Outlook folders
+* Read emails
+* Call Dispatcher
+
+---
+
+## modDispatcher
+
+**Purpose**
+
+* Route emails to the correct processing engine
+
+**Routes**
+
+* Resource
+* Offer
+* Interview
+* BGV
+* Deviation
+* NATS
+* NAPS
+
+---
+
+## modDuplicate
+
+**Purpose**
+
+* Prevent duplicate email processing
+
+---
+
+## modFolders
+
+**Purpose**
+
+* Folder creation
+* Folder validation
+
+---
+
+## modParserEngine
+
+**Purpose**
+
+* Extract information from email subject and body
+
+**Functions**
+
+* ParseCandidateName()
+* ParseMobile()
+* ParseEmail()
+* ParseExperience()
+* ParseCurrentCTC()
+* ParseExpectedCTC()
+* ParseNoticePeriod()
+* ParseSkills()
+
+---
+
+# Recruitment Modules
+
+## modCandidateEngine
+
+**Purpose**
+
+* Candidate creation
+* Candidate lookup
+* Candidate folder creation
+* CandidateID generation
+
+---
+
+## modResources
+
+**Purpose**
+
+* Process resource allocation emails
+
+---
+
+## modResume
+
+**Purpose**
+
+* Resume indexing
+* Resume registration
+
+---
+
+## modAttachments
+
+**Purpose**
+
+* Download attachments
+* Save files
+* Attachment indexing
+
+---
+
+## modOfferEngine
+
+**Purpose**
+
+* Offer processing
+* Offer tracking
+* Timeline updates
+
+---
+
+## modInterviewEngine
+
+**Purpose**
+
+* Interview scheduling
+* Interview tracking
+
+---
+
+## modBGV
+
+**Purpose**
+
+* Background verification workflow
+
+---
+
+## modDeviation
+
+**Purpose**
+
+* Deviation approval workflow
+
+---
+
+## modNATS
+
+**Purpose**
+
+* National Apprenticeship Training Scheme processing
+
+---
+
+## modNAPS
+
+**Purpose**
+
+* National Apprenticeship Promotion Scheme processing
+
+---
+
+## modTimeline
+
+**Purpose**
+
+* Maintain candidate activity history
+
+---
+
+# Future Modules
+
+## Version 2.2
+
+* modResumeIntelligence
+* modResumeImport
+* modResumeSearch
+* modCandidateMerge
+
+---
+
+## Version 2.3
+
+* modKPIEngine
+* modDashboard
+* modPowerBIExport
+
+---
+
+## Version 3.0
+
+* modAIEngine
+* modResumeMatching
+* modJDMatching
+* modRecruiterAssistant
+
+---
+
+# Coding Standards
+
+1. Every module must use `Option Explicit`.
+2. Every public procedure must include error handling.
+3. No direct worksheet references outside the configuration layer.
+4. Use `CandidateID` for all candidate relationships.
+5. Log all unexpected errors using `LogError`.
+6. Read configurable values from `01_Settings` where applicable.
+7. Keep each module focused on a single responsibility.
+
+---
+
+# Current Statistics
+
+* Version: 2.2.0 Baseline
+* Database: 39+ worksheets
+* Modules: 20+
+* Architecture: Layered
+* Status: Stable
+* Compile Status: No compile errors

@@ -1,0 +1,59 @@
+{
+    "Cloud": [
+        "AWS Certified Cloud Practitioner",
+        "AWS Certified Solutions Architect",
+        "AWS Certified SysOps Administrator",
+        "AWS Certified Developer",
+        "Microsoft Certified Azure Administrator",
+        "Microsoft Certified Azure Solutions Architect",
+        "Google Professional Cloud Architect",
+        "Google Associate Cloud Engineer"
+    ],
+
+    "Networking": [
+        "CCNA",
+        "CCNP",
+        "CCIE",
+        "JNCIA",
+        "JNCIS",
+        "JNCIP",
+        "Fortinet NSE",
+        "PCNSE"
+    ],
+
+    "Virtualization": [
+        "VMware VCP",
+        "VMware VCAP"
+    ],
+
+    "Linux": [
+        "RHCSA",
+        "RHCE",
+        "LFCS",
+        "LFCE"
+    ],
+
+    "Project Management": [
+        "PMP",
+        "Prince2",
+        "ITIL"
+    ],
+
+    "Security": [
+        "CEH",
+        "CISSP",
+        "Security+"
+    ],
+
+    "Containers": [
+        "Docker",
+        "CKA",
+        "CKAD"
+    ],
+
+    "Development": [
+        "Oracle OCP",
+        "Java SE",
+        "Microsoft Certified Developer"
+    ]
+}

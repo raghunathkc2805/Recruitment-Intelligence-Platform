@@ -1,0 +1,59 @@
+{
+    "Tata Consultancy Services": [
+        "TCS",
+        "Tata Consultancy Services",
+        "Tata Consultancy Services Ltd"
+    ],
+
+    "Infosys": [
+        "Infosys",
+        "Infosys Ltd",
+        "Infosys Limited"
+    ],
+
+    "Wipro": [
+        "Wipro",
+        "Wipro Ltd",
+        "Wipro Limited"
+    ],
+
+    "HCL Technologies": [
+        "HCL",
+        "HCL Tech",
+        "HCL Technologies",
+        "HCL Technologies Ltd"
+    ],
+
+    "IBM": [
+        "IBM",
+        "IBM India",
+        "IBM India Pvt Ltd"
+    ],
+
+    "Accenture": [
+        "Accenture",
+        "Accenture India"
+    ],
+
+    "Cognizant": [
+        "CTS",
+        "Cognizant",
+        "Cognizant Technology Solutions"
+    ],
+
+    "Capgemini": [
+        "Capgemini",
+        "Cap Gemini"
+    ],
+
+    "Tech Mahindra": [
+        "Tech Mahindra",
+        "TechM"
+    ],
+
+    "LTIMindtree": [
+        "LTI",
+        "Mindtree",
+        "LTIMindtree"
+    ]
+}
