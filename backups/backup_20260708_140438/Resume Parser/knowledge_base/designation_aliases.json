@@ -1,0 +1,66 @@
+{
+    "Software Engineer": [
+        "Software Engineer",
+        "Software Developer",
+        "Developer",
+        "Application Developer",
+        "Programmer"
+    ],
+
+    "Senior Software Engineer": [
+        "Senior Software Engineer",
+        "Senior Developer",
+        "Sr Software Engineer",
+        "Sr. Software Engineer",
+        "Lead Software Engineer"
+    ],
+
+    "Technical Lead": [
+        "Technical Lead",
+        "Tech Lead",
+        "Lead Engineer",
+        "Lead Developer"
+    ],
+
+    "Project Manager": [
+        "Project Manager",
+        "Project Lead",
+        "PM"
+    ],
+
+    "Program Manager": [
+        "Program Manager",
+        "Programme Manager"
+    ],
+
+    "Cloud Engineer": [
+        "Cloud Engineer",
+        "Cloud Consultant",
+        "Cloud Administrator"
+    ],
+
+    "Cloud Architect": [
+        "Cloud Architect",
+        "Solutions Architect",
+        "AWS Architect",
+        "Azure Architect"
+    ],
+
+    "Network Engineer": [
+        "Network Engineer",
+        "Network Administrator",
+        "Network Consultant"
+    ],
+
+    "NOC Engineer": [
+        "NOC Engineer",
+        "Network Operations Center Engineer",
+        "NOC Support Engineer"
+    ],
+
+    "Manager": [
+        "Manager",
+        "Team Manager",
+        "Delivery Manager"
+    ]
+}
