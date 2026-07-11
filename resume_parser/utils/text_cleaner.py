@@ -1,58 +1,102 @@
-from __future__ import annotations
+"""
+Recruitment Intelligence Platform
+Resume Parser - Text Cleaner
 
-import re
-from typing import Iterable
+Normalizes extracted text before it reaches
+the extractors.
+"""
+
+import unicodedata
+
+from . import regex_patterns as patterns
 
 
-class TextCleaner:
-    """
-    Standard text cleaning utility for Resume Parser.
+def normalize_unicode(text: str) -> str:
+    """Normalize unicode characters."""
+    if not text:
+        return ""
 
-    - Normalizes whitespace
-    - Removes null characters
-    - Removes excessive blank lines
-    - Normalizes unicode quotes/dashes
-    """
+    return unicodedata.normalize("NFKC", text)
 
-    _SPACE_RE = re.compile(r"[ \t]+")
-    _BLANK_LINES_RE = re.compile(r"\n\s*\n+")
 
-    _REPLACEMENTS = {
+def remove_control_characters(text: str) -> str:
+    """Remove hidden control characters."""
+    return patterns.CONTROL_CHARACTERS.sub("", text)
+
+
+def normalize_quotes(text: str) -> str:
+    """Replace smart quotes with ASCII quotes."""
+
+    replacements = {
         "\u2018": "'",
         "\u2019": "'",
         "\u201C": '"',
         "\u201D": '"',
-        "\u2013": "-",
-        "\u2014": "-",
-        "\u00A0": " ",
-        "\x00": "",
+        "\u2032": "'",
+        "\u2033": '"'
     }
 
-    @classmethod
-    def clean(cls, text: str) -> str:
-        if not text:
-            return ""
+    for old, new in replacements.items():
+        text = text.replace(old, new)
 
-        for old, new in cls._REPLACEMENTS.items():
-            text = text.replace(old, new)
+    return text
 
-        lines = [cls._clean_line(line) for line in text.splitlines()]
 
-        text = "\n".join(lines)
+def normalize_hyphens(text: str) -> str:
+    """Normalize unicode hyphens."""
 
-        text = cls._BLANK_LINES_RE.sub("\n\n", text)
+    return patterns.HYPHENS.sub("-", text)
 
-        return text.strip()
 
-    @classmethod
-    def clean_lines(cls, lines: Iterable[str]) -> list[str]:
-        return [
-            cls._clean_line(line)
-            for line in lines
-            if line and line.strip()
-        ]
+def remove_bullets(text: str) -> str:
+    """Convert bullets into line prefixes."""
 
-    @classmethod
-    def _clean_line(cls, line: str) -> str:
-        line = cls._SPACE_RE.sub(" ", line)
-        return line.strip()
+    return patterns.BULLETS.sub("-", text)
+
+
+def normalize_whitespace(text: str) -> str:
+    """Normalize spaces and line endings."""
+
+    text = text.replace("\r\n", "\n")
+    text = text.replace("\r", "\n")
+
+    text = patterns.MULTIPLE_SPACES.sub(" ", text)
+    text = patterns.MULTIPLE_NEWLINES.sub("\n\n", text)
+
+    return text
+
+
+def strip_lines(text: str) -> str:
+    """Strip whitespace from every line."""
+
+    cleaned = []
+
+    for line in text.split("\n"):
+        cleaned.append(line.strip())
+
+    return "\n".join(cleaned)
+
+
+def clean(text: str) -> str:
+    """
+    Complete cleaning pipeline.
+    """
+
+    if not text:
+        return ""
+
+    text = normalize_unicode(text)
+
+    text = remove_control_characters(text)
+
+    text = normalize_quotes(text)
+
+    text = normalize_hyphens(text)
+
+    text = remove_bullets(text)
+
+    text = normalize_whitespace(text)
+
+    text = strip_lines(text)
+
+    return text.strip()

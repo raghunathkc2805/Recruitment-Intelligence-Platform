@@ -1,105 +1,177 @@
 """
-Resume Parser Constants
+Recruitment Intelligence Platform
+Resume Parser - Global Constants
+
+Author: Recruitment Intelligence Platform
 """
 
 from pathlib import Path
 
-# ---------------------------------------------------------
+# --------------------------------------------------
 # Project Paths
-# ---------------------------------------------------------
+# --------------------------------------------------
 
-ROOT_DIR = Path(__file__).resolve().parents[2]
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
 
-RESUME_PARSER_DIR = ROOT_DIR / "resume_parser"
+RESUME_PARSER_ROOT = PROJECT_ROOT / "resume_parser"
 
-KNOWLEDGE_BASE_DIR = RESUME_PARSER_DIR / "knowledge_base"
+OUTPUT_ROOT = RESUME_PARSER_ROOT / "output"
 
-OUTPUT_DIR = RESUME_PARSER_DIR / "output"
+CSV_OUTPUT = OUTPUT_ROOT / "csv"
+EXCEL_OUTPUT = OUTPUT_ROOT / "excel"
+JSON_OUTPUT = OUTPUT_ROOT / "json"
+REPORT_OUTPUT = OUTPUT_ROOT / "reports"
 
-LOG_DIR = RESUME_PARSER_DIR / "logs"
+LOG_DIRECTORY = RESUME_PARSER_ROOT / "logs"
 
-SAMPLE_RESUME_DIR = RESUME_PARSER_DIR / "sample_resumes"
+KNOWLEDGE_BASE = RESUME_PARSER_ROOT / "knowledge_base"
 
-# ---------------------------------------------------------
+SAMPLE_RESUMES = RESUME_PARSER_ROOT / "sample_resumes"
+
+# --------------------------------------------------
 # Supported File Types
-# ---------------------------------------------------------
+# --------------------------------------------------
 
-SUPPORTED_FILE_TYPES = {
+SUPPORTED_EXTENSIONS = {
     ".pdf",
     ".docx",
-    ".txt",
+    ".txt"
 }
 
-# ---------------------------------------------------------
-# Text Limits
-# ---------------------------------------------------------
+SUPPORTED_MIME_TYPES = {
+    "application/pdf",
+    "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    "text/plain"
+}
 
-MIN_TEXT_LENGTH = 20
+# --------------------------------------------------
+# File Limits
+# --------------------------------------------------
 
-MAX_TEXT_LENGTH = 2_000_000
+MAX_FILE_SIZE_MB = 20
 
-# ---------------------------------------------------------
-# Resume Scoring
-# ---------------------------------------------------------
+MAX_FILE_SIZE_BYTES = MAX_FILE_SIZE_MB * 1024 * 1024
 
-MAX_SCORE = 100
-
-DEFAULT_SCORE = 0
-
-# ---------------------------------------------------------
-# Ranking Thresholds
-# ---------------------------------------------------------
-
-OUTSTANDING_SCORE = 95
-
-EXCELLENT_SCORE = 90
-
-VERY_GOOD_SCORE = 80
-
-GOOD_SCORE = 70
-
-AVERAGE_SCORE = 50
-
-# ---------------------------------------------------------
-# Default Encoding
-# ---------------------------------------------------------
+MIN_TEXT_LENGTH = 30
 
 DEFAULT_ENCODING = "utf-8"
 
-# ---------------------------------------------------------
-# Regex Flags
-# ---------------------------------------------------------
+# --------------------------------------------------
+# Resume Parser
+# --------------------------------------------------
 
-REGEX_FLAGS = 0
+DEFAULT_LANGUAGE = "en"
 
-# ---------------------------------------------------------
-# Output Formats
-# ---------------------------------------------------------
+DEFAULT_SCORE = 0
 
-OUTPUT_JSON = "json"
+DEFAULT_CONFIDENCE = 0.0
 
-OUTPUT_CSV = "csv"
+DEFAULT_PAGE_COUNT = 0
 
-OUTPUT_CONSOLE = "console"
+# --------------------------------------------------
+# Parsing Status
+# --------------------------------------------------
 
-# ---------------------------------------------------------
+STATUS_SUCCESS = "success"
+
+STATUS_FAILED = "failed"
+
+STATUS_WARNING = "warning"
+
+# --------------------------------------------------
+# Export Formats
+# --------------------------------------------------
+
+EXPORT_JSON = "json"
+
+EXPORT_CSV = "csv"
+
+EXPORT_EXCEL = "excel"
+
+EXPORT_PDF = "pdf"
+
+SUPPORTED_EXPORTS = {
+    EXPORT_JSON,
+    EXPORT_CSV,
+    EXPORT_EXCEL,
+    EXPORT_PDF
+}
+
+# --------------------------------------------------
 # Knowledge Base Files
-# ---------------------------------------------------------
+# --------------------------------------------------
 
-SKILLS_MASTER = KNOWLEDGE_BASE_DIR / "skills_master.json"
+SKILLS_MASTER = KNOWLEDGE_BASE / "skills_master.json"
 
-DESIGNATION_MASTER = KNOWLEDGE_BASE_DIR / "designation_master.json"
+CERTIFICATION_MASTER = KNOWLEDGE_BASE / "certification_master.json"
 
-COMPANY_MASTER = KNOWLEDGE_BASE_DIR / "company_master.json"
+COMPANY_MASTER = KNOWLEDGE_BASE / "company_master.json"
 
-DOMAIN_MASTER = KNOWLEDGE_BASE_DIR / "domain_master.json"
+DESIGNATION_MASTER = KNOWLEDGE_BASE / "designation_master.json"
 
-LOCATION_MASTER = KNOWLEDGE_BASE_DIR / "location_master.json"
+EDUCATION_MASTER = KNOWLEDGE_BASE / "education_master.json"
 
-EDUCATION_MASTER = KNOWLEDGE_BASE_DIR / "education_master.json"
+DOMAIN_MASTER = KNOWLEDGE_BASE / "domain_master.json"
 
-CERTIFICATION_MASTER = KNOWLEDGE_BASE_DIR / "certification_master.json"
+LOCATION_MASTER = KNOWLEDGE_BASE / "location_master.json"
 
-LANGUAGE_MASTER = KNOWLEDGE_BASE_DIR / "language_master.json"
+LANGUAGE_MASTER = KNOWLEDGE_BASE / "language_master.json"
 
-KEYWORD_SYNONYMS = KNOWLEDGE_BASE_DIR / "keyword_synonyms.json"
+KEYWORD_SYNONYMS = KNOWLEDGE_BASE / "keyword_synonyms.json"
+
+# --------------------------------------------------
+# Parser Names
+# --------------------------------------------------
+
+TXT_PARSER = "txt"
+
+DOCX_PARSER = "docx"
+
+PDF_PARSER = "pdf"
+
+# --------------------------------------------------
+# Logging
+# --------------------------------------------------
+
+LOG_LEVEL = "INFO"
+
+LOG_FORMAT = (
+    "%(asctime)s | "
+    "%(levelname)s | "
+    "%(name)s | "
+    "%(message)s"
+)
+
+# --------------------------------------------------
+# Common Response Keys
+# --------------------------------------------------
+
+KEY_SUCCESS = "success"
+
+KEY_STATUS = "status"
+
+KEY_ERRORS = "errors"
+
+KEY_TEXT = "text"
+
+KEY_FILE_NAME = "file_name"
+
+KEY_FILE_TYPE = "file_type"
+
+KEY_FILE_SIZE = "file_size"
+
+KEY_PAGE_COUNT = "pages"
+
+KEY_METADATA = "metadata"
+
+KEY_ENCODING = "encoding"
+
+# --------------------------------------------------
+# Miscellaneous
+# --------------------------------------------------
+
+EMPTY_STRING = ""
+
+UNKNOWN = "Unknown"
+
+NOT_AVAILABLE = "N/A"
