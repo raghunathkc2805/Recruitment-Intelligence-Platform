@@ -8,7 +8,7 @@ from __future__ import annotations
 import re
 from typing import Dict, List
 
-from resume_parser.utils.knowledge_base import COMPANIES
+from resume_parser.utils.knowledge_base import COMPANY_ALIASES
 
 
 class EmployerExtractor:
@@ -32,11 +32,9 @@ class EmployerExtractor:
 
         employers = []
 
-        for company in COMPANIES:
+        for company, aliases in COMPANY_ALIASES.items():
 
-            pattern = cls._compile(company)
-
-            if pattern.search(text):
+            if any(cls._compile(alias).search(text) for alias in aliases):
 
                 employers.append(
                     {

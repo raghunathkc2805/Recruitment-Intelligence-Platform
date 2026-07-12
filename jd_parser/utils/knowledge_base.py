@@ -1,13 +1,4 @@
-import json
-from pathlib import Path
-
-BASE_DIR = Path(__file__).resolve().parent.parent
-KB_DIR = BASE_DIR / "knowledge_base"
-
-
-def load_json(filename):
-    with open(KB_DIR / filename, "r", encoding="utf-8") as file:
-        return json.load(file)
+from shared.knowledge_base.loader import load_json
 
 
 # Skills
@@ -33,8 +24,9 @@ UNIVERSITIES = load_json("universities.json")
 CERTIFICATIONS = load_json("certification_master.json")
 
 # Companies
-COMPANIES = load_json("companies_master.json")
+COMPANIES = load_json("company_master.json")
 
 # Locations
-INDIA_STATES = load_json("india_states.json")
-INDIA_CITIES = load_json("india_cities.json")
+LOCATIONS = load_json("location_master.json")
+INDIA_STATES = LOCATIONS["states"]
+INDIA_CITIES = LOCATIONS["cities"]

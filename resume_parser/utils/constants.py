@@ -15,6 +15,8 @@ PROJECT_ROOT = Path(__file__).resolve().parents[2]
 
 RESUME_PARSER_ROOT = PROJECT_ROOT / "resume_parser"
 
+SHARED_KNOWLEDGE_BASE = PROJECT_ROOT / "shared" / "knowledge_base"
+
 OUTPUT_ROOT = RESUME_PARSER_ROOT / "output"
 
 CSV_OUTPUT = OUTPUT_ROOT / "csv"
@@ -24,7 +26,7 @@ REPORT_OUTPUT = OUTPUT_ROOT / "reports"
 
 LOG_DIRECTORY = RESUME_PARSER_ROOT / "logs"
 
-KNOWLEDGE_BASE = RESUME_PARSER_ROOT / "knowledge_base"
+KNOWLEDGE_BASE = SHARED_KNOWLEDGE_BASE
 
 SAMPLE_RESUMES = RESUME_PARSER_ROOT / "sample_resumes"
 

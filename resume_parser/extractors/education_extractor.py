@@ -8,31 +8,11 @@ from __future__ import annotations
 import re
 from typing import Dict, List
 
+from resume_parser.utils.knowledge_base import EDUCATION
 
-DEGREES = [
-    "PhD",
-    "Doctorate",
-    "M.Tech",
-    "ME",
-    "MS",
-    "MBA",
-    "MCA",
-    "M.Sc",
-    "BE",
-    "B.Tech",
-    "B.E",
-    "BCA",
-    "B.Sc",
-    "B.Com",
-    "BA",
-    "Diploma",
-    "PUC",
-    "12th",
-    "10th",
-    "SSLC",
-]
+DEGREES = EDUCATION
 
-YEAR_PATTERN = re.compile(r"\b(19|20)\d{2}\b")
+YEAR_PATTERN = re.compile(r"\b(?:19|20)\d{2}\b")
 
 PERCENT_PATTERN = re.compile(r"\b\d{2,3}(?:\.\d+)?\s*%")
 
@@ -66,7 +46,7 @@ class EducationExtractor:
             if not degree:
                 continue
 
-            years = YEAR_PATTERN.findall(line)
+            years = [match.group(0) for match in YEAR_PATTERN.finditer(line)]
 
             percentage = PERCENT_PATTERN.search(line)
 
