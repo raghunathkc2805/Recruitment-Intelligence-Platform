@@ -3,7 +3,10 @@ Recruitment Intelligence Platform
 DOCX Resume Parser
 """
 
+from __future__ import annotations
+
 from pathlib import Path
+import zipfile
 
 import docx
 import docx2txt
@@ -28,47 +31,73 @@ class DOCXParser:
     """
     Production DOCX parser.
 
-    Primary Engine:
+    Primary:
         python-docx
 
-    Fallback:
+    Secondary:
         docx2txt
+
+    Final fallback:
+        Read as plain text
     """
 
     @staticmethod
-    def _read_using_python_docx(path: Path) -> str:
+    def _read_python_docx(path: Path) -> str:
 
         document = docx.Document(path)
 
         paragraphs = []
 
         for paragraph in document.paragraphs:
-            text = paragraph.text.strip()
 
-            if text:
-                paragraphs.append(text)
+            value = paragraph.text.strip()
+
+            if value:
+                paragraphs.append(value)
 
         return "\n".join(paragraphs)
 
     @staticmethod
-    def _read_using_docx2txt(path: Path) -> str:
+    def _read_docx2txt(path: Path) -> str:
 
         return docx2txt.process(str(path))
 
+    @staticmethod
+    def _read_text(path: Path) -> str:
+
+        return path.read_text(
+            encoding="utf-8",
+            errors="ignore",
+        )
+
     @classmethod
-    def parse(cls, file_path: str | Path) -> dict:
+    def parse(cls, file_path: str | Path):
 
         path = Path(file_path)
 
+        engine = None
+
         try:
 
-            raw_text = cls._read_using_python_docx(path)
+            raw_text = cls._read_python_docx(path)
 
-        except Exception:
+            engine = "python-docx"
 
-            raw_text = cls._read_using_docx2txt(path)
+        except (zipfile.BadZipFile, ValueError, OSError):
 
-        cleaned_text = text_cleaner.clean(raw_text)
+            try:
+
+                raw_text = cls._read_docx2txt(path)
+
+                engine = "docx2txt"
+
+            except Exception:
+
+                raw_text = cls._read_text(path)
+
+                engine = "text-fallback"
+
+        cleaned = text_cleaner.clean(raw_text)
 
         return {
 
@@ -84,16 +113,16 @@ class DOCXParser:
 
             KEY_PAGE_COUNT: None,
 
-            KEY_TEXT: cleaned_text,
+            KEY_TEXT: cleaned,
 
             KEY_METADATA: {
 
                 "encoding": DEFAULT_ENCODING,
 
-                "engine": "python-docx/docx2txt"
+                "engine": engine,
 
             },
 
-            KEY_ERRORS: []
+            KEY_ERRORS: [],
 
         }

@@ -1,102 +1,53 @@
 """
 Recruitment Intelligence Platform
-Resume Parser - Text Cleaner
-
-Normalizes extracted text before it reaches
-the extractors.
+Text Cleaner
 """
 
-import unicodedata
+from __future__ import annotations
 
-from . import regex_patterns as patterns
-
-
-def normalize_unicode(text: str) -> str:
-    """Normalize unicode characters."""
-    if not text:
-        return ""
-
-    return unicodedata.normalize("NFKC", text)
+import html
+import re
 
 
-def remove_control_characters(text: str) -> str:
-    """Remove hidden control characters."""
-    return patterns.CONTROL_CHARACTERS.sub("", text)
-
-
-def normalize_quotes(text: str) -> str:
-    """Replace smart quotes with ASCII quotes."""
-
-    replacements = {
-        "\u2018": "'",
-        "\u2019": "'",
-        "\u201C": '"',
-        "\u201D": '"',
-        "\u2032": "'",
-        "\u2033": '"'
-    }
-
-    for old, new in replacements.items():
-        text = text.replace(old, new)
-
-    return text
-
-
-def normalize_hyphens(text: str) -> str:
-    """Normalize unicode hyphens."""
-
-    return patterns.HYPHENS.sub("-", text)
-
-
-def remove_bullets(text: str) -> str:
-    """Convert bullets into line prefixes."""
-
-    return patterns.BULLETS.sub("-", text)
-
-
-def normalize_whitespace(text: str) -> str:
-    """Normalize spaces and line endings."""
-
-    text = text.replace("\r\n", "\n")
-    text = text.replace("\r", "\n")
-
-    text = patterns.MULTIPLE_SPACES.sub(" ", text)
-    text = patterns.MULTIPLE_NEWLINES.sub("\n\n", text)
-
-    return text
-
-
-def strip_lines(text: str) -> str:
-    """Strip whitespace from every line."""
-
-    cleaned = []
-
-    for line in text.split("\n"):
-        cleaned.append(line.strip())
-
-    return "\n".join(cleaned)
-
-
-def clean(text: str) -> str:
+class TextCleaner:
     """
-    Complete cleaning pipeline.
+    Standard text normalization used across all resume parsers.
     """
 
-    if not text:
-        return ""
+    _MULTIPLE_SPACES = re.compile(r"[ \t]+")
+    _MULTIPLE_NEWLINES = re.compile(r"\n{3,}")
+    _NON_BREAKING_SPACE = re.compile(r"[\u00A0\u2007\u202F]")
+    _ZERO_WIDTH = re.compile(r"[\u200B-\u200D\uFEFF]")
 
-    text = normalize_unicode(text)
+    @classmethod
+    def clean(cls, text: str | None) -> str:
 
-    text = remove_control_characters(text)
+        if not text:
+            return ""
 
-    text = normalize_quotes(text)
+        text = html.unescape(text)
 
-    text = normalize_hyphens(text)
+        text = text.replace("\r\n", "\n")
+        text = text.replace("\r", "\n")
 
-    text = remove_bullets(text)
+        text = cls._NON_BREAKING_SPACE.sub(" ", text)
+        text = cls._ZERO_WIDTH.sub("", text)
 
-    text = normalize_whitespace(text)
+        lines = []
 
-    text = strip_lines(text)
+        for line in text.split("\n"):
 
-    return text.strip()
+            line = cls._MULTIPLE_SPACES.sub(" ", line)
+
+            line = line.strip()
+
+            lines.append(line)
+
+        text = "\n".join(lines)
+
+        text = cls._MULTIPLE_NEWLINES.sub("\n\n", text)
+
+        return text.strip()
+
+
+clean = TextCleaner.clean

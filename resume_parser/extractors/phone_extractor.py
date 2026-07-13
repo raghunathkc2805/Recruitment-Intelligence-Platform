@@ -1,14 +1,6 @@
 """
 Recruitment Intelligence Platform
 Production Phone Extractor
-
-Supports:
-- Indian Mobile Numbers
-- International Numbers
-- Landlines
-- Multiple Phone Numbers
-- Duplicate Removal
-- Normalization
 """
 
 from __future__ import annotations
@@ -20,15 +12,21 @@ from typing import List, Optional
 PHONE_REGEX = re.compile(
     r"""
     (?:
-        (?:\+?\d{1,3})?          # Optional country code
-        [\s\-./]*
+        (?:\+91[\s\-]?)?
+        (?:0[\s\-]?)?
+        [6-9]\d{9}
     )
+    |
     (?:
-        \(?\d{2,5}\)?            # Optional STD code
-        [\s\-./]*
-    )?
+        \+\d{1,3}[\s\-]?\d{6,14}
+    )
+    |
     (?:
-        \d[\d\s\-./]{8,15}\d
+        \(\d{2,5}\)[\s\-]?\d{6,10}
+    )
+    |
+    (?:
+        \d{2,5}[\s\-]\d{6,10}
     )
     """,
     re.VERBOSE,
@@ -37,22 +35,16 @@ PHONE_REGEX = re.compile(
 
 class PhoneExtractor:
 
-    MIN_DIGITS = 10
-    MAX_DIGITS = 15
-
     @staticmethod
     def normalize(phone: str) -> str:
-        """
-        Convert phone number into a standard format.
-        """
 
         phone = phone.strip()
 
-        has_plus = phone.startswith("+")
+        plus = phone.startswith("+")
 
         digits = re.sub(r"\D", "", phone)
 
-        if has_plus:
+        if plus:
             return "+" + digits
 
         return digits
@@ -62,7 +54,7 @@ class PhoneExtractor:
 
         digits = re.sub(r"\D", "", phone)
 
-        return cls.MIN_DIGITS <= len(digits) <= cls.MAX_DIGITS
+        return 10 <= len(digits) <= 15
 
     @classmethod
     def extract_all(cls, text: str) -> List[str]:
@@ -71,15 +63,17 @@ class PhoneExtractor:
             return []
 
         phones = []
+        seen = set()
 
         for match in PHONE_REGEX.finditer(text):
 
-            phone = cls.normalize(match.group(0))
+            phone = cls.normalize(match.group())
 
             if not cls.is_valid(phone):
                 continue
 
-            if phone not in phones:
+            if phone not in seen:
+                seen.add(phone)
                 phones.append(phone)
 
         return phones

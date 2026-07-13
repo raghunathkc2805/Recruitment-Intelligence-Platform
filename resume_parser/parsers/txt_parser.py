@@ -3,6 +3,8 @@ Recruitment Intelligence Platform
 TXT Resume Parser
 """
 
+from __future__ import annotations
+
 from pathlib import Path
 
 from resume_parser.utils import text_cleaner
@@ -17,40 +19,84 @@ from resume_parser.utils.constants import (
     KEY_STATUS,
     KEY_SUCCESS,
     KEY_TEXT,
+    STATUS_FAILED,
     STATUS_SUCCESS,
 )
 
 
 class TXTParser:
     """
-    Parses plain text resumes.
+    Production TXT parser.
     """
 
-    @staticmethod
-    def parse(file_path: str | Path) -> dict:
+    @classmethod
+    def parse(cls, file_path: str | Path):
 
         path = Path(file_path)
 
-        with open(
-            path,
-            "r",
-            encoding=DEFAULT_ENCODING,
-            errors="ignore",
-        ) as f:
-            raw_text = f.read()
+        if not path.exists():
 
-        cleaned_text = text_cleaner.clean(raw_text)
+            raise FileNotFoundError(path)
 
-        return {
-            KEY_SUCCESS: True,
-            KEY_STATUS: STATUS_SUCCESS,
-            KEY_FILE_NAME: path.name,
-            KEY_FILE_TYPE: ".txt",
-            KEY_FILE_SIZE: path.stat().st_size,
-            KEY_PAGE_COUNT: 1,
-            KEY_TEXT: cleaned_text,
-            KEY_METADATA: {
-                "encoding": DEFAULT_ENCODING
-            },
-            KEY_ERRORS: [],
-        }
+        try:
+
+            raw_text = path.read_text(
+                encoding="utf-8",
+                errors="ignore",
+            )
+
+            cleaned = text_cleaner.clean(raw_text)
+
+            return {
+
+                KEY_SUCCESS: True,
+
+                KEY_STATUS: STATUS_SUCCESS,
+
+                KEY_FILE_NAME: path.name,
+
+                KEY_FILE_TYPE: ".txt",
+
+                KEY_FILE_SIZE: path.stat().st_size,
+
+                KEY_PAGE_COUNT: 1,
+
+                KEY_TEXT: cleaned,
+
+                KEY_METADATA: {
+
+                    "encoding": DEFAULT_ENCODING,
+
+                },
+
+                KEY_ERRORS: [],
+
+            }
+
+        except Exception as exc:
+
+            return {
+
+                KEY_SUCCESS: False,
+
+                KEY_STATUS: STATUS_FAILED,
+
+                KEY_FILE_NAME: path.name,
+
+                KEY_FILE_TYPE: ".txt",
+
+                KEY_FILE_SIZE: 0,
+
+                KEY_PAGE_COUNT: 0,
+
+                KEY_TEXT: "",
+
+                KEY_METADATA: {
+
+                    "encoding": DEFAULT_ENCODING,
+
+                },
+
+                KEY_ERRORS: [str(exc)],
+
+            }

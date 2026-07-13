@@ -1,156 +1,111 @@
 """
 Recruitment Intelligence Platform
-Resume Parser - Regular Expression Library
-
-Centralized compiled regex patterns used across
-all extractors and validators.
+Common Regular Expression Patterns
 """
+
+from __future__ import annotations
 
 import re
 
-# --------------------------------------------------
-# Email
-# --------------------------------------------------
-
 EMAIL = re.compile(
-    r"\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}\b",
-    re.IGNORECASE
+    r"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}",
+    re.IGNORECASE,
 )
-
-# --------------------------------------------------
-# Phone Numbers
-# --------------------------------------------------
 
 PHONE = re.compile(
-    r"(\+?\d{1,3}[\s\-]?)?(\(?\d{3,5}\)?[\s\-]?)?\d{5}[\s\-]?\d{5}",
-    re.IGNORECASE
+    r"""
+    (?:
+        (?:\+?\d{1,3})?
+        [\s\-./]*
+    )
+    (?:
+        \(?\d{2,5}\)?
+        [\s\-./]*
+    )?
+    (?:
+        \d[\d\s\-./]{8,15}\d
+    )
+    """,
+    re.VERBOSE,
 )
 
-# --------------------------------------------------
-# URLs
-# --------------------------------------------------
-
 URL = re.compile(
-    r"https?://[^\s]+",
-    re.IGNORECASE
+    r"(?:https?://|www\.)[^\s]+",
+    re.IGNORECASE,
 )
 
 LINKEDIN = re.compile(
-    r"(https?://)?(www\.)?linkedin\.com/[^\s]+",
-    re.IGNORECASE
+    r"(?:https?://)?(?:www\.)?linkedin\.com/[^\s]+",
+    re.IGNORECASE,
 )
 
 GITHUB = re.compile(
-    r"(https?://)?(www\.)?github\.com/[^\s]+",
-    re.IGNORECASE
+    r"(?:https?://)?(?:www\.)?github\.com/[A-Za-z0-9_.-]+",
+    re.IGNORECASE,
 )
-
-# --------------------------------------------------
-# Experience
-# --------------------------------------------------
-
-EXPERIENCE = re.compile(
-    r"(\d+(?:\.\d+)?)\s*(?:\+)?\s*"
-    r"(?:years?|yrs?|y)\s*"
-    r"(?:and)?\s*"
-    r"(\d+)?\s*"
-    r"(?:months?|mos?|m)?",
-    re.IGNORECASE
-)
-
-# --------------------------------------------------
-# Date Formats
-# --------------------------------------------------
-
-DATE = re.compile(
-    r"\b("
-    r"\d{1,2}[/-]\d{1,2}[/-]\d{2,4}"
-    r"|"
-    r"\d{4}[/-]\d{1,2}[/-]\d{1,2}"
-    r"|"
-    r"(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)"
-    r"[a-z]*\s+\d{4}"
-    r")\b",
-    re.IGNORECASE
-)
-
-# --------------------------------------------------
-# Education
-# --------------------------------------------------
-
-CGPA = re.compile(
-    r"\b\d(?:\.\d{1,2})?\s*/\s*10\b"
-)
-
-PERCENTAGE = re.compile(
-    r"\b\d{2,3}(?:\.\d+)?\s*%\b"
-)
-
-# --------------------------------------------------
-# Name
-# --------------------------------------------------
-
-NAME = re.compile(
-    r"^[A-Z][a-z]+(?:\s+[A-Z][a-z]+){1,4}$",
-    re.MULTILINE
-)
-
-# --------------------------------------------------
-# Postal Codes
-# --------------------------------------------------
 
 PINCODE = re.compile(
     r"\b\d{6}\b"
 )
 
-# --------------------------------------------------
-# Whitespace
-# --------------------------------------------------
+YEAR = re.compile(
+    r"\b(?:19|20)\d{2}\b"
+)
 
-MULTIPLE_SPACES = re.compile(
-    r"[ \t]{2,}"
+PERCENTAGE = re.compile(
+    r"\b\d{2,3}(?:\.\d+)?\s*%"
+)
+
+CGPA = re.compile(
+    r"\b\d(?:\.\d+)?\s*/\s*10\b",
+    re.IGNORECASE,
+)
+
+NAME = re.compile(
+    r"^[A-Z][a-zA-Z]+(?:[\s\-'][A-Z][a-zA-Z]+){1,4}$"
+)
+
+WHITESPACE = re.compile(
+    r"\s+"
 )
 
 MULTIPLE_NEWLINES = re.compile(
-    r"\n{3,}"
+    r"\n{2,}"
 )
 
-LEADING_TRAILING_SPACE = re.compile(
-    r"^\s+|\s+$",
-    re.MULTILINE
+DATE = re.compile(
+    r"""
+    (?:
+        \b(?:0?[1-9]|[12][0-9]|3[01])
+        [/\-.]
+        (?:0?[1-9]|1[0-2])
+        [/\-.]
+        (?:19|20)\d{2}\b
+    )
+    |
+    (?:
+        \b(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec|
+        January|February|March|April|May|June|July|August|
+        September|October|November|December)
+        \s+
+        (?:19|20)\d{2}\b
+    )
+    """,
+    re.IGNORECASE | re.VERBOSE,
 )
 
-CONTROL_CHARACTERS = re.compile(
-    r"[\x00-\x1F\x7F]"
-)
-
-# --------------------------------------------------
-# Resume Sections
-# --------------------------------------------------
-
-SECTION_HEADERS = re.compile(
-    r"\b("
-    r"summary|profile|objective|"
-    r"experience|employment|work history|"
-    r"education|qualification|"
-    r"skills|technical skills|"
-    r"projects|"
-    r"certifications?|"
-    r"languages?|"
-    r"achievements?|"
-    r"awards?"
-    r")\b",
-    re.IGNORECASE
-)
-
-# --------------------------------------------------
-# Common Cleanup
-# --------------------------------------------------
-
-BULLETS = re.compile(
-    r"[•●■▪►◆◇○]"
-)
-
-HYPHENS = re.compile(
-    r"[–—]"
+EXPERIENCE = re.compile(
+    r"""
+    (\d+(?:\.\d+)?)
+    \s*
+    (?:\+)?\s*
+    (?:years?|yrs?|year|yr)
+    (?:\s*(?:and|&)?\s*)?
+    (?:
+        (\d+)
+        \s*
+        (?:months?|mos?|month|mo)
+    )?
+    """,
+    re.IGNORECASE | re.VERBOSE,
 )
