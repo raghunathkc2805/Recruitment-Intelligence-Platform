@@ -1,31 +1,54 @@
-# Python
+﻿# Python
 __pycache__/
 *.py[cod]
-*.pyo
+*$py.class
 
-# Virtual environments
+# Virtual Environment
 .venv/
 venv/
 env/
+
+# Testing
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
 
 # IDE
 .vscode/
 .idea/
 
+# Build
+build/
+dist/
+*.egg-info/
+
 # Logs
-**/logs/
+logs/
+reports/
+artifacts/
 *.log
 
-# Temporary files
-**/temp/
-*.tmp
-*.bak
+# Environment
+.env
+.env.*
 
-# Generated parser output
-**/output/
-**/test_results/
+# Databases
+*.sqlite
+*.sqlite3
+*.db
 
-# OS files
+# OS
 Thumbs.db
-Desktop.ini
 .DS_Store
+
+# Parser Output
+resume_parser/output/
+jd_parser/output/
+_Resume Parser_Legacy/output/
+
+# Temporary
+temp/
+tmp/
+cache/
