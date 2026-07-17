@@ -1,8 +1,7 @@
-from fastapi import APIRouter
+﻿from fastapi import APIRouter
 
-from api.services.matching_service import (
-    MatchingService,
-)
+from api.dependencies import DatabaseSession
+from api.services.matching_service import MatchingService
 
 router = APIRouter(
     prefix="/matching",
@@ -13,8 +12,10 @@ router = APIRouter(
 @router.post("/run")
 async def run_matching(
     payload: dict,
+    db: DatabaseSession,
 ):
 
     return MatchingService.run(
-        payload
+        db,
+        payload,
     )

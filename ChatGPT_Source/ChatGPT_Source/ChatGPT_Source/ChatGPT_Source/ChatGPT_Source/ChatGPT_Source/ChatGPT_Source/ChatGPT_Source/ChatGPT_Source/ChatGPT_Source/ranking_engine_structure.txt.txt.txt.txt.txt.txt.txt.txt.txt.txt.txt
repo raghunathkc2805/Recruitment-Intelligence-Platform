@@ -1,0 +1,94 @@
+Folder PATH listing for volume New Volume
+Volume serial number is 00000160 A21C:8E30
+D:\RECRUITMENT AUTOMATION VERSION 2\RANKING_ENGINE
+¦   constants.py
+¦   engine.py
+¦   exceptions.py
+¦   main.py
+¦   ranking_service.py
+¦   scoring_engine.py
+¦   version.py
+¦   __init__.py
+¦   
++---algorithms
+¦   ¦   recommendation_engine.py
+¦   ¦   scoring_engine.py
+¦   ¦   tie_breaker.py
+¦   ¦   weighted_ranker.py
+¦   ¦   __init__.py
+¦   ¦   
+¦   +---__pycache__
+¦           recommendation_engine.cpython-314.pyc
+¦           scoring_engine.cpython-314.pyc
+¦           tie_breaker.cpython-314.pyc
+¦           weighted_ranker.cpython-314.pyc
+¦           __init__.cpython-314.pyc
+¦           
++---benchmarks
++---config
++---core
++---datasets
++---docs
++---input
++---knowledge_base
++---logs
++---models
+¦   ¦   ranked_candidate.py
+¦   ¦   ranking_result.py
+¦   ¦   __init__.py
+¦   ¦   
+¦   +---__pycache__
+¦           ranked_candidate.cpython-314.pyc
+¦           ranking_result.cpython-314.pyc
+¦           __init__.cpython-314.pyc
+¦           
++---output
++---reports
++---samples
++---scripts
++---services
++---temp
++---tests
+¦   ¦   conftest.py
+¦   ¦   test_models.py
+¦   ¦   test_ranking_service.py
+¦   ¦   test_recommendation_engine.py
+¦   ¦   test_scoring_engine.py
+¦   ¦   test_tie_breaker.py
+¦   ¦   test_utils.py
+¦   ¦   test_weighted_ranker.py
+¦   ¦   __init__.py
+¦   ¦   
+¦   +---__pycache__
+¦           conftest.cpython-314.pyc
+¦           test_models.cpython-314.pyc
+¦           test_ranking_service.cpython-314.pyc
+¦           test_recommendation_engine.cpython-314.pyc
+¦           test_scoring_engine.cpython-314.pyc
+¦           test_tie_breaker.cpython-314.pyc
+¦           test_utils.cpython-314.pyc
+¦           test_weighted_ranker.cpython-314.pyc
+¦           __init__.cpython-314.pyc
+¦           
++---utils
+¦   ¦   score_utils.py
+¦   ¦   sorting_utils.py
+¦   ¦   validation.py
+¦   ¦   __init__.py
+¦   ¦   
+¦   +---__pycache__
+¦           score_utils.cpython-314.pyc
+¦           sorting_utils.cpython-314.pyc
+¦           validation.cpython-314.pyc
+¦           __init__.cpython-314.pyc
+¦           
++---__pycache__
+        constants.cpython-314.pyc
+        engine.cpython-314.pyc
+        exceptions.cpython-314.pyc
+        main.cpython-314.pyc
+        ranking_service.cpython-314.pyc
+        scoring_engine.cpython-314.pyc
+        version.cpython-314.pyc
+        __init__.cpython-314.pyc
+        

@@ -1,24 +1,23 @@
-"""
-Recruitment Intelligence Platform
+﻿"""
 Database Models
 """
 
+from .audit_log import AuditLog
 from .candidate import Candidate
-from .resume import Resume
 from .job_description import JobDescription
 from .match_result import MatchResult
+from .organization import Organization
+from .resume import Resume
 from .search_history import SearchHistory
 from .user import User
-from .organization import Organization
-from .audit_log import AuditLog
 
 __all__ = [
+    "AuditLog",
     "Candidate",
-    "Resume",
     "JobDescription",
     "MatchResult",
+    "Organization",
+    "Resume",
     "SearchHistory",
     "User",
-    "Organization",
-    "AuditLog",
 ]

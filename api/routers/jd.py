@@ -1,5 +1,8 @@
-from fastapi import APIRouter, UploadFile, File
+﻿from fastapi import APIRouter
+from fastapi import File
+from fastapi import UploadFile
 
+from api.dependencies import DatabaseSession
 from api.services.jd_service import JDService
 
 router = APIRouter(
@@ -10,9 +13,11 @@ router = APIRouter(
 
 @router.post("/parse")
 async def parse_jd(
-    file: UploadFile = File(...)
+    file: UploadFile = File(...),
+    db: DatabaseSession = None,
 ):
 
     return JDService.parse(
-        file
+        db=db,
+        upload_file=file,
     )

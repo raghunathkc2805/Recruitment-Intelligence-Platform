@@ -13,11 +13,9 @@ from api.routers.jd import router as jd_router
 from api.routers.matching import router as matching_router
 from api.routers.ranking import router as ranking_router
 from api.routers.search import router as search_router
-
-from api.routers.candidates import (
-    router as candidate_router,
-)
-
+from api.routers.candidates import router as candidate_router
+from api.routers.auth import router as auth_router
+from api.routers.recommendation import router as recommendation_router
 
 app = FastAPI(
     title="Recruitment Intelligence Platform",
@@ -26,6 +24,7 @@ app = FastAPI(
     redoc_url="/redoc",
 )
 
+# Core APIs
 app.include_router(health_router)
 app.include_router(resume_router)
 app.include_router(jd_router)
@@ -33,4 +32,8 @@ app.include_router(matching_router)
 app.include_router(ranking_router)
 app.include_router(search_router)
 
+# Business APIs
 app.include_router(candidate_router)
+
+# Authentication
+app.include_router(auth_router)

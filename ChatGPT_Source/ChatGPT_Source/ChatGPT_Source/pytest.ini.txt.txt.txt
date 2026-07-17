@@ -1,0 +1,12 @@
+[pytest]
+norecursedirs =
+    backups
+    archive
+    .git
+    .pytest_cache
+    __pycache__
+    venv
+    .venv
+    _Resume Parser_Legacy
+
+addopts = -ra

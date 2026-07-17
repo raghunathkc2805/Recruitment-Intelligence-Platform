@@ -1,0 +1,7 @@
+﻿Write-Host ""
+Write-Host "==============================================="
+Write-Host "Batch 000"
+Write-Host "Builder Initialization"
+Write-Host "==============================================="
+Write-Host ""
+Write-Host "Builder Ready."

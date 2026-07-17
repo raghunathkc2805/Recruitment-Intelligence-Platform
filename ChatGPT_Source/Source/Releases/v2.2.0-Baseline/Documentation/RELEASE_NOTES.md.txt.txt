@@ -1,0 +1,219 @@
+# Recruitment Automation Suite (RAS)
+
+# RELEASE NOTES
+
+---
+
+# Version 2.2.0 Baseline
+
+**Release Date:** 26-Jun-2026
+
+## Overview
+
+This release establishes the first stable baseline of the Recruitment Automation Suite. The architecture, database schema, and module structure are considered stable and will serve as the foundation for future development.
+
+---
+
+## New Features
+
+### Core Framework
+
+* Application initialization
+* Configuration Manager
+* Settings Engine
+* Global Variables
+* Constants
+* Excel Engine
+* Logger
+* Utilities
+
+---
+
+### Outlook Integration
+
+* Outlook Mail Scanner
+* Folder Scanner
+* Mail Classification
+* Dispatcher Engine
+* Duplicate Email Detection
+
+---
+
+### Recruitment Modules
+
+* Candidate Engine
+* Resource Engine
+* Resume Engine
+* Attachment Engine
+* Offer Engine
+* Interview Engine
+* Background Verification Engine
+* Deviation Engine
+* NATS Engine
+* NAPS Engine
+
+---
+
+### Database
+
+Implemented workbook containing:
+
+* Settings
+* Processed Emails
+* Mail Index
+* Resources
+* Candidates
+* Resumes
+* Offers
+* Interviews
+* BGV
+* Deviation
+* NATS
+* NAPS
+* Attachments
+* Recruiters
+* Customers
+* KPI
+* Dashboard
+* Audit
+* Error Log
+* Lookups
+* Folder Master
+* Mail Types
+* System Configuration
+* Candidate Sequence
+* Candidate Timeline
+* Email Templates
+* Job Master
+* Recruitment Stages
+* Users
+* System Logs
+* Parser Rules
+* Resume Parser
+* Resume Skills
+* Resume Education
+* Resume Employment
+* Resume Certifications
+* Candidates_Master
+* AuditLog
+* Settings_Advanced
+
+---
+
+## Documentation
+
+Created:
+
+* README.md
+* DATABASE.md
+* MODULES.md
+* ROADMAP.md
+* TEST_PLAN.md
+* CHANGELOG.md
+* RELEASE_NOTES.md
+
+---
+
+## Improvements
+
+* CandidateID-based architecture
+* Configuration-driven settings
+* Centralized dispatcher
+* Parser rules stored in Excel
+* Timeline support
+* Standardized folder structure
+
+---
+
+## Testing
+
+* VBA Project compiled successfully.
+* No compile errors.
+* Baseline backup created.
+* Database backup completed.
+
+---
+
+## Known Limitations
+
+* Resume parsing not yet implemented.
+* PDF/DOCX extraction pending.
+* Dashboard visuals pending.
+* Power BI export pending.
+* AI features pending.
+* HRMS integration pending.
+
+---
+
+## Upgrade Path
+
+### Version 2.2.1
+
+Planned:
+
+* Resume Intelligence Engine
+* Python Resume Parser
+* JSON Import
+* Resume Metadata
+
+---
+
+### Version 2.3
+
+Planned:
+
+* Recruitment Dashboard
+* KPI Engine
+* Candidate Search
+* Recruiter Analytics
+
+---
+
+### Version 2.4
+
+Planned:
+
+* Power BI Export
+* Monthly Reports
+* Executive Dashboard
+
+---
+
+### Version 3.0
+
+Planned:
+
+* AI Resume Matching
+* JD Matching
+* Recruiter Assistant
+* Candidate Ranking
+
+---
+
+## Release Status
+
+| Item            | Status    |
+| --------------- | --------- |
+| Database        | Stable    |
+| Architecture    | Frozen    |
+| Documentation   | Complete  |
+| Compile Status  | Passed    |
+| Baseline Backup | Completed |
+
+---
+
+## Approval
+
+Project: Recruitment Automation Suite
+
+Version: 2.2.0 Baseline
+
+Release Status: **Approved for Further Development**
+
+Prepared By:
+
+Raghunath K C
+
+Date:
+
+26-Jun-2026

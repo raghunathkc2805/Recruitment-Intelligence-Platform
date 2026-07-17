@@ -48,9 +48,24 @@ class CandidateRepository(BaseRepository):
             .first()
         )
 
-    def list(
+    def update(
         self,
-    ) -> list[Candidate]:
+        candidate: Candidate,
+    ) -> Candidate:
+
+        self.db.commit()
+        self.db.refresh(candidate)
+        return candidate
+
+    def delete(
+        self,
+        candidate: Candidate,
+    ) -> None:
+
+        self.db.delete(candidate)
+        self.db.commit()
+
+    def list(self) -> list[Candidate]:
 
         return (
             self.db.query(Candidate)
