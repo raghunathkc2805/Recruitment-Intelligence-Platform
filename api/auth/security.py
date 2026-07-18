@@ -1,66 +1,63 @@
-"""
-Enterprise Security Layer
+﻿"""
+Authentication Security
 """
 
 from __future__ import annotations
-
-from typing import Annotated
 
 from fastapi import Depends
 from fastapi import HTTPException
 from fastapi import status
 from fastapi.security import HTTPAuthorizationCredentials
 from fastapi.security import HTTPBearer
+from jose import JWTError
 
 from api.auth.jwt_handler import decode_access_token
 
-oauth2_scheme = HTTPBearer(auto_error=True)
+security = HTTPBearer(auto_error=True)
 
-BearerToken = Annotated[
-    HTTPAuthorizationCredentials,
-    Depends(oauth2_scheme),
-]
-
-
-class CurrentUser(dict):
-    """Authenticated user payload."""
+BearerToken = HTTPAuthorizationCredentials
 
 
 def get_current_user(
-    token: BearerToken,
-) -> CurrentUser:
+    credentials: BearerToken = Depends(security),
+) -> dict:
 
     try:
+        payload = decode_access_token(credentials.credentials)
 
-        payload = decode_access_token(
-            token.credentials,
-        )
+        if payload.get("type") != "access":
+            raise HTTPException(
+                status_code=status.HTTP_401_UNAUTHORIZED,
+                detail="Invalid authentication token.",
+            )
 
-        if "sub" not in payload:
-            raise ValueError
+        if not payload.get("sub"):
+            raise HTTPException(
+                status_code=status.HTTP_401_UNAUTHORIZED,
+                detail="Invalid authentication token.",
+            )
 
-        return CurrentUser(payload)
+        return payload
 
-    except Exception as exc:
-
+    except JWTError as exc:
         raise HTTPException(
             status_code=status.HTTP_401_UNAUTHORIZED,
-            detail="Authentication required.",
+            detail="Invalid authentication token.",
         ) from exc
 
 
-def require_roles(
-    *roles: str,
-):
+CurrentUser = dict
+
+
+def require_roles(*roles: str):
+
+    allowed = set(roles)
 
     def dependency(
-        current_user: CurrentUser = Depends(
-            get_current_user,
-        ),
-    ) -> CurrentUser:
+        current_user=Depends(get_current_user),
+    ) -> dict:
 
-        if current_user["role"] not in roles:
-
+        if current_user.get("role") not in allowed:
             raise HTTPException(
                 status_code=status.HTTP_403_FORBIDDEN,
                 detail="Insufficient permissions.",
