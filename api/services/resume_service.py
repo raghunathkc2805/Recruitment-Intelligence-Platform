@@ -130,21 +130,165 @@ class ResumeService:
                 stored_resume
             )
 
+            candidate_data = parsed.get(
+                "candidate",
+                {},
+            )
+
             candidate_repo = CandidateRepository(
                 db
             )
 
+            name = (
+                candidate_data.get(
+                    "name",
+                    "",
+                )
+                or ""
+            ).strip()
+
             email = (
-                parsed.get(
+                candidate_data.get(
                     "email",
                     "",
                 )
-                .strip()
-                .lower()
+                or ""
+            ).strip().lower()
+
+            phone = (
+                candidate_data.get(
+                    "phone",
+                    "",
+                )
+                or ""
+            ).strip()
+
+            experience_data = candidate_data.get(
+                "experience",
+                {},
+            )
+
+            experience_years = 0.0
+            experience_list = []
+
+            if isinstance(
+                experience_data,
+                dict,
+            ):
+
+                experience_years = float(
+                    experience_data.get(
+                        "years",
+                        0,
+                    )
+                    or 0
+                )
+
+                experience_list = (
+                    experience_data.get(
+                        "employment",
+                        [],
+                    )
+                    or []
+                )
+
+            designation = ""
+
+            if experience_list:
+
+                designation = (
+                    experience_list[0].get(
+                        "designation",
+                        "",
+                    )
+                    or ""
+                )
+
+            locations = candidate_data.get(
+                "locations",
+                [],
+            )
+
+            location = ""
+
+            if locations:
+
+                first_location = locations[0]
+
+                if isinstance(
+                    first_location,
+                    dict,
+                ):
+
+                    location = (
+                        first_location.get(
+                            "location",
+                            "",
+                        )
+                        or ""
+                    )
+
+                else:
+
+                    location = str(
+                        first_location
+                    )
+
+            skills_data = candidate_data.get(
+                "skills",
+                {},
+            )
+
+            skills = []
+
+            if isinstance(
+                skills_data,
+                dict,
+            ):
+
+                for value in skills_data.values():
+
+                    if isinstance(
+                        value,
+                        list,
+                    ):
+
+                        skills.extend(
+                            value
+                        )
+
+            elif isinstance(
+                skills_data,
+                list,
+            ):
+
+                skills = skills_data
+
+            education = (
+                candidate_data.get(
+                    "education",
+                    [],
+                )
+                or []
+            )
+
+            certifications = (
+                candidate_data.get(
+                    "certifications",
+                    [],
+                )
+                or []
+            )
+
+            projects = (
+                candidate_data.get(
+                    "projects",
+                    [],
+                )
+                or []
             )
 
             candidate = None
-
             if email:
 
                 candidate = (
@@ -152,7 +296,7 @@ class ResumeService:
                         email
                     )
                 )
-
+                
             if candidate is None:
 
                 candidate = Candidate(
@@ -161,34 +305,21 @@ class ResumeService:
                         f"CAN-{uuid.uuid4().hex[:10].upper()}"
                     ),
 
-                    full_name=parsed.get(
-                        "name",
-                        "Unknown Candidate",
+                    full_name=(
+                        name
+                        if name
+                        else "Unknown Candidate"
                     ),
 
                     email=email,
 
-                    mobile=parsed.get(
-                        "mobile",
-                        "",
-                    ),
+                    mobile=phone,
 
-                    location=parsed.get(
-                        "location",
-                        "",
-                    ),
+                    location=location,
 
-                    experience_years=float(
-                        parsed.get(
-                            "experience_years",
-                            0,
-                        )
-                    ),
+                    experience_years=experience_years,
 
-                    current_designation=parsed.get(
-                        "designation",
-                        "",
-                    ),
+                    current_designation=designation,
 
                 )
 
@@ -231,10 +362,7 @@ class ResumeService:
                 db
             )
 
-            for skill in parsed.get(
-                "skills",
-                [],
-            ):
+            for skill in skills:
 
                 if isinstance(
                     skill,
@@ -249,31 +377,28 @@ class ResumeService:
                 db
             )
 
-            for education in parsed.get(
-                "education",
-                [],
-            ):
+            for education_item in education:
 
                 education_repo.create(
 
                     candidate_id=candidate.id,
 
-                    degree=education.get(
+                    degree=education_item.get(
                         "degree",
                         "",
                     ),
 
-                    specialization=education.get(
+                    specialization=education_item.get(
                         "specialization",
                         "",
                     ),
 
-                    institution=education.get(
+                    institution=education_item.get(
                         "institution",
                         "",
                     ),
 
-                    passing_year=education.get(
+                    passing_year=education_item.get(
                         "passing_year",
                         "",
                     ),
@@ -286,30 +411,28 @@ class ResumeService:
                 )
             )
 
-            for experience in parsed.get(
-                "experience",
-                [],
-            ):
+            for experience_item in experience_list:
 
                 experience_repo.create(
 
                     candidate_id=candidate.id,
 
-                    company_name=experience.get(
+                    company_name=experience_item.get(
                         "company",
                         "",
                     ),
 
-                    designation=experience.get(
+                    designation=experience_item.get(
                         "designation",
                         "",
                     ),
 
                     experience_years=float(
-                        experience.get(
+                        experience_item.get(
                             "years",
                             0,
                         )
+                        or 0
                     ),
 
                 )
@@ -320,21 +443,18 @@ class ResumeService:
                 )
             )
 
-            for certification in parsed.get(
-                "certifications",
-                [],
-            ):
+            for certification_item in certifications:
 
                 certification_repo.create(
 
                     candidate_id=candidate.id,
 
-                    certification_name=certification.get(
+                    certification_name=certification_item.get(
                         "name",
                         "",
                     ),
 
-                    issuing_organization=certification.get(
+                    issuing_organization=certification_item.get(
                         "issuer",
                         "",
                     ),
@@ -347,28 +467,25 @@ class ResumeService:
                 )
             )
 
-            for project in parsed.get(
-                "projects",
-                [],
-            ):
+            for project_item in projects:
 
                 project_repo.create(
 
                     candidate_id=candidate.id,
 
-                    project_name=project.get(
+                    project_name=project_item.get(
                         "name",
                         "",
                     ),
 
-                    description=project.get(
+                    description=project_item.get(
                         "description",
                         "",
                     ),
 
                     technologies=", ".join(
 
-                        project.get(
+                        project_item.get(
                             "technologies",
                             [],
                         )
@@ -448,3 +565,5 @@ class ResumeService:
                     logger.exception(
                         "Unable to remove temporary resume."
                     )
+
+
