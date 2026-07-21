@@ -28,7 +28,8 @@ env/
 # OS files
 Thumbs.db
 Desktop.ini
-.DS_Store.env
+.DS_Store
+.env
 *.pyc
 .pytest_cache/
 .mypy_cache/
