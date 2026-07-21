@@ -1,4 +1,4 @@
-"""
+﻿"""
 Candidate Router
 """
 
@@ -10,9 +10,8 @@ from fastapi import HTTPException
 from fastapi import Response
 from fastapi import status
 
-from api.auth.security import CurrentUser
-from api.auth.security import get_current_user
-from api.auth.security import require_roles
+from api.auth.permission_constants import Permission
+from api.auth.permission_dependency import require_permission
 from api.dependencies import DatabaseSession
 from api.schemas.candidate import (
     CandidateCreateRequest,
@@ -33,14 +32,12 @@ router = APIRouter(
 def create_candidate(
     payload: CandidateCreateRequest,
     db: DatabaseSession,
-    _: CurrentUser = Depends(
-        require_roles(
-            "Admin",
-            "Recruiter",
+    _=Depends(
+        require_permission(
+            Permission.CANDIDATE_CREATE,
         ),
     ),
 ):
-
     return CandidateService.create(
         db,
         payload.model_dump(),
@@ -50,11 +47,12 @@ def create_candidate(
 @router.get("")
 def list_candidates(
     db: DatabaseSession,
-    _: CurrentUser = Depends(
-        get_current_user,
+    _=Depends(
+        require_permission(
+            Permission.CANDIDATE_VIEW,
+        ),
     ),
 ):
-
     return CandidateService.list(db)
 
 
@@ -62,18 +60,18 @@ def list_candidates(
 def get_candidate(
     candidate_id: str,
     db: DatabaseSession,
-    _: CurrentUser = Depends(
-        get_current_user,
+    _=Depends(
+        require_permission(
+            Permission.CANDIDATE_VIEW,
+        ),
     ),
 ):
-
     candidate = CandidateService.get(
         db,
         candidate_id,
     )
 
     if candidate is None:
-
         raise HTTPException(
             status_code=404,
             detail="Candidate not found.",
@@ -87,14 +85,12 @@ def update_candidate(
     candidate_id: str,
     payload: CandidateUpdateRequest,
     db: DatabaseSession,
-    _: CurrentUser = Depends(
-        require_roles(
-            "Admin",
-            "Recruiter",
+    _=Depends(
+        require_permission(
+            Permission.CANDIDATE_UPDATE,
         ),
     ),
 ):
-
     candidate = CandidateService.update(
         db,
         candidate_id,
@@ -102,7 +98,6 @@ def update_candidate(
     )
 
     if candidate is None:
-
         raise HTTPException(
             status_code=404,
             detail="Candidate not found.",
@@ -118,20 +113,18 @@ def update_candidate(
 def delete_candidate(
     candidate_id: str,
     db: DatabaseSession,
-    _: CurrentUser = Depends(
-        require_roles(
-            "Admin",
+    _=Depends(
+        require_permission(
+            Permission.CANDIDATE_DELETE,
         ),
     ),
 ):
-
     deleted = CandidateService.delete(
         db,
         candidate_id,
     )
 
     if not deleted:
-
         raise HTTPException(
             status_code=404,
             detail="Candidate not found.",
