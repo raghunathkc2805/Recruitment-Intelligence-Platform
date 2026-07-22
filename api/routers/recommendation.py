@@ -14,7 +14,9 @@ from api.dependencies import DatabaseSession
 
 from database.repositories.job_repository import JobRepository
 
-from api.services.recommendation_service import RecommendationService
+from api.services.recommendation_service import RecommendationService
+from api.background import background_manager
+from api.background.jobs.recommendation_job import process_recommendation
 
 router = APIRouter(
     prefix="/recommendations",
@@ -101,3 +103,22 @@ async def top_candidate(
         return {}
 
     return recommendations[0]
+
+# ==============================================================================
+# Queue Recommendation Generation
+# ==============================================================================
+
+def queue_recommendation(
+    recommendation_service,
+    candidate_id: str,
+    job_id: str,
+):
+
+    return background_manager.submit(
+        "recommendation",
+        process_recommendation,
+        recommendation_service,
+        candidate_id,
+        job_id,
+    )
+

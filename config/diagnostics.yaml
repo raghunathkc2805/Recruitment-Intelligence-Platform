@@ -1,0 +1,15 @@
+runtime:
+  cpu_warning:80
+  cpu_critical:90
+
+memory:
+  warning:80
+  critical:90
+
+disk:
+  warning:85
+  critical:95
+
+thread_limit:300
+
+self_healing:true

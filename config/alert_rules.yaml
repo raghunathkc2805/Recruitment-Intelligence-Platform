@@ -1,0 +1,18 @@
+﻿cpu:
+  warning: 80
+  critical: 90
+
+memory:
+  warning: 80
+  critical: 90
+
+response_time:
+  warning: 1000
+  critical: 2000
+
+error_rate:
+  warning: 2
+  critical: 5
+
+bujju:
+  ai_failure_rate: 10

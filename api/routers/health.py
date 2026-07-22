@@ -1,16 +1,17 @@
-from fastapi import APIRouter
+﻿from fastapi import APIRouter
 
-router = APIRouter(
-    prefix="",
-    tags=["Health"],
-)
+from api.health import health_service
 
+router = APIRouter(tags=["Health"])
 
 @router.get("/health")
-async def health():
+def health():
+    return health_service.health()
 
-    return {
-        "status": "healthy",
-        "platform": "Recruitment Intelligence Platform",
-        "version": "1.0.0",
-    }
+@router.get("/live")
+def live():
+    return health_service.liveness()
+
+@router.get("/ready")
+def ready():
+    return health_service.readiness()
