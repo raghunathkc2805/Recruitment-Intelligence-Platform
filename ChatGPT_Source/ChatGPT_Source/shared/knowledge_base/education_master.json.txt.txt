@@ -1,1 +1,0 @@
-["PhD", "Doctorate", "M.Tech", "ME", "MS", "MBA", "MCA", "M.Sc", "BE", "B.Tech", "B.E", "BCA", "B.Sc", "B.Com", "BA", "Diploma", "PUC", "12th", "10th", "SSLC"]
