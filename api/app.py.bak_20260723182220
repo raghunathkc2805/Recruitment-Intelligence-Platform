@@ -28,7 +28,6 @@ from api.routers.search import router as search_router
 from api.routers.candidates import router as candidate_router
 from api.routers.auth import router as auth_router
 from api.routers.recommendation import router as recommendation_router
-from api.routes.audit import router as audit_router
 
 app = FastAPI(
     title="Recruitment Intelligence Platform",
@@ -55,9 +54,6 @@ app.include_router(candidate_router)
 
 # Authentication
 app.include_router(auth_router)
-
-# Audit
-app.include_router(audit_router)
 
 
 
@@ -133,5 +129,4 @@ app.add_middleware(
 from api.routers.metrics import router as metrics_router
 
 app.include_router(metrics_router)
-
 

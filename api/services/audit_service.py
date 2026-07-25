@@ -1,0 +1,115 @@
+﻿from __future__ import annotations
+
+from datetime import datetime
+from uuid import UUID
+
+from api.repositories.audit_repository import AuditRepository
+from api.schemas.audit import AuditCreate
+from database.models.audit_log import AuditLog
+
+
+class AuditService:
+
+    def __init__(self, repository: AuditRepository):
+        self.repository = repository
+
+    def create(self, request: AuditCreate) -> AuditLog:
+
+        entity = AuditLog(
+            tenant_id=request.tenant_id,
+            organization_id=request.organization_id,
+            user_id=request.user_id,
+            username=request.username,
+            email=request.email,
+            role_name=request.role_name,
+            session_id=request.session_id,
+            request_id=request.request_id,
+            correlation_id=request.correlation_id,
+            trace_id=request.trace_id,
+            action=request.action,
+            event_type=request.event_type,
+            resource_type=request.resource_type,
+            resource_id=request.resource_id,
+            resource_name=request.resource_name,
+            module=request.module,
+            endpoint=request.endpoint,
+            http_method=request.http_method,
+            status=request.status,
+            status_code=request.status_code,
+            message=request.message,
+            reason=request.reason,
+            before_data=request.before_data,
+            after_data=request.after_data,
+            metadata_=request.metadata,
+            client_ip=request.client_ip,
+            forwarded_ip=request.forwarded_ip,
+            user_agent=request.user_agent,
+            device=request.device,
+            browser=request.browser,
+            platform=request.platform,
+            country=request.country,
+            city=request.city,
+            latitude=request.latitude,
+            longitude=request.longitude,
+            request_body=request.request_body,
+            query_params=request.query_params,
+            headers=request.headers,
+            response_time_ms=request.response_time_ms,
+            created_at=datetime.utcnow()
+        )
+
+        return self.repository.create(entity)
+
+    def get(self, audit_id: UUID):
+        return self.repository.get(audit_id)
+
+    def delete(self, audit_id: UUID):
+        return self.repository.delete(audit_id)
+
+    def list(self, page: int = 1, page_size: int = 50):
+        return self.repository.list(page, page_size)
+
+    def count(self):
+        return self.repository.count()
+
+    def by_user(
+        self,
+        user_id: UUID,
+        page: int = 1,
+        page_size: int = 50,
+    ):
+        return self.repository.by_user(
+            user_id=user_id,
+            page=page,
+            page_size=page_size,
+        )
+
+    def by_action(self, action: str):
+        return self.repository.by_action(action)
+
+    def by_resource(
+        self,
+        resource_type: str,
+        resource_id: str | None = None,
+    ):
+        return self.repository.by_resource(
+            resource_type,
+            resource_id,
+        )
+
+    def search(
+        self,
+        start_date=None,
+        end_date=None,
+        action=None,
+        status=None,
+        user_id=None,
+    ):
+        return self.repository.search(
+            start_date=start_date,
+            end_date=end_date,
+            action=action,
+            status=status,
+            user_id=user_id,
+        )
+

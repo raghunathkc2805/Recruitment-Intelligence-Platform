@@ -1,0 +1,135 @@
+﻿{
+  "project": {
+    "name": "Recruitment Intelligence Platform",
+    "code": "RIP",
+    "repository_root": "D:\\Recruitment Automation 2nd Version",
+    "repository_type": "Git",
+    "status": "Active Development",
+    "architecture": "Frozen",
+    "governance": "Approved",
+    "project_operating_system": {
+      "enabled": true,
+      "version": "1.0.0",
+      "status": "Operational"
+    }
+  },
+
+  "directories": {
+    "api": "api",
+    "core": "core",
+    "database": "database",
+    "docs": "docs",
+    "project_state": "project_state",
+    "scripts": "scripts",
+    "tests": "tests",
+    "tools": "tools",
+    "ui": "ui"
+  },
+
+  "governance": {
+    "documents": [
+      "PROJECT_SPECIFICATION.md",
+      "ARCHITECTURE.md",
+      "CODING_STANDARDS.md",
+      "DEVELOPMENT_WORKFLOW.md",
+      "DECISION_LOG.md"
+    ],
+    "generation": "Manual",
+    "automatic_updates": false
+  },
+
+  "project_state": {
+    "source_of_truth": true,
+    "files": [
+      "project.json",
+      "roadmap.json",
+      "sprint.json",
+      "tests.json"
+    ]
+  },
+
+
+  "generated_documentation": {
+    "location": "docs/PROJECT_OPERATING_SYSTEM",
+    "documents": [
+      "PROJECT_CONTEXT.md",
+      "PROJECT_MANIFEST.json",
+      "ROADMAP.md",
+      "PROJECT_STATUS.md",
+      "CHANGELOG.md",
+      "NEXT_TASK.md",
+      "FILE_INDEX.md",
+      "MODULE_INDEX.md",
+      "DEPENDENCY_MAP.md",
+      "TEST_HISTORY.md",
+      "SPRINT_HISTORY.md",
+      "CODE_GENERATION_MANIFEST.md"
+    ],
+    "generated": true,
+    "deterministic": true
+  },
+
+  "engineering": {
+    "backward_compatibility": true,
+    "architecture_frozen": true,
+    "idempotent_execution": true,
+    "repository_scan": true,
+    "dependency_analysis": true,
+    "documentation_generation": true,
+    "inventory_generation": true,
+    "snapshot_generation": true
+  },
+
+  "automation": {
+    "bootstrap": "tools/pos/bootstrap.ps1",
+    "update": "tools/pos/update_pos.py",
+    "state_directory": "project_state",
+    "documentation_directory": "docs/PROJECT_OPERATING_SYSTEM"
+  },
+
+  "repository_rules": {
+    "manual_governance": true,
+    "automatic_generated_docs": true,
+    "overwrite_governance": false,
+    "modify_application_code": false,
+    "preserve_directory_structure": true,
+    "preserve_naming": true
+  },
+
+
+  "document_status": {
+    "name": "PROJECT_MANIFEST.json",
+    "classification": "Generated Documentation",
+    "owner": "Project Operating System",
+    "generation_method": "Automatic",
+    "update_method": "Generated from project_state",
+    "status": "Approved"
+  },
+
+  "references": {
+    "governance_documents": [
+      "PROJECT_SPECIFICATION.md",
+      "ARCHITECTURE.md",
+      "CODING_STANDARDS.md",
+      "DEVELOPMENT_WORKFLOW.md",
+      "DECISION_LOG.md"
+    ],
+    "project_state_files": [
+      "project.json",
+      "roadmap.json",
+      "sprint.json",
+      "tests.json"
+    ]
+  },
+
+  "metadata": {
+    "schema_version": "1.0",
+    "manifest_version": "1.0.0",
+    "generated_by": "Project Operating System",
+    "supports_incremental_updates": true,
+    "supports_repository_inventory": true,
+    "supports_dependency_mapping": true,
+    "supports_snapshot_generation": true,
+    "supports_state_generation": true
+  }
+}
