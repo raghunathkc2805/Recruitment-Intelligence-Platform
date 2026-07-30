@@ -1,0 +1,35 @@
+﻿BUJJU AI CHANGE CONTROL POLICY
+
+
+Before Any Change:
+
+[1] Document Requirement
+
+[2] Review Architecture Impact
+
+[3] Validate Security Impact
+
+[4] Implement Change
+
+[5] Execute Regression
+
+[6] Approve Release
+
+
+Protected Areas:
+
+✓ Core Architecture
+✓ RBAC
+✓ Audit Framework
+✓ Database Integrity
+✓ Recruitment Intelligence Engine
+
+
+Status:
+
+CHANGE CONTROL ENABLED
+
+
+Generated:
+07/26/2026 22:04:35
+

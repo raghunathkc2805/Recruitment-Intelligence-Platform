@@ -1,0 +1,203 @@
+﻿RECRUITMENT INTELLIGENCE PLATFORM
+
+30-DAY BUSINESS IMPACT REVIEW
+
+VERSION:
+
+v1.0
+
+
+
+--------------------------------
+
+REVIEW PERIOD
+
+
+Start Date:
+
+
+End Date:
+
+
+
+--------------------------------
+
+PLATFORM ADOPTION
+
+
+Total Recruiters Enabled:
+
+
+Active Recruiters:
+
+
+Daily Active Users:
+
+
+Monthly Active Users:
+
+
+Feature Adoption %:
+
+
+
+--------------------------------
+
+RECRUITMENT PERFORMANCE
+
+
+Total Positions Supported:
+
+
+Positions Closed:
+
+
+Platform Assisted Closures:
+
+
+Closure Contribution %:
+
+
+Candidates Evaluated:
+
+
+Candidates Shortlisted:
+
+
+Candidates Offered:
+
+
+Candidates Joined:
+
+
+
+--------------------------------
+
+BUJJU AI IMPACT
+
+
+Resume Intelligence Requests:
+
+
+JD Analysis Requests:
+
+
+Candidate Matching Requests:
+
+
+Ranking Requests:
+
+
+AI Recommendations Generated:
+
+
+AI Recommendations Used:
+
+
+
+--------------------------------
+
+TALENT DATABASE IMPACT
+
+
+Total Candidate Profiles:
+
+
+Resume Records Indexed:
+
+
+New Profiles Added:
+
+
+Profiles Updated:
+
+
+Duplicate Profiles Prevented:
+
+
+Search Utilization:
+
+
+
+--------------------------------
+
+PRODUCTIVITY IMPACT
+
+
+Recruiter Time Saved:
+
+
+Search Efficiency Improvement:
+
+
+Resume Review Reduction:
+
+
+Candidate Discovery Improvement:
+
+
+
+--------------------------------
+
+BUSINESS VALUE
+
+
+Hiring Cost Impact:
+
+
+Database Utilization:
+
+
+Platform Contribution:
+
+
+Recruitment Intelligence Improvement:
+
+
+
+--------------------------------
+
+USER FEEDBACK SUMMARY
+
+
+Positive Feedback:
+
+
+Challenges:
+
+
+Enhancement Requests:
+
+
+Training Requirements:
+
+
+
+--------------------------------
+
+EXECUTIVE REVIEW
+
+
+Business Impact:
+
+
+Adoption Status:
+
+
+Next Improvement Actions:
+
+
+
+--------------------------------
+
+FINAL STATUS:
+
+
+30-DAY BUSINESS IMPACT REVIEW READY
+
+
+
+Generated:
+
+07/27/2026 12:37:12
+

@@ -1,0 +1,252 @@
+﻿RECRUITMENT INTELLIGENCE PLATFORM
+
+PRODUCTION ADMINISTRATOR OPERATIONS RUNBOOK
+
+VERSION:
+
+v1.0
+
+
+
+================================
+
+SYSTEM ADMINISTRATION
+
+
+Application Monitoring
+
+
+Database Monitoring
+
+
+Service Health Review
+
+
+Configuration Management
+
+
+Environment Management
+
+
+
+================================
+
+USER MANAGEMENT
+
+
+Create User
+
+
+Assign Role
+
+
+Update Permissions
+
+
+Deactivate User
+
+
+Review Access Logs
+
+
+
+================================
+
+ROLE MANAGEMENT
+
+
+Administrator:
+
+
+Full Platform Control
+
+
+
+Recruitment Manager:
+
+
+Recruiter Management
+
+Analytics Access
+
+
+
+Recruiter:
+
+
+Candidate Intelligence
+
+Search
+
+Matching
+
+Shortlisting
+
+
+
+Management:
+
+
+Dashboard Access
+
+Business Reports
+
+
+
+================================
+
+DATA OPERATIONS
+
+
+Resume Import Monitoring
+
+
+CSV Import Monitoring
+
+
+Duplicate Review
+
+
+Data Quality Review
+
+
+Search Index Validation
+
+
+
+================================
+
+AI OPERATIONS
+
+
+Resume Intelligence Monitoring
+
+
+JD Intelligence Monitoring
+
+
+Matching Performance Review
+
+
+Ranking Quality Review
+
+
+AI Usage Analytics
+
+
+
+================================
+
+REPORT OPERATIONS
+
+
+Generate Reports
+
+
+Validate Reports
+
+
+Export Reports
+
+
+Schedule Reports
+
+
+Review Report Access
+
+
+
+================================
+
+SECURITY OPERATIONS
+
+
+Access Review
+
+
+Audit Review
+
+
+Security Event Review
+
+
+Incident Escalation
+
+
+
+================================
+
+BACKUP OPERATIONS
+
+
+Backup Verification
+
+
+Restore Validation
+
+
+Recovery Testing
+
+
+
+================================
+
+CHANGE MANAGEMENT
+
+
+Request Change
+
+
+Impact Review
+
+
+Approval
+
+
+Testing
+
+
+Production Release
+
+
+
+================================
+
+ADMIN DAILY CHECKLIST
+
+
+System Health:
+
+
+Database:
+
+
+Users:
+
+
+Security:
+
+
+AI Services:
+
+
+Reports:
+
+
+Issues:
+
+
+
+================================
+
+FINAL STATUS:
+
+
+v1.0 ADMIN OPERATIONS RUNBOOK CREATED
+
+
+
+Generated:
+
+07/27/2026 13:01:47
+

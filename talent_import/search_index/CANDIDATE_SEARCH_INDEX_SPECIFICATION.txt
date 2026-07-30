@@ -1,0 +1,102 @@
+﻿RECRUITMENT INTELLIGENCE PLATFORM
+
+VERSION 1.0
+
+CANDIDATE SEARCH INDEX ENGINE
+
+
+PURPOSE:
+
+Create recruiter searchable talent database.
+
+
+INDEX DATA:
+
+
+Candidate Name
+
+Skills
+
+Technical Skills
+
+Functional Skills
+
+Current Company
+
+Previous Companies
+
+Designation
+
+Experience
+
+Location
+
+Preferred Location
+
+Education
+
+Certifications
+
+Notice Period
+
+Compensation
+
+
+
+SEARCH CAPABILITIES:
+
+
+Keyword Search
+
+Skill Search
+
+Company Search
+
+Location Search
+
+Experience Search
+
+Multi Criteria Search
+
+
+
+INDEX PROCESS:
+
+
+Candidate Profile
+
+        |
+
+        ↓
+
+Data Normalization
+
+        |
+
+        ↓
+
+Search Metadata Generation
+
+        |
+
+        ↓
+
+Candidate Index Creation
+
+        |
+
+        ↓
+
+Recruiter Search Ready
+
+
+
+VERSION:
+
+v1.0
+
+
+STATUS:
+
+SEARCH INDEX FOUNDATION READY
+

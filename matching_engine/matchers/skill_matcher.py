@@ -29,7 +29,29 @@ class SkillMatcher:
             if skill
         }
 
-        matched = sorted(candidate & required)
+        skill_aliases = {
+            "documentation": {
+                "document",
+                "documentation",
+                "reporting",
+                "technical documentation",
+                "report preparation",
+            },
+        }
+
+        normalized_candidate = set(candidate)
+        normalized_required = set(required)
+
+        for key, aliases in skill_aliases.items():
+            if normalized_required.intersection(aliases):
+                normalized_required.add(key)
+
+            if normalized_candidate.intersection(aliases):
+                normalized_candidate.add(key)
+
+        matched = sorted(
+            normalized_candidate & normalized_required
+        )
 
         missing = sorted(required - candidate)
 

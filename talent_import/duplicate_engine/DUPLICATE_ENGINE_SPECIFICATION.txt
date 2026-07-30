@@ -1,0 +1,75 @@
+﻿RECRUITMENT INTELLIGENCE PLATFORM
+
+VERSION 1.0
+
+DUPLICATE INTELLIGENCE ENGINE
+
+
+PURPOSE:
+
+Identify duplicate candidates during bulk talent import.
+
+
+MATCHING RULES:
+
+
+LEVEL 1:
+Exact Match
+
+- Email
+- Mobile
+- LinkedIn
+
+
+LEVEL 2:
+Resume Fingerprint
+
+- File Hash
+- Resume Content Hash
+
+
+LEVEL 3:
+AI Profile Similarity
+
+- Name
+- Skills
+- Experience
+- Company
+- Designation
+- Location
+
+
+DECISION:
+
+
+Duplicate:
+
+Merge / Update Existing Candidate
+
+
+New:
+
+Create New Candidate Profile
+
+
+REPORT OUTPUT:
+
+
+Duplicate Candidate ID
+
+Matched Field
+
+Confidence Score
+
+Recommended Action
+
+
+VERSION:
+
+v1.0
+
+
+STATUS:
+
+FOUNDATION CREATED
+

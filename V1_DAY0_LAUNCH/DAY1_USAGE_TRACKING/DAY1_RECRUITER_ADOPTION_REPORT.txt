@@ -1,0 +1,157 @@
+﻿RECRUITMENT INTELLIGENCE PLATFORM
+
+DAY-1 RECRUITER ADOPTION REPORT
+
+VERSION:
+
+v1.0
+
+
+
+--------------------------------
+
+USER ACTIVITY
+
+
+Total Recruiters Activated:
+
+
+First Login Completed:
+
+
+Active Users:
+
+
+Inactive Users:
+
+
+
+--------------------------------
+
+SEARCH ACTIVITY
+
+
+Total Searches:
+
+
+Candidate Profiles Viewed:
+
+
+Resumes Accessed:
+
+
+Search Filters Used:
+
+
+Saved Searches Created:
+
+
+
+--------------------------------
+
+BUJJU AI USAGE
+
+
+Resume Analysis Requests:
+
+
+JD Analysis Requests:
+
+
+Candidate Matching Requests:
+
+
+Ranking Requests:
+
+
+Recommendations Viewed:
+
+
+
+--------------------------------
+
+RECRUITMENT ACTIONS
+
+
+Candidates Shortlisted:
+
+
+Positions Supported:
+
+
+Positions Closed:
+
+
+Platform Assisted Closures:
+
+
+
+--------------------------------
+
+TALENT DATABASE ACTIVITY
+
+
+Candidate Profiles Accessed:
+
+
+New Profiles Added:
+
+
+Duplicate Records Prevented:
+
+
+Resume Updates:
+
+
+
+--------------------------------
+
+USER FEEDBACK
+
+
+Issues Reported:
+
+
+Training Required:
+
+
+Feature Requests:
+
+
+Improvement Suggestions:
+
+
+
+--------------------------------
+
+DAY-1 HEALTH STATUS
+
+
+Platform Adoption:
+
+PENDING
+
+
+User Activity:
+
+PENDING
+
+
+Business Impact:
+
+PENDING
+
+
+
+--------------------------------
+
+STATUS:
+
+DAY-1 USAGE TRACKING READY
+
+
+
+Generated:
+
+07/27/2026 12:10:33
+

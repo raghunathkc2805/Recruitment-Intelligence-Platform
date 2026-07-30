@@ -1,0 +1,85 @@
+﻿RECRUITMENT INTELLIGENCE PLATFORM
+
+PILOT IMPORT VALIDATION RESULT
+
+VERSION:
+
+v1.0
+
+
+
+--------------------------------
+
+PILOT DATA
+
+
+Resume Files:
+
+100
+
+
+CSV Records:
+
+100
+
+
+
+--------------------------------
+
+VALIDATION
+
+
+Import Module:
+
+PASSED
+
+
+Application:
+
+PASSED
+
+
+Database:
+
+PASSED
+
+
+Migration:
+
+PASSED
+
+
+
+--------------------------------
+
+NEXT EXECUTION
+
+
+Run Resume Import
+
+
+Run CSV Import
+
+
+Run Duplicate Detection
+
+
+Validate Candidate Creation
+
+
+Validate Search Index
+
+
+
+--------------------------------
+
+STATUS:
+
+READY FOR PILOT DATA EXECUTION
+
+
+
+Generated:
+
+07/27/2026 14:04:59
+

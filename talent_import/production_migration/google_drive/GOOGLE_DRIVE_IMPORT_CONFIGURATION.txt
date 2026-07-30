@@ -1,0 +1,161 @@
+﻿RECRUITMENT INTELLIGENCE PLATFORM
+
+GOOGLE DRIVE RESUME IMPORT CONFIGURATION
+
+VERSION:
+
+v1.0
+
+
+
+--------------------------------
+
+SOURCE
+
+
+Google Drive Folder:
+
+
+1xWuPeJY_gxYmQZccUUhvHm5y7Rk8j1Gj
+
+
+
+--------------------------------
+
+IMPORT TYPE
+
+
+Resume Repository:
+
+CONNECTED SOURCE
+
+
+Supported Files:
+
+
+PDF
+
+
+DOC
+
+
+DOCX
+
+
+
+--------------------------------
+
+IMPORT PIPELINE
+
+
+Google Drive
+
+
+↓
+
+
+File Validation
+
+
+↓
+
+
+Resume Parser
+
+
+↓
+
+
+Candidate Extraction
+
+
+↓
+
+
+Duplicate Detection
+
+
+↓
+
+
+Candidate Database
+
+
+↓
+
+
+Search Index
+
+
+
+--------------------------------
+
+PILOT EXECUTION
+
+
+Sample Files:
+
+100
+
+
+Validation:
+
+
+File Count:
+
+
+Resume Readability:
+
+
+Parser Success:
+
+
+Candidate Extraction:
+
+
+Database Insert:
+
+
+
+--------------------------------
+
+FULL MIGRATION
+
+
+Target:
+
+
+15000 Resume Files
+
+
+
+--------------------------------
+
+AUDIT
+
+
+Source:
+
+Google Drive
+
+
+Batch:
+
+PROD-001
+
+
+Configured:
+
+07/27/2026 14:22:28
+
+
+
+--------------------------------
+
+STATUS:
+
+
+GOOGLE DRIVE SOURCE CONFIGURED
+
+
+

@@ -1,0 +1,191 @@
+﻿RECRUITMENT INTELLIGENCE PLATFORM
+
+TALENT IMPORT ENGINE
+
+VERSION:
+
+v1.0
+
+
+
+--------------------------------
+
+SUPPORTED IMPORT SOURCES
+
+
+Google Drive Resume Repository
+
+
+Supported Files:
+
+
+PDF
+
+
+DOC
+
+
+DOCX
+
+
+
+CSV Candidate Database
+
+
+
+--------------------------------
+
+PROCESS FLOW
+
+
+STEP 1:
+
+Read Source Files
+
+
+
+STEP 2:
+
+Validate File Format
+
+
+
+STEP 3:
+
+Extract Candidate Data
+
+
+
+STEP 4:
+
+Run Duplicate Detection
+
+
+
+STEP 5:
+
+Parse Resume Intelligence
+
+
+
+STEP 6:
+
+Create / Update Candidate Profile
+
+
+
+STEP 7:
+
+Generate Import Audit
+
+
+
+--------------------------------
+
+CSV MAPPING
+
+
+Candidate Name
+
+
+Email
+
+
+Mobile
+
+
+Current Company
+
+
+Designation
+
+
+Experience
+
+
+Skills
+
+
+Location
+
+
+Current CTC
+
+
+Expected CTC
+
+
+
+--------------------------------
+
+DUPLICATE VALIDATION
+
+
+Primary Match:
+
+
+Email
+
+
+Secondary Match:
+
+
+Mobile
+
+
+Document Match:
+
+
+Resume Hash
+
+
+Similarity Match:
+
+
+Profile Comparison
+
+
+
+--------------------------------
+
+IMPORT REPORT
+
+
+Batch ID
+
+
+Source
+
+
+Total Records
+
+
+Processed
+
+
+Created
+
+
+Updated
+
+
+Duplicates
+
+
+Failed
+
+
+
+--------------------------------
+
+STATUS:
+
+
+IMPORT ENGINE READY FOR PILOT EXECUTION
+
+
+
+Generated:
+
+07/27/2026 14:03:38
+

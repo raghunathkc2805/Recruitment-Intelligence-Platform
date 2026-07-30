@@ -1,4 +1,4 @@
-﻿"""Schema alignment
+"""Schema alignment
 
 Revision ID: 449874d5dea4
 Revises: 65cb880e2ac7

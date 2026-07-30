@@ -1,0 +1,124 @@
+﻿RECRUITMENT INTELLIGENCE PLATFORM
+
+BUJJU AI MATCHING VALIDATION
+
+VERSION:
+
+v1.0
+
+
+
+--------------------------------
+
+INPUT
+
+
+Candidate Profiles:
+
+99
+
+
+Job Description:
+
+TEST JD REQUIRED
+
+
+
+--------------------------------
+
+MATCHING PIPELINE
+
+
+JD Upload
+
+↓
+
+JD Skill Extraction
+
+↓
+
+Experience Extraction
+
+↓
+
+Role Intelligence
+
+↓
+
+Candidate Comparison
+
+↓
+
+Match Scoring
+
+↓
+
+Ranking Generation
+
+
+
+--------------------------------
+
+VALIDATION
+
+
+JD Parser:
+
+READY
+
+
+Skill Matching:
+
+READY
+
+
+Experience Matching:
+
+READY
+
+
+Candidate Ranking:
+
+READY
+
+
+Recommendation Engine:
+
+READY
+
+
+
+--------------------------------
+
+OUTPUT
+
+
+Top Matching Candidates:
+
+
+Candidate Match Score:
+
+
+Skill Match:
+
+
+Experience Match:
+
+
+Recommendation Reason:
+
+
+
+--------------------------------
+
+STATUS:
+
+
+BUJJU AI MATCHING TEST READY
+
+
+
+Generated:
+
+07/27/2026 17:35:14
+

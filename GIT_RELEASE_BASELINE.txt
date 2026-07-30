@@ -1,0 +1,25 @@
+﻿RECRUITMENT INTELLIGENCE PLATFORM
+
+GIT RELEASE BASELINE
+
+Release:
+v2.0.0-bujju-ai
+
+Status:
+PRODUCTION RELEASE
+
+Regression:
+877 PASSED
+
+Architecture:
+FROZEN
+
+AI Layer:
+BUJJU AI
+
+Repository:
+BASELINED
+
+Generated:
+07/26/2026 22:05:46
+

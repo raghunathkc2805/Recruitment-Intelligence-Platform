@@ -1,0 +1,181 @@
+﻿RECRUITMENT INTELLIGENCE PLATFORM
+
+VERSION 1.0
+
+CUSTOM DATE RANGE REPORTING ENGINE
+
+
+RELEASE:
+
+v1.0
+
+
+
+--------------------------------
+
+DATE FILTER OPTIONS
+
+
+Custom Start Date
+
+Custom End Date
+
+
+Predefined Filters:
+
+
+Today
+
+
+Yesterday
+
+
+Last 7 Days
+
+
+Last 30 Days
+
+
+Current Month
+
+
+Previous Month
+
+
+Quarter
+
+
+Financial Year
+
+
+Custom Range
+
+
+
+--------------------------------
+
+REPORTS SUPPORTING DATE FILTER
+
+
+Recruiter Activity Report
+
+
+Talent Database Growth Report
+
+
+Resume Processing Report
+
+
+JD Analysis Report
+
+
+Candidate Matching Report
+
+
+Ranking Report
+
+
+Position Closure Report
+
+
+Feature Usage Report
+
+
+AI Utilization Report
+
+
+Executive Business Impact Report
+
+
+
+--------------------------------
+
+FILTER COMBINATIONS
+
+
+Date Range
+
++
+
+Recruiter
+
+
+Date Range
+
++
+
+Business Vertical
+
+
+Date Range
+
++
+
+Location
+
+
+Date Range
+
++
+
+Feature Used
+
+
+Date Range
+
++
+
+Position
+
+
+
+--------------------------------
+
+OUTPUT FORMATS
+
+
+Dashboard View
+
+
+Excel Export
+
+
+PDF Report
+
+
+CSV Export
+
+
+
+--------------------------------
+
+VALIDATION
+
+
+Start Date Required
+
+
+End Date Required
+
+
+Start Date <= End Date
+
+
+Timezone Handling
+
+
+Historical Data Access
+
+
+
+--------------------------------
+
+STATUS:
+
+CUSTOM DATE RANGE REPORTING ENABLED
+
+
+Generated:
+
+07/27/2026 12:01:25
+

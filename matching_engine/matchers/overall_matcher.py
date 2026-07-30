@@ -23,6 +23,7 @@ from matching_engine.matchers.location_matcher import (
 from matching_engine.matchers.skill_matcher import (
     SkillMatcher,
 )
+from matching_engine.constants import DEFAULT_WEIGHTS
 
 
 class OverallMatcher:
@@ -42,9 +43,39 @@ class OverallMatcher:
             job.get("skills", []),
         )
 
+        candidate_experience = candidate.get(
+            "experience",
+            0,
+        )
+
+        if isinstance(candidate_experience, dict):
+            experience_payload = candidate_experience
+        else:
+            experience_payload = {
+                "years": float(candidate_experience or 0)
+            }
+
+        job_experience = job.get(
+            "experience",
+            job.get(
+                "experience_required",
+                0
+            ),
+        )
+
+        if isinstance(job_experience, dict):
+            required_years = job_experience.get(
+                "years",
+                0
+            )
+        else:
+            required_years = float(
+                job_experience or 0
+            )
+
         experience_match = ExperienceMatcher.match(
-            candidate.get("experience"),
-            job.get("experience", 0),
+            experience_payload,
+            required_years,
         )
 
         education_match = EducationMatcher.match(
@@ -67,17 +98,22 @@ class OverallMatcher:
             job.get("certifications", []),
         )
 
-        scores = [
-            skill_match["score"],
-            experience_match["score"],
-            education_match["score"],
-            designation_match["score"],
-            location_match["score"],
-            certification_match["score"],
-        ]
+        weighted_score = (
+            skill_match["score"] * DEFAULT_WEIGHTS["skills"]
+            +
+            experience_match["score"] * DEFAULT_WEIGHTS["experience"]
+            +
+            education_match["score"] * DEFAULT_WEIGHTS["education"]
+            +
+            designation_match["score"] * DEFAULT_WEIGHTS["designation"]
+            +
+            location_match["score"] * DEFAULT_WEIGHTS["location"]
+            +
+            certification_match["score"] * DEFAULT_WEIGHTS["certification"]
+        )
 
         overall_score = round(
-            sum(scores) / len(scores),
+            weighted_score / 100,
             2,
         )
 

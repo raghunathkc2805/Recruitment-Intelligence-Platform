@@ -1,0 +1,40 @@
+﻿BUJJU AI RESTORE TEST TEMPLATE
+
+
+Test Date:
+
+
+Backup Version:
+
+
+Restore Environment:
+
+
+Application Status:
+
+
+Database Status:
+
+
+AI Service Status:
+
+
+Health Check Result:
+
+
+Regression Result:
+
+
+Issues:
+
+
+Final Status:
+
+
+Approved By:
+
+
+Generated:
+
+07/26/2026 22:35:11
+

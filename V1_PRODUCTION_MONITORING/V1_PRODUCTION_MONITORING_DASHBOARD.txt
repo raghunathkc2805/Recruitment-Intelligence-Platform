@@ -1,0 +1,147 @@
+﻿RECRUITMENT INTELLIGENCE PLATFORM
+
+VERSION 1.0
+
+PRODUCTION MONITORING DASHBOARD
+
+
+STATUS:
+
+LIVE
+
+
+
+SYSTEM MONITORING:
+
+
+Application Health
+
+API Availability
+
+Database Health
+
+Authentication
+
+RBAC
+
+Audit Logging
+
+Error Monitoring
+
+
+
+--------------------------------
+
+
+RECRUITER USAGE:
+
+
+Active Recruiters
+
+Login Activity
+
+Candidate Searches
+
+Profiles Viewed
+
+Resumes Accessed
+
+Shortlists Created
+
+
+
+--------------------------------
+
+
+TALENT DATABASE:
+
+
+Total Candidates
+
+Resume Count
+
+Skills Indexed
+
+Companies Indexed
+
+Locations Indexed
+
+Duplicate Records Prevented
+
+
+
+--------------------------------
+
+
+BUJJU AI USAGE:
+
+
+Resume Intelligence Requests
+
+JD Analysis Requests
+
+Candidate Matching Requests
+
+Ranking Requests
+
+Recommendations Used
+
+
+
+--------------------------------
+
+
+POSITION CLOSURE INTELLIGENCE:
+
+
+Total Positions Closed
+
+Platform Assisted Closures
+
+Feature Usage Count
+
+Candidates Offered
+
+CTC Impact
+
+
+
+--------------------------------
+
+
+ALERT LEVELS:
+
+
+Critical
+
+High
+
+Medium
+
+Low
+
+
+
+--------------------------------
+
+
+REPORT FREQUENCY:
+
+
+Daily Health Check
+
+Weekly Adoption Review
+
+Monthly Business Review
+
+
+
+STATUS:
+
+PRODUCTION MONITORING ACTIVE
+
+
+Generated:
+
+07/27/2026 11:52:42
+

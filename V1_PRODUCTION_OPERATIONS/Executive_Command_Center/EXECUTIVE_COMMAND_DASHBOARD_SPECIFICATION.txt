@@ -1,0 +1,225 @@
+﻿RECRUITMENT INTELLIGENCE PLATFORM
+
+EXECUTIVE COMMAND DASHBOARD
+
+SINGLE PANE OF GLASS
+
+VERSION:
+
+v1.0
+
+
+
+--------------------------------
+
+EXECUTIVE OVERVIEW
+
+
+Platform Health:
+
+
+Recruiter Adoption:
+
+
+Talent Intelligence:
+
+
+BUJJU AI Performance:
+
+
+Business Impact:
+
+
+
+--------------------------------
+
+REAL TIME KPIs
+
+
+Active Recruiters:
+
+
+Total Searches:
+
+
+Candidates Viewed:
+
+
+AI Requests:
+
+
+Positions Closed:
+
+
+Platform Assisted Closures:
+
+
+
+--------------------------------
+
+TALENT ASSET VIEW
+
+
+Total Candidates:
+
+
+Resume Repository:
+
+
+Skills Indexed:
+
+
+Companies Indexed:
+
+
+Duplicate Prevention:
+
+
+
+--------------------------------
+
+AI INTELLIGENCE VIEW
+
+
+Resume Analysis:
+
+
+JD Analysis:
+
+
+Candidate Matching:
+
+
+Ranking Requests:
+
+
+Recommendations Used:
+
+
+
+--------------------------------
+
+HIRING BUSINESS VIEW
+
+
+Open Positions:
+
+
+Supported Positions:
+
+
+Closed Positions:
+
+
+Candidates Offered:
+
+
+CTC Impact:
+
+
+ROI Impact:
+
+
+
+--------------------------------
+
+RECRUITER PERFORMANCE
+
+
+Top Recruiters:
+
+
+Most Used Features:
+
+
+Highest Closures:
+
+
+Adoption Leaders:
+
+
+
+--------------------------------
+
+SYSTEM HEALTH
+
+
+Application Status:
+
+
+API Status:
+
+
+Database Status:
+
+
+Security Status:
+
+
+Analytics Status:
+
+
+
+--------------------------------
+
+EXECUTIVE FILTERS
+
+
+Date Range
+
+
+Business Vertical
+
+
+Recruiter
+
+
+Location
+
+
+Feature Usage
+
+
+Position
+
+
+
+--------------------------------
+
+REPORT ACTIONS
+
+
+Generate Report
+
+
+Export Excel
+
+
+Export PDF
+
+
+Export CSV
+
+
+
+--------------------------------
+
+FINAL VIEW:
+
+
+CEO / MD
+
+RECRUITMENT INTELLIGENCE COMMAND CENTER
+
+
+
+STATUS:
+
+EXECUTIVE COMMAND DASHBOARD CREATED
+
+
+
+Generated:
+
+07/27/2026 12:57:23
+

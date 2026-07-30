@@ -1,0 +1,7 @@
+﻿Recruitment Intelligence Platform
+Release Candidate Baseline
+
+Tests: 875 passed
+Status: VALIDATED
+Migration: PASS
+Dependency Check: PASS

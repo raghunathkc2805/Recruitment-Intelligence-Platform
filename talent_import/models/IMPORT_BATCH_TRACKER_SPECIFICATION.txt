@@ -1,0 +1,138 @@
+﻿RECRUITMENT INTELLIGENCE PLATFORM
+
+VERSION 1.0
+
+TALENT IMPORT BATCH TRACKER
+
+
+PURPOSE:
+
+Track every bulk talent database import activity.
+
+
+BATCH INFORMATION:
+
+
+Batch ID:
+
+Created Date:
+
+Source:
+
+Google Drive / CSV
+
+
+File Count:
+
+
+Processing Status:
+
+QUEUED
+PROCESSING
+COMPLETED
+FAILED
+
+
+
+--------------------------------
+
+RESUME PROCESSING METRICS
+
+
+Total Resumes:
+
+
+Processed:
+
+
+Successfully Parsed:
+
+
+Failed Parsing:
+
+
+Duplicates Found:
+
+
+Candidates Created:
+
+
+Candidates Updated:
+
+
+
+--------------------------------
+
+CSV PROCESSING METRICS
+
+
+Total Records:
+
+
+Validated:
+
+
+Imported:
+
+
+Rejected:
+
+
+Duplicate Records:
+
+
+Updated Records:
+
+
+
+--------------------------------
+
+AUDIT INFORMATION
+
+
+Import Initiated By:
+
+
+Start Time:
+
+
+Completion Time:
+
+
+Processing Duration:
+
+
+Error Log:
+
+
+Duplicate Report:
+
+
+
+--------------------------------
+
+ROLLBACK CONTROL
+
+
+Backup Created:
+
+YES / NO
+
+
+Rollback Available:
+
+YES / NO
+
+
+
+--------------------------------
+
+VERSION:
+
+v1.0
+
+
+STATUS:
+
+BATCH TRACKING READY
+

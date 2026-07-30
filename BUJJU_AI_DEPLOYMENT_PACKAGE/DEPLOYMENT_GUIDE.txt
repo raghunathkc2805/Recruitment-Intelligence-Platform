@@ -1,0 +1,39 @@
+﻿RECRUITMENT INTELLIGENCE PLATFORM
+
+BUJJU AI EDITION
+
+PRODUCTION DEPLOYMENT INSTRUCTIONS
+
+1. Install Python dependencies
+
+pip install -r requirements.txt
+
+
+2. Configure environment variables
+
+
+3. Apply database migrations
+
+python -m alembic upgrade head
+
+
+4. Start application
+
+
+5. Validate health endpoint
+
+
+6. Run smoke tests
+
+
+Release:
+Production Ready
+
+Regression:
+877 Passed
+
+Architecture:
+Frozen
+
+Generated:
+07/26/2026 22:00:25

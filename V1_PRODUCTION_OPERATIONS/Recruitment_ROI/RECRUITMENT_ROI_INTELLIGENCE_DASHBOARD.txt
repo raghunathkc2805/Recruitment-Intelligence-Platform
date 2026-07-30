@@ -1,0 +1,179 @@
+﻿RECRUITMENT INTELLIGENCE PLATFORM
+
+RECRUITMENT ROI &
+COST SAVING INTELLIGENCE DASHBOARD
+
+VERSION:
+
+v1.0
+
+
+
+--------------------------------
+
+RECRUITMENT COST METRICS
+
+
+Total Positions Supported:
+
+
+Total Positions Closed:
+
+
+Average Hiring Cost:
+
+
+External Sourcing Cost:
+
+
+Internal Sourcing Cost:
+
+
+
+--------------------------------
+
+PLATFORM IMPACT
+
+
+Platform Assisted Closures:
+
+
+Platform Contribution %:
+
+
+Recruiter Productivity Improvement:
+
+
+Time Saved:
+
+
+Manual Effort Reduction:
+
+
+
+--------------------------------
+
+SOURCING COST ANALYSIS
+
+
+Database Sourced Candidates:
+
+
+External Portal Sourced Candidates:
+
+
+Referral Sourced Candidates:
+
+
+Platform Generated Candidates:
+
+
+
+--------------------------------
+
+COST SAVING CALCULATION
+
+
+Traditional Hiring Cost:
+
+
+Platform Enabled Hiring Cost:
+
+
+Estimated Savings:
+
+
+Savings Percentage:
+
+
+
+--------------------------------
+
+RECRUITER PRODUCTIVITY
+
+
+Search Time Reduction:
+
+
+Resume Screening Reduction:
+
+
+Candidate Discovery Improvement:
+
+
+Shortlisting Efficiency:
+
+
+Closure Velocity:
+
+
+
+--------------------------------
+
+BUSINESS VALUE
+
+
+Cost Optimization:
+
+
+Faster Hiring:
+
+
+Better Talent Discovery:
+
+
+Database Utilization:
+
+
+AI Assisted Recruitment:
+
+
+
+--------------------------------
+
+EXECUTIVE ROI VIEW
+
+
+Investment:
+
+
+Usage:
+
+
+Savings:
+
+
+Business Impact:
+
+
+ROI Percentage:
+
+
+
+--------------------------------
+
+REPORTING
+
+
+Monthly ROI Report
+
+
+Quarterly Business Review
+
+
+Executive Value Dashboard
+
+
+
+--------------------------------
+
+STATUS:
+
+RECRUITMENT ROI DASHBOARD CREATED
+
+
+
+Generated:
+
+07/27/2026 12:57:02
+

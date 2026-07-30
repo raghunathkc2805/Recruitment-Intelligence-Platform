@@ -1,0 +1,18 @@
+﻿RECRUITMENT INTELLIGENCE PLATFORM
+
+SPRINT 21.1
+ADVANCED ENHANCEMENT FOUNDATION
+
+Production Baseline:
+LOCKED
+
+Enhancement Mode:
+CONTROLLED EXTENSION
+
+Core Architecture:
+UNCHANGED
+
+Regression Protection:
+ENABLED
+
+Generated: 07/26/2026 04:10:16

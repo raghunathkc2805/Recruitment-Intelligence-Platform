@@ -1,0 +1,53 @@
+﻿RECRUITMENT INTELLIGENCE PLATFORM
+
+FULL MIGRATION EXECUTION STATUS
+
+BATCH:
+
+PROD-001
+
+
+CURRENT STATUS:
+
+
+Source Validation:
+
+RUNNING
+
+
+Resume Processing:
+
+WAITING
+
+
+CSV Processing:
+
+WAITING
+
+
+Candidate Creation:
+
+WAITING
+
+
+Duplicate Detection:
+
+WAITING
+
+
+Search Index:
+
+WAITING
+
+
+
+NEXT ACTION:
+
+Configure actual source folders and execute migration worker.
+
+
+
+Generated:
+
+07/27/2026 14:07:13
+

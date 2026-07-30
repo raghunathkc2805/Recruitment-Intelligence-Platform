@@ -1,0 +1,176 @@
+﻿RECRUITMENT INTELLIGENCE PLATFORM
+
+VERSION 1.0
+
+WEEKLY OPERATIONS REVIEW DASHBOARD
+
+
+RELEASE:
+
+v1.0
+
+
+REVIEW PERIOD:
+
+Weekly
+
+
+
+--------------------------------
+
+PLATFORM HEALTH
+
+
+Application Availability:
+
+
+API Performance:
+
+
+Database Performance:
+
+
+Security Events:
+
+
+Audit Events:
+
+
+
+--------------------------------
+
+RECRUITER ADOPTION
+
+
+Total Recruiters:
+
+
+Active Recruiters:
+
+
+Searches Performed:
+
+
+Candidates Viewed:
+
+
+Resumes Accessed:
+
+
+Shortlists Generated:
+
+
+
+--------------------------------
+
+TALENT INTELLIGENCE USAGE
+
+
+Resume Parsing:
+
+
+JD Analysis:
+
+
+Candidate Matching:
+
+
+Ranking Usage:
+
+
+AI Recommendations:
+
+
+
+--------------------------------
+
+POSITION CLOSURE INTELLIGENCE
+
+
+Total Positions Closed:
+
+
+Platform Assisted Closures:
+
+
+Platform Contribution %:
+
+
+Candidates Offered:
+
+
+CTC Impact:
+
+
+Top Used Feature:
+
+
+
+--------------------------------
+
+RECRUITER PERFORMANCE
+
+
+Recruiter Name:
+
+
+Positions Closed:
+
+
+Platform Usage:
+
+
+Candidates Shortlisted:
+
+
+Success Rate:
+
+
+
+--------------------------------
+
+ISSUE MANAGEMENT
+
+
+Critical:
+
+
+High:
+
+
+Medium:
+
+
+Resolved:
+
+
+
+--------------------------------
+
+MANAGEMENT SUMMARY
+
+
+Business Impact:
+
+
+Productivity Improvement:
+
+
+Adoption Status:
+
+
+Action Items:
+
+
+
+--------------------------------
+
+STATUS:
+
+WEEKLY OPERATIONS REVIEW READY
+
+
+Generated:
+
+07/27/2026 11:53:40
+

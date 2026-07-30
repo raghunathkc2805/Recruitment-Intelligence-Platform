@@ -1,0 +1,190 @@
+﻿RECRUITMENT INTELLIGENCE PLATFORM
+
+FIRST PRODUCTION WEEK REVIEW
+
+RECRUITER PERFORMANCE SCORECARD
+
+VERSION:
+
+v1.0
+
+
+
+================================
+
+REVIEW PERIOD
+
+
+Week Start:
+
+
+Week End:
+
+
+
+================================
+
+RECRUITER ACTIVITY
+
+
+Recruiter Name:
+
+
+Login Count:
+
+
+Active Days:
+
+
+Session Usage:
+
+
+
+--------------------------------
+
+SEARCH PERFORMANCE
+
+
+Total Searches:
+
+
+Search Queries:
+
+
+Candidates Discovered:
+
+
+Profiles Viewed:
+
+
+Resume Access Count:
+
+
+
+--------------------------------
+
+AI FEATURE UTILIZATION
+
+
+Resume Intelligence:
+
+
+JD Intelligence:
+
+
+Candidate Matching:
+
+
+Candidate Ranking:
+
+
+AI Recommendations:
+
+
+
+--------------------------------
+
+RECRUITMENT OUTPUT
+
+
+Positions Supported:
+
+
+Candidates Shortlisted:
+
+
+Candidates Submitted:
+
+
+Positions Closed:
+
+
+Platform Assisted Closures:
+
+
+
+--------------------------------
+
+PRODUCTIVITY SCORE
+
+
+Search Efficiency:
+
+
+Candidate Discovery:
+
+
+Resume Review Efficiency:
+
+
+Closure Contribution:
+
+
+Overall Score:
+
+
+
+--------------------------------
+
+ADOPTION RATING
+
+
+High Adoption:
+
+
+Medium Adoption:
+
+
+Low Adoption:
+
+
+
+--------------------------------
+
+IMPROVEMENT ACTIONS
+
+
+Additional Training:
+
+
+Feature Awareness:
+
+
+Process Improvement:
+
+
+Support Required:
+
+
+
+--------------------------------
+
+MANAGEMENT SUMMARY
+
+
+Top Performer:
+
+
+Highest Platform Usage:
+
+
+Highest Closure Contribution:
+
+
+Key Insights:
+
+
+
+--------------------------------
+
+STATUS:
+
+
+FIRST WEEK PRODUCTION REVIEW READY
+
+
+
+Generated:
+
+07/27/2026 13:04:09
+

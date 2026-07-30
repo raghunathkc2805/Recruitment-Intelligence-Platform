@@ -1,0 +1,181 @@
+﻿RECRUITMENT INTELLIGENCE PLATFORM
+
+PILOT DATA MIGRATION EXECUTION
+
+VERSION:
+
+v1.0
+
+
+
+--------------------------------
+
+PILOT BATCH
+
+
+Resume Files:
+
+100
+
+
+CSV Records:
+
+100
+
+
+
+--------------------------------
+
+EXECUTION FLOW
+
+
+Step 1:
+
+Read Resume Files
+
+
+Step 2:
+
+Validate Documents
+
+
+Step 3:
+
+Extract Candidate Information
+
+
+Step 4:
+
+Validate CSV Data
+
+
+Step 5:
+
+Run Duplicate Detection
+
+
+Step 6:
+
+Create Candidate Profiles
+
+
+Step 7:
+
+Map Resume To Candidate
+
+
+Step 8:
+
+Update Search Index
+
+
+
+--------------------------------
+
+VALIDATION
+
+
+File Validation:
+
+PENDING
+
+
+CSV Validation:
+
+PENDING
+
+
+Duplicate Check:
+
+PENDING
+
+
+Resume Parsing:
+
+PENDING
+
+
+Candidate Creation:
+
+PENDING
+
+
+Resume Mapping:
+
+PENDING
+
+
+Search Availability:
+
+PENDING
+
+
+
+--------------------------------
+
+PILOT SUCCESS CRITERIA
+
+
+Candidates Created:
+
+
+Resumes Mapped:
+
+
+Duplicates Identified:
+
+
+Failed Records:
+
+
+Search Tested:
+
+
+
+--------------------------------
+
+ROLL FORWARD DECISION
+
+
+IF PILOT SUCCESSFUL:
+
+
+Proceed Full Migration
+
+
+15,000 Resumes
+
+
+4,000 CSV Records
+
+
+
+IF FAILED:
+
+
+Fix Issues Before Full Load
+
+
+
+--------------------------------
+
+AUDIT
+
+
+Batch ID:
+
+
+Execution Date:
+
+07/27/2026 14:04:17
+
+
+Executed By:
+
+
+Status:
+
+PILOT READY
+
+
+

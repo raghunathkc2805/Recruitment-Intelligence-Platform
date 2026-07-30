@@ -1,0 +1,34 @@
+﻿INCIDENT REPORT TEMPLATE
+
+
+Incident ID:
+
+
+Date:
+
+
+Severity:
+
+
+Affected Component:
+
+
+Business Impact:
+
+
+Root Cause:
+
+
+Resolution:
+
+
+Validation:
+
+
+Closure Approval:
+
+
+Generated:
+
+07/26/2026 22:29:41
+

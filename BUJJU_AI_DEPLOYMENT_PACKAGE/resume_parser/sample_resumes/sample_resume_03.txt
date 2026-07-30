@@ -1,0 +1,22 @@
+John Michael Doe
+
+Senior Software Engineer
+
+Email: john.doe@example.com
+
+Mobile: +91 9876543210
+
+Professional Summary
+
+Experienced Python Developer with 8 years of experience.
+
+Skills
+
+Python
+Docker
+Kubernetes
+AWS
+
+Education
+
+B.E Computer Science

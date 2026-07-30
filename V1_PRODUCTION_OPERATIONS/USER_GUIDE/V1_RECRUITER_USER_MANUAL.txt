@@ -1,0 +1,246 @@
+﻿RECRUITMENT INTELLIGENCE PLATFORM
+
+RECRUITER USER MANUAL &
+QUICK START GUIDE
+
+VERSION:
+
+v1.0
+
+
+
+================================
+
+GETTING STARTED
+
+
+Step 1:
+
+Login to Platform
+
+
+Step 2:
+
+Access Recruiter Dashboard
+
+
+Step 3:
+
+Select Recruitment Requirement
+
+
+
+================================
+
+CANDIDATE SEARCH
+
+
+Search Using:
+
+
+Skills
+
+
+Technology
+
+
+Designation
+
+
+Experience
+
+
+Location
+
+
+Company
+
+
+Notice Period
+
+
+
+Actions:
+
+
+View Candidate Profile
+
+
+Review Resume
+
+
+Check Match Score
+
+
+Shortlist Candidate
+
+
+
+================================
+
+RESUME INTELLIGENCE
+
+
+Recruiter Can:
+
+
+Analyse Resume
+
+
+Extract Skills
+
+
+Review Experience
+
+
+Identify Matching Roles
+
+
+Compare Candidate Fit
+
+
+
+================================
+
+JD INTELLIGENCE
+
+
+Recruiter Can:
+
+
+Upload JD
+
+
+Analyse Requirements
+
+
+Identify Skills
+
+
+Generate Search Criteria
+
+
+Find Matching Candidates
+
+
+
+================================
+
+CANDIDATE MATCHING
+
+
+Process:
+
+
+Select Position
+
+
+Run Matching
+
+
+Review Ranked Candidates
+
+
+Shortlist Suitable Profiles
+
+
+
+================================
+
+POSITION CLOSURE TRACKING
+
+
+Capture:
+
+
+Position
+
+
+Candidate Selected
+
+
+Feature Used
+
+
+CTC Offered
+
+
+Closure Status
+
+
+
+================================
+
+REPORTS
+
+
+Recruiter Reports:
+
+
+Search Activity
+
+
+Candidate Pipeline
+
+
+Shortlist Report
+
+
+Position Closure Report
+
+
+
+================================
+
+BEST PRACTICES
+
+
+Use Complete JD
+
+
+Use Relevant Search Filters
+
+
+Review Match Score
+
+
+Maintain Candidate Feedback
+
+
+Update Closure Details
+
+
+
+================================
+
+SUPPORT
+
+
+Issue:
+
+Raise Support Request
+
+
+Feature Request:
+
+Submit Enhancement Request
+
+
+Critical Issue:
+
+Follow Incident Process
+
+
+
+================================
+
+STATUS:
+
+RECRUITER QUICK START GUIDE CREATED
+
+
+
+Generated:
+
+07/27/2026 13:02:11
+

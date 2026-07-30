@@ -1,0 +1,182 @@
+﻿RECRUITMENT INTELLIGENCE PLATFORM
+
+PRODUCTION TALENT IMPORT EXECUTION
+
+VERSION:
+
+v1.0
+
+
+INPUT SOURCES:
+
+
+1. Google Drive Resume Repository
+
+
+Supported:
+
+PDF
+
+DOC
+
+DOCX
+
+
+
+2. Candidate CSV Database
+
+
+
+--------------------------------
+
+IMPORT PIPELINE:
+
+
+Google Drive
+
+↓
+
+Resume Validation
+
+↓
+
+Duplicate Detection
+
+↓
+
+Resume Parsing
+
+↓
+
+Candidate Intelligence Extraction
+
+↓
+
+Candidate Database
+
+
+
+CSV
+
+↓
+
+Column Validation
+
+↓
+
+Candidate Mapping
+
+↓
+
+Duplicate Check
+
+↓
+
+Database Update
+
+
+
+--------------------------------
+
+VALIDATION RULES:
+
+
+Mandatory Fields:
+
+
+Candidate Name
+
+
+Email
+
+
+Mobile
+
+
+Skills
+
+
+Experience
+
+
+Location
+
+
+
+--------------------------------
+
+DUPLICATE CHECK:
+
+
+Email Match:
+
+ACTIVE
+
+
+Mobile Match:
+
+ACTIVE
+
+
+Resume Hash:
+
+ACTIVE
+
+
+Profile Similarity:
+
+ACTIVE
+
+
+
+--------------------------------
+
+IMPORT TRACKING:
+
+
+Batch ID:
+
+Generated
+
+
+Import Date:
+
+07/27/2026 14:03:11
+
+
+Source:
+
+Google Drive + CSV
+
+
+
+--------------------------------
+
+OUTPUT:
+
+
+Candidate Records Created:
+
+
+Candidate Records Updated:
+
+
+Duplicate Records:
+
+
+Failed Records:
+
+
+Resume Mapping:
+
+
+
+--------------------------------
+
+STATUS:
+
+
+IMPORT PIPELINE READY FOR EXECUTION
+
+
+

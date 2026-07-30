@@ -1,0 +1,198 @@
+﻿RECRUITMENT INTELLIGENCE PLATFORM
+
+VERSION 1.0
+
+DYNAMIC REPORT BUILDER
+
+
+RELEASE:
+
+v1.0
+
+
+
+--------------------------------
+
+REPORT CREATION
+
+
+User Selects:
+
+
+Report Type
+
+
+Date Range
+
+
+Filters
+
+
+Columns
+
+
+Export Format
+
+
+
+--------------------------------
+
+AVAILABLE REPORTS
+
+
+Recruiter Activity Report
+
+
+Candidate Search Report
+
+
+Resume Intelligence Report
+
+
+JD Analysis Report
+
+
+Candidate Matching Report
+
+
+Ranking Report
+
+
+Talent Database Report
+
+
+Duplicate Analysis Report
+
+
+Position Closure Report
+
+
+Bujju AI Usage Report
+
+
+Executive Business Impact Report
+
+
+
+--------------------------------
+
+FILTERS
+
+
+Date Range
+
+
+Recruiter
+
+
+Business Vertical
+
+
+Location
+
+
+Position
+
+
+Feature Used
+
+
+Candidate Status
+
+
+
+--------------------------------
+
+EXPORT FORMATS
+
+
+Excel (.xlsx)
+
+
+PDF (.pdf)
+
+
+CSV (.csv)
+
+
+
+--------------------------------
+
+EXCEL REPORT
+
+
+Multiple Sheets
+
+
+Summary
+
+
+Detailed Data
+
+
+Analytics
+
+
+Charts
+
+
+
+--------------------------------
+
+PDF REPORT
+
+
+Executive Format
+
+
+Summary Cards
+
+
+Graphs
+
+
+Key Metrics
+
+
+
+--------------------------------
+
+CSV REPORT
+
+
+Raw Data Export
+
+
+Data Analysis Ready
+
+
+
+--------------------------------
+
+SECURITY
+
+
+Role Based Access
+
+
+Admin Reports
+
+
+Recruiter Reports
+
+
+Restricted Data Fields
+
+
+
+--------------------------------
+
+STATUS:
+
+DYNAMIC REPORT BUILDER FOUNDATION CREATED
+
+
+Generated:
+
+07/27/2026 12:02:00
+

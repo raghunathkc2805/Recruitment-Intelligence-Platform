@@ -1,0 +1,179 @@
+﻿RECRUITMENT INTELLIGENCE PLATFORM
+
+VERSION 1.0
+
+USER ADOPTION KNOWLEDGE BASE
+
+
+--------------------------------
+
+RECRUITER WORKFLOW
+
+
+1. Login
+
+
+2. Search Candidates
+
+
+3. Review Candidate Intelligence
+
+
+4. Analyse Resume
+
+
+5. Review Match Score
+
+
+6. Shortlist Candidate
+
+
+7. Close Position
+
+
+8. Capture Platform Usage
+
+
+
+--------------------------------
+
+TALENT SEARCH
+
+
+Available Searches:
+
+
+Skills
+
+Technology
+
+Designation
+
+Company
+
+Experience
+
+Location
+
+Notice Period
+
+Compensation
+
+
+
+--------------------------------
+
+BUJJU AI FEATURES
+
+
+Resume Intelligence
+
+
+JD Intelligence
+
+
+Candidate Matching
+
+
+Candidate Ranking
+
+
+Talent Database Search
+
+
+
+--------------------------------
+
+POSITION CLOSURE PROCESS
+
+
+When Position Is Closed:
+
+
+Select:
+
+Platform Used - YES / NO
+
+
+If YES:
+
+
+Select Feature Used:
+
+
+Sourcing
+
+Resume Parsing
+
+Resume Scoring
+
+JD Analysis
+
+JD Building
+
+Candidate Matching
+
+Candidate Ranking
+
+Related Company Search
+
+Skill Intelligence
+
+Market Intelligence
+
+Candidate Database Search
+
+
+Capture:
+
+Candidate
+
+CTC Offered
+
+
+
+--------------------------------
+
+ADMIN RESPONSIBILITIES
+
+
+Monitor:
+
+Recruiter Adoption
+
+Feature Usage
+
+Positions Closed
+
+Platform Assisted Closures
+
+Business Impact
+
+
+
+--------------------------------
+
+SUPPORT PROCESS
+
+
+Issue Logging
+
+User Feedback
+
+Enhancement Requests
+
+Production Monitoring
+
+
+
+--------------------------------
+
+STATUS:
+
+v1.0 KNOWLEDGE BASE CLOSED
+
+
+Generated:
+
+07/27/2026 11:55:13
+

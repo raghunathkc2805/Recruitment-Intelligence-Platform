@@ -1,0 +1,34 @@
+﻿CONFIGURATION DRIFT REVIEW TEMPLATE
+
+
+Review Date:
+
+
+Environment:
+
+
+Baseline Version:
+
+
+Detected Changes:
+
+
+Affected Component:
+
+
+Risk Assessment:
+
+
+Action Taken:
+
+
+Approval:
+
+
+Closure Date:
+
+
+Generated:
+
+07/26/2026 22:47:24
+

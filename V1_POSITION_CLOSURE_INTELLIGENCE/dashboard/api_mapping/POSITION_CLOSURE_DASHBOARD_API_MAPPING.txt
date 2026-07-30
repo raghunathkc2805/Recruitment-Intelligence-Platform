@@ -1,0 +1,139 @@
+﻿RECRUITMENT INTELLIGENCE PLATFORM
+
+VERSION 1.0
+
+POSITION CLOSURE DASHBOARD API MAPPING
+
+
+API ENDPOINTS:
+
+
+GET
+
+/admin/dashboard/position-closure/summary
+
+
+Returns:
+
+
+Total Positions Closed
+
+Platform Assisted Closures
+
+Closure Percentage
+
+Candidates Offered
+
+Total CTC Offered
+
+
+
+--------------------------------
+
+
+GET
+
+/admin/dashboard/position-closure/features
+
+
+Returns:
+
+
+Feature Name
+
+Usage Count
+
+Percentage Contribution
+
+
+
+--------------------------------
+
+
+GET
+
+/admin/dashboard/position-closure/recruiters
+
+
+Returns:
+
+
+Recruiter Name
+
+Positions Closed
+
+Platform Assisted Closures
+
+Usage Pattern
+
+
+
+--------------------------------
+
+
+GET
+
+/admin/dashboard/position-closure/trends
+
+
+Returns:
+
+
+Monthly Closures
+
+Platform Usage Trend
+
+Feature Adoption Trend
+
+
+
+--------------------------------
+
+
+FILTERS:
+
+
+Date Range
+
+Recruiter
+
+Business Vertical
+
+Location
+
+Feature
+
+
+
+--------------------------------
+
+
+FRONTEND COMPONENTS:
+
+
+Position Closure Summary Card
+
+
+Feature Usage Chart
+
+
+Recruiter Adoption Table
+
+
+Closure Trend Graph
+
+
+CTC Impact Card
+
+
+
+STATUS:
+
+API MAPPING READY
+
+
+
+Generated:
+
+07/27/2026 11:34:29
+

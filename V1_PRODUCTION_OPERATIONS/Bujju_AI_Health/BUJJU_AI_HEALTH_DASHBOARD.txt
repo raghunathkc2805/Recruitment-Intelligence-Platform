@@ -1,0 +1,188 @@
+﻿RECRUITMENT INTELLIGENCE PLATFORM
+
+BUJJU AI PERFORMANCE MONITORING &
+INTELLIGENCE HEALTH DASHBOARD
+
+VERSION:
+
+v1.0
+
+
+
+--------------------------------
+
+AI SERVICE AVAILABILITY
+
+
+Bujju AI Service Status:
+
+
+Resume Intelligence Status:
+
+
+JD Intelligence Status:
+
+
+Candidate Matching Status:
+
+
+Ranking Engine Status:
+
+
+Recommendation Engine Status:
+
+
+
+--------------------------------
+
+AI PROCESSING METRICS
+
+
+Resume Analysis Requests:
+
+
+JD Analysis Requests:
+
+
+Candidate Matching Requests:
+
+
+Ranking Requests:
+
+
+AI Recommendations Generated:
+
+
+
+--------------------------------
+
+AI PERFORMANCE
+
+
+Average Resume Processing Time:
+
+
+Average JD Analysis Time:
+
+
+Average Matching Response Time:
+
+
+Average Ranking Response Time:
+
+
+Recommendation Generation Time:
+
+
+
+--------------------------------
+
+AI QUALITY METRICS
+
+
+Match Accuracy:
+
+
+Ranking Relevance:
+
+
+Recommendation Acceptance:
+
+
+Resume Extraction Accuracy:
+
+
+JD Understanding Accuracy:
+
+
+
+--------------------------------
+
+AI USAGE ANALYTICS
+
+
+Active Recruiters Using AI:
+
+
+Most Used AI Feature:
+
+
+Daily AI Requests:
+
+
+Weekly AI Requests:
+
+
+Monthly AI Requests:
+
+
+
+--------------------------------
+
+AI ERROR MONITORING
+
+
+Processing Failures:
+
+
+Timeout Events:
+
+
+Data Quality Issues:
+
+
+Service Errors:
+
+
+Recovery Actions:
+
+
+
+--------------------------------
+
+AI GOVERNANCE
+
+
+AI Request Logging:
+
+
+Output Validation:
+
+
+Data Access Control:
+
+
+Audit Trail:
+
+
+Model Performance Review:
+
+
+
+--------------------------------
+
+REPORTING
+
+
+Daily AI Health Report
+
+
+Weekly AI Performance Review
+
+
+Monthly AI Business Impact Report
+
+
+
+--------------------------------
+
+STATUS:
+
+BUJJU AI HEALTH MONITORING FRAMEWORK CREATED
+
+
+
+Generated:
+
+07/27/2026 12:52:35
+

@@ -1,0 +1,176 @@
+﻿RECRUITMENT INTELLIGENCE PLATFORM
+
+LIVE RECRUITER USAGE TRACKING
+
+VERSION:
+
+v1.0
+
+
+
+================================
+
+USER ACTIVITY TRACKING
+
+
+Recruiter ID:
+
+
+Recruiter Name:
+
+
+Login Date:
+
+
+Last Active Date:
+
+
+Session Duration:
+
+
+
+================================
+
+SEARCH ACTIVITY
+
+
+Search Count:
+
+
+Search Keywords:
+
+
+Filters Used:
+
+
+Candidates Found:
+
+
+Profiles Viewed:
+
+
+
+================================
+
+CANDIDATE INTELLIGENCE USAGE
+
+
+Resume Views:
+
+
+Resume Analysis Requests:
+
+
+JD Analysis Requests:
+
+
+Matching Requests:
+
+
+Ranking Requests:
+
+
+
+================================
+
+RECRUITMENT ACTIONS
+
+
+Candidates Shortlisted:
+
+
+Interview Pipeline:
+
+
+Positions Supported:
+
+
+Positions Closed:
+
+
+
+================================
+
+AI ADOPTION
+
+
+AI Features Used:
+
+
+AI Recommendations Viewed:
+
+
+AI Recommendations Accepted:
+
+
+AI Assisted Closures:
+
+
+
+================================
+
+PRODUCTIVITY METRICS
+
+
+Search Time Saved:
+
+
+Resume Review Reduction:
+
+
+Candidate Discovery Improvement:
+
+
+Closure Efficiency:
+
+
+
+================================
+
+WEEKLY USER SCORECARD
+
+
+Usage Score:
+
+
+Feature Adoption Score:
+
+
+Productivity Score:
+
+
+Business Contribution Score:
+
+
+
+================================
+
+MANAGEMENT VIEW
+
+
+Top Active Recruiters:
+
+
+Highest AI Usage:
+
+
+Highest Closures:
+
+
+Training Required:
+
+
+
+================================
+
+STATUS:
+
+
+LIVE RECRUITER USAGE TRACKING ACTIVE
+
+
+
+Generated:
+
+07/27/2026 13:03:49
+

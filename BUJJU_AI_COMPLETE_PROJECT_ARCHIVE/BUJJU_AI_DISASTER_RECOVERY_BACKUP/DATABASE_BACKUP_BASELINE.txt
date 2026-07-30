@@ -1,0 +1,33 @@
+﻿RECRUITMENT INTELLIGENCE PLATFORM
+
+BUJJU AI EDITION
+
+DATABASE BACKUP BASELINE
+
+
+Database:
+
+PostgreSQL
+
+
+Backup Requirements:
+
+1. Full database dump
+2. Migration version capture
+3. Restore validation
+
+
+Current Migration:
+
+38138ae6fa73
+
+
+Schema Status:
+
+VALIDATED
+
+
+Generated:
+
+07/26/2026 22:06:24
+

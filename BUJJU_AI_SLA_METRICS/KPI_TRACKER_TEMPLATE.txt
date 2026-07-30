@@ -1,0 +1,37 @@
+﻿BUJJU AI KPI TRACKER TEMPLATE
+
+
+Period:
+
+
+Availability:
+
+
+API Performance:
+
+
+AI Usage:
+
+
+Recommendation Quality:
+
+
+Security Events:
+
+
+Incidents:
+
+
+Resolution Status:
+
+
+Business Impact:
+
+
+Review Status:
+
+
+Generated:
+
+07/26/2026 22:30:17
+

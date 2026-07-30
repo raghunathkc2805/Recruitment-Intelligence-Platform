@@ -1,0 +1,127 @@
+﻿RECRUITMENT INTELLIGENCE PLATFORM
+
+PRODUCTION IMPORT WORKER EXECUTION
+
+VERSION:
+
+v1.0
+
+
+--------------------------------
+
+BATCH:
+
+PROD-001
+
+
+
+--------------------------------
+
+SOURCE CONFIGURATION
+
+
+Resume Source:
+
+CONFIGURE REQUIRED
+
+
+CSV Source:
+
+CONFIGURE REQUIRED
+
+
+
+--------------------------------
+
+PROCESSING
+
+
+Resume Extraction:
+
+READY
+
+
+Candidate Creation:
+
+READY
+
+
+Duplicate Detection:
+
+READY
+
+
+Resume Mapping:
+
+READY
+
+
+Search Index Update:
+
+READY
+
+
+
+--------------------------------
+
+EXECUTION SEQUENCE
+
+
+1. Load Resume Files
+
+
+2. Parse Candidate Information
+
+
+3. Validate CSV Records
+
+
+4. Match Existing Candidates
+
+
+5. Create New Profiles
+
+
+6. Update Existing Profiles
+
+
+7. Generate Search Index
+
+
+8. Generate Migration Report
+
+
+
+--------------------------------
+
+SUCCESS CRITERIA
+
+
+Candidates Imported
+
+
+Resumes Linked
+
+
+Duplicates Identified
+
+
+Search Available
+
+
+Audit Generated
+
+
+
+--------------------------------
+
+STATUS:
+
+IMPORT WORKER READY
+
+
+
+Generated:
+
+07/27/2026 14:07:45
+

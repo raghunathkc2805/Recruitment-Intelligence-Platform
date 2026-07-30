@@ -1,0 +1,40 @@
+﻿BUJJU AI SECURITY INCIDENT TEMPLATE
+
+
+Incident ID:
+
+
+Detection Date:
+
+
+Severity:
+
+
+Affected Component:
+
+
+Security Event:
+
+
+Impact:
+
+
+Containment Action:
+
+
+Root Cause:
+
+
+Resolution:
+
+
+Validation:
+
+
+Closure:
+
+
+Generated:
+
+07/26/2026 22:35:38
+

@@ -1,0 +1,92 @@
+﻿RECRUITMENT INTELLIGENCE PLATFORM
+
+VERSION 1.0
+
+PRODUCTION TALENT DATABASE MIGRATION
+
+
+MIGRATION SCOPE:
+
+
+Resume Repository:
+
+15,000 Files
+
+
+Candidate Master CSV:
+
+4,000 Records
+
+
+
+PROCESS:
+
+
+STEP 1:
+
+Create Migration Backup
+
+
+STEP 2:
+
+Validate Resume Repository
+
+
+STEP 3:
+
+Validate CSV Data
+
+
+STEP 4:
+
+Execute Duplicate Detection
+
+
+STEP 5:
+
+Create / Update Candidate Profiles
+
+
+STEP 6:
+
+Generate Search Index
+
+
+STEP 7:
+
+Validate Recruiter Access
+
+
+
+MONITORING:
+
+
+Total Records
+
+Processed Records
+
+Failed Records
+
+Duplicate Records
+
+Created Profiles
+
+Updated Profiles
+
+
+
+ROLLBACK:
+
+Available Using Batch ID
+
+
+
+VERSION:
+
+v1.0
+
+
+STATUS:
+
+PRODUCTION MIGRATION READY
+

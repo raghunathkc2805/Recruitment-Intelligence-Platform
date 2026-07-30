@@ -222,8 +222,39 @@ def extract_skills(text):
             "soft_skills": [],
         }
 
+    technical_skills = _find_technical_skills(text)
+
+
+    # Compound skill precedence
+    # Example:
+    # Oracle ERP -> keep Oracle ERP, remove ERP
+
+    compound_children = {
+
+        "Oracle ERP": [
+            "ERP",
+        ],
+
+    }
+
+
+    for parent, children in compound_children.items():
+
+        if parent in technical_skills:
+
+            technical_skills = [
+
+                skill
+
+                for skill in technical_skills
+
+                if skill not in children
+
+            ]
+
+
     return {
-        "technical_skills": _find_technical_skills(text),
+        "technical_skills": technical_skills,
         "functional_skills": _search_terms(text, FUNCTIONAL_SKILLS),
         "soft_skills": _search_terms(text, SOFT_SKILLS),
     }

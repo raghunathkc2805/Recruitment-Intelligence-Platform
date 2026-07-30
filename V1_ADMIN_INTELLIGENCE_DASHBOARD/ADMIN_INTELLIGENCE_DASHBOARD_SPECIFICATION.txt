@@ -1,0 +1,85 @@
+﻿RECRUITMENT INTELLIGENCE PLATFORM
+
+VERSION 1.0
+
+ADMIN INTELLIGENCE DASHBOARD
+
+
+PURPOSE:
+
+Measure platform adoption, recruiter usage,
+AI utilization and recruitment impact.
+
+
+
+DASHBOARD AREAS:
+
+
+1. Platform Adoption
+
+
+2. Talent Database Intelligence
+
+
+3. Recruiter Activity
+
+
+4. Bujju AI Usage
+
+
+5. Position Closure Intelligence
+
+
+
+POSITION CLOSURE TRACKING:
+
+
+Capture:
+
+Platform Used:
+YES / NO
+
+
+Usage Purpose:
+
+
+Sourcing
+
+Resume Parsing
+
+Resume Scoring
+
+JD Analysis
+
+JD Building
+
+Candidate Matching
+
+Related Company Search
+
+Skill Intelligence
+
+Market Intelligence
+
+
+
+Business Metrics:
+
+
+Positions Closed
+
+Candidates Offered
+
+CTC Offered
+
+
+
+STATUS:
+
+v1 ADMIN DASHBOARD SPECIFICATION CREATED
+
+
+Generated:
+
+07/27/2026 11:30:01
+

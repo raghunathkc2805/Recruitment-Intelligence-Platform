@@ -1,0 +1,95 @@
+﻿RECRUITMENT INTELLIGENCE PLATFORM
+
+BUJJU AI EDITION
+
+PRODUCTION MONITORING KPI BASELINE
+
+
+SYSTEM HEALTH KPIs
+
+Application Availability:
+Target: >= 99%
+
+API Response Health:
+Target: Stable
+
+Database Health:
+Target: Validated
+
+
+RECRUITMENT INTELLIGENCE KPIs
+
+Candidate Searches:
+Track daily volume
+
+JD Analysis Requests:
+Track usage
+
+Recommendation Requests:
+Track AI assistance usage
+
+Candidate Match Quality:
+Track ranking confidence
+
+
+BUJJU AI KPIs
+
+AI Queries:
+Daily count
+
+AI Response Time:
+Monitor latency
+
+Recommendation Confidence:
+Track accuracy
+
+Risk Analysis:
+Track hiring alerts
+
+Executive Insights:
+Track leadership usage
+
+
+RECRUITMENT BUSINESS KPIs
+
+Open Positions:
+Monitor
+
+Position Ageing:
+Monitor
+
+Pipeline Strength:
+Monitor
+
+Talent Availability:
+Monitor
+
+Hiring Risk:
+Monitor
+
+
+SECURITY KPIs
+
+Authentication Failures:
+Monitor
+
+RBAC Violations:
+Monitor
+
+Audit Events:
+Monitor
+
+
+Regression Baseline:
+
+877 PASSED
+
+
+Status:
+
+MONITORING READY
+
+
+Generated:
+07/26/2026 22:03:13
+

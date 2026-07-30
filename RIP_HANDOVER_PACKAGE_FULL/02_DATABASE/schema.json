@@ -1,0 +1,1270 @@
+{
+  "analytics_events": [
+    {
+      "column": "id",
+      "type": "VARCHAR"
+    },
+    {
+      "column": "event_type",
+      "type": "VARCHAR(100)"
+    },
+    {
+      "column": "entity_type",
+      "type": "VARCHAR(100)"
+    },
+    {
+      "column": "entity_id",
+      "type": "VARCHAR"
+    },
+    {
+      "column": "metric_value",
+      "type": "FLOAT"
+    },
+    {
+      "column": "metadata_json",
+      "type": "TEXT"
+    },
+    {
+      "column": "created_at",
+      "type": "DATETIME"
+    }
+  ],
+  "audit_logs": [
+    {
+      "column": "id",
+      "type": "VARCHAR(36)"
+    },
+    {
+      "column": "tenant_id",
+      "type": "VARCHAR(36)"
+    },
+    {
+      "column": "organization_id",
+      "type": "VARCHAR(36)"
+    },
+    {
+      "column": "user_id",
+      "type": "VARCHAR(36)"
+    },
+    {
+      "column": "username",
+      "type": "VARCHAR(255)"
+    },
+    {
+      "column": "email",
+      "type": "VARCHAR(255)"
+    },
+    {
+      "column": "role_name",
+      "type": "VARCHAR(150)"
+    },
+    {
+      "column": "session_id",
+      "type": "VARCHAR(255)"
+    },
+    {
+      "column": "request_id",
+      "type": "VARCHAR(255)"
+    },
+    {
+      "column": "correlation_id",
+      "type": "VARCHAR(255)"
+    },
+    {
+      "column": "trace_id",
+      "type": "VARCHAR(255)"
+    },
+    {
+      "column": "action",
+      "type": "VARCHAR(120)"
+    },
+    {
+      "column": "event_type",
+      "type": "VARCHAR(120)"
+    },
+    {
+      "column": "resource_type",
+      "type": "VARCHAR(150)"
+    },
+    {
+      "column": "resource_id",
+      "type": "VARCHAR(255)"
+    },
+    {
+      "column": "resource_name",
+      "type": "VARCHAR(255)"
+    },
+    {
+      "column": "module",
+      "type": "VARCHAR(150)"
+    },
+    {
+      "column": "endpoint",
+      "type": "VARCHAR(500)"
+    },
+    {
+      "column": "http_method",
+      "type": "VARCHAR(20)"
+    },
+    {
+      "column": "status",
+      "type": "VARCHAR(50)"
+    },
+    {
+      "column": "status_code",
+      "type": "INTEGER"
+    },
+    {
+      "column": "message",
+      "type": "TEXT"
+    },
+    {
+      "column": "reason",
+      "type": "TEXT"
+    },
+    {
+      "column": "before_data",
+      "type": "JSON"
+    },
+    {
+      "column": "after_data",
+      "type": "JSON"
+    },
+    {
+      "column": "metadata",
+      "type": "JSON"
+    },
+    {
+      "column": "client_ip",
+      "type": "VARCHAR(64)"
+    },
+    {
+      "column": "forwarded_ip",
+      "type": "VARCHAR(64)"
+    },
+    {
+      "column": "user_agent",
+      "type": "TEXT"
+    },
+    {
+      "column": "device",
+      "type": "VARCHAR(255)"
+    },
+    {
+      "column": "browser",
+      "type": "VARCHAR(255)"
+    },
+    {
+      "column": "platform",
+      "type": "VARCHAR(255)"
+    },
+    {
+      "column": "country",
+      "type": "VARCHAR(150)"
+    },
+    {
+      "column": "city",
+      "type": "VARCHAR(150)"
+    },
+    {
+      "column": "latitude",
+      "type": "FLOAT"
+    },
+    {
+      "column": "longitude",
+      "type": "FLOAT"
+    },
+    {
+      "column": "request_body",
+      "type": "JSON"
+    },
+    {
+      "column": "query_params",
+      "type": "JSON"
+    },
+    {
+      "column": "headers",
+      "type": "JSON"
+    },
+    {
+      "column": "response_time_ms",
+      "type": "FLOAT"
+    },
+    {
+      "column": "created_at",
+      "type": "DATETIME"
+    }
+  ],
+  "candidate_career_intelligence": [
+    {
+      "column": "id",
+      "type": "VARCHAR"
+    },
+    {
+      "column": "candidate_id",
+      "type": "VARCHAR"
+    },
+    {
+      "column": "stability_score",
+      "type": "FLOAT"
+    },
+    {
+      "column": "growth_score",
+      "type": "FLOAT"
+    },
+    {
+      "column": "predicted_next_level",
+      "type": "VARCHAR(200)"
+    },
+    {
+      "column": "career_summary",
+      "type": "TEXT"
+    },
+    {
+      "column": "created_at",
+      "type": "DATETIME"
+    }
+  ],
+  "candidate_certifications": [
+    {
+      "column": "id",
+      "type": "VARCHAR(36)"
+    },
+    {
+      "column": "candidate_id",
+      "type": "VARCHAR(36)"
+    },
+    {
+      "column": "certification_name",
+      "type": "VARCHAR(255)"
+    },
+    {
+      "column": "issuing_organization",
+      "type": "VARCHAR(255)"
+    }
+  ],
+  "candidate_education": [
+    {
+      "column": "id",
+      "type": "VARCHAR(36)"
+    },
+    {
+      "column": "candidate_id",
+      "type": "VARCHAR(36)"
+    },
+    {
+      "column": "degree",
+      "type": "VARCHAR(255)"
+    },
+    {
+      "column": "specialization",
+      "type": "VARCHAR(255)"
+    },
+    {
+      "column": "institution",
+      "type": "VARCHAR(255)"
+    },
+    {
+      "column": "passing_year",
+      "type": "VARCHAR(20)"
+    }
+  ],
+  "candidate_experience": [
+    {
+      "column": "id",
+      "type": "VARCHAR(36)"
+    },
+    {
+      "column": "candidate_id",
+      "type": "VARCHAR(36)"
+    },
+    {
+      "column": "company_name",
+      "type": "VARCHAR(255)"
+    },
+    {
+      "column": "designation",
+      "type": "VARCHAR(255)"
+    },
+    {
+      "column": "experience_years",
+      "type": "FLOAT"
+    }
+  ],
+  "candidate_intelligence": [
+    {
+      "column": "id",
+      "type": "VARCHAR"
+    },
+    {
+      "column": "candidate_id",
+      "type": "VARCHAR"
+    },
+    {
+      "column": "intelligence_type",
+      "type": "VARCHAR(100)"
+    },
+    {
+      "column": "score",
+      "type": "FLOAT"
+    },
+    {
+      "column": "explanation",
+      "type": "TEXT"
+    },
+    {
+      "column": "created_at",
+      "type": "DATETIME"
+    }
+  ],
+  "candidate_projects": [
+    {
+      "column": "id",
+      "type": "VARCHAR(36)"
+    },
+    {
+      "column": "candidate_id",
+      "type": "VARCHAR(36)"
+    },
+    {
+      "column": "project_name",
+      "type": "VARCHAR(255)"
+    },
+    {
+      "column": "description",
+      "type": "TEXT"
+    },
+    {
+      "column": "technologies",
+      "type": "TEXT"
+    }
+  ],
+  "candidate_recommendations": [
+    {
+      "column": "id",
+      "type": "VARCHAR"
+    },
+    {
+      "column": "source_candidate_id",
+      "type": "VARCHAR"
+    },
+    {
+      "column": "recommended_candidate_id",
+      "type": "VARCHAR"
+    },
+    {
+      "column": "recommendation_type",
+      "type": "VARCHAR(100)"
+    },
+    {
+      "column": "similarity_score",
+      "type": "FLOAT"
+    },
+    {
+      "column": "explanation",
+      "type": "TEXT"
+    },
+    {
+      "column": "created_at",
+      "type": "DATETIME"
+    }
+  ],
+  "candidate_relationships": [
+    {
+      "column": "id",
+      "type": "VARCHAR"
+    },
+    {
+      "column": "candidate_id",
+      "type": "VARCHAR"
+    },
+    {
+      "column": "interaction_type",
+      "type": "VARCHAR(100)"
+    },
+    {
+      "column": "message",
+      "type": "TEXT"
+    },
+    {
+      "column": "response_status",
+      "type": "VARCHAR(100)"
+    },
+    {
+      "column": "interaction_count",
+      "type": "INTEGER"
+    },
+    {
+      "column": "created_at",
+      "type": "DATETIME"
+    }
+  ],
+  "candidate_risks": [
+    {
+      "column": "id",
+      "type": "VARCHAR"
+    },
+    {
+      "column": "candidate_id",
+      "type": "VARCHAR"
+    },
+    {
+      "column": "risk_score",
+      "type": "FLOAT"
+    },
+    {
+      "column": "risk_factors",
+      "type": "TEXT"
+    },
+    {
+      "column": "recommendation",
+      "type": "TEXT"
+    },
+    {
+      "column": "created_at",
+      "type": "DATETIME"
+    }
+  ],
+  "candidate_skills": [
+    {
+      "column": "id",
+      "type": "VARCHAR(36)"
+    },
+    {
+      "column": "candidate_id",
+      "type": "VARCHAR(36)"
+    },
+    {
+      "column": "skill_name",
+      "type": "VARCHAR(150)"
+    },
+    {
+      "column": "skill_category",
+      "type": "VARCHAR(100)"
+    }
+  ],
+  "candidates": [
+    {
+      "column": "id",
+      "type": "VARCHAR(36)"
+    },
+    {
+      "column": "candidate_code",
+      "type": "VARCHAR(50)"
+    },
+    {
+      "column": "full_name",
+      "type": "VARCHAR(255)"
+    },
+    {
+      "column": "email",
+      "type": "VARCHAR(255)"
+    },
+    {
+      "column": "mobile",
+      "type": "VARCHAR(30)"
+    },
+    {
+      "column": "location",
+      "type": "VARCHAR(150)"
+    },
+    {
+      "column": "experience_years",
+      "type": "FLOAT"
+    },
+    {
+      "column": "current_designation",
+      "type": "VARCHAR(255)"
+    },
+    {
+      "column": "active",
+      "type": "BOOLEAN"
+    },
+    {
+      "column": "created_at",
+      "type": "DATETIME"
+    },
+    {
+      "column": "updated_at",
+      "type": "DATETIME"
+    }
+  ],
+  "competency_gaps": [
+    {
+      "column": "id",
+      "type": "VARCHAR"
+    },
+    {
+      "column": "candidate_id",
+      "type": "VARCHAR"
+    },
+    {
+      "column": "job_id",
+      "type": "VARCHAR"
+    },
+    {
+      "column": "missing_competencies",
+      "type": "TEXT"
+    },
+    {
+      "column": "verification_priority",
+      "type": "FLOAT"
+    },
+    {
+      "column": "recommendation",
+      "type": "TEXT"
+    },
+    {
+      "column": "created_at",
+      "type": "DATETIME"
+    }
+  ],
+  "continuous_learning_events": [
+    {
+      "column": "id",
+      "type": "VARCHAR"
+    },
+    {
+      "column": "event_type",
+      "type": "VARCHAR(100)"
+    },
+    {
+      "column": "entity_type",
+      "type": "VARCHAR(100)"
+    },
+    {
+      "column": "entity_id",
+      "type": "VARCHAR"
+    },
+    {
+      "column": "data",
+      "type": "TEXT"
+    },
+    {
+      "column": "confidence_score",
+      "type": "FLOAT"
+    },
+    {
+      "column": "approved",
+      "type": "BOOLEAN"
+    },
+    {
+      "column": "created_at",
+      "type": "DATETIME"
+    }
+  ],
+  "hiring_success": [
+    {
+      "column": "id",
+      "type": "VARCHAR"
+    },
+    {
+      "column": "candidate_id",
+      "type": "VARCHAR"
+    },
+    {
+      "column": "source",
+      "type": "VARCHAR(200)"
+    },
+    {
+      "column": "recruiter_id",
+      "type": "VARCHAR(200)"
+    },
+    {
+      "column": "outcome",
+      "type": "VARCHAR(100)"
+    },
+    {
+      "column": "acceptance_score",
+      "type": "FLOAT"
+    },
+    {
+      "column": "joining_success",
+      "type": "FLOAT"
+    },
+    {
+      "column": "feedback",
+      "type": "TEXT"
+    },
+    {
+      "column": "created_at",
+      "type": "DATETIME"
+    }
+  ],
+  "intelligence_scores": [
+    {
+      "column": "id",
+      "type": "VARCHAR"
+    },
+    {
+      "column": "entity_type",
+      "type": "VARCHAR(100)"
+    },
+    {
+      "column": "entity_id",
+      "type": "VARCHAR"
+    },
+    {
+      "column": "overall_score",
+      "type": "FLOAT"
+    },
+    {
+      "column": "confidence_score",
+      "type": "FLOAT"
+    },
+    {
+      "column": "explanation",
+      "type": "TEXT"
+    },
+    {
+      "column": "created_at",
+      "type": "DATETIME"
+    }
+  ],
+  "jd_intelligence": [
+    {
+      "column": "id",
+      "type": "VARCHAR"
+    },
+    {
+      "column": "job_id",
+      "type": "VARCHAR"
+    },
+    {
+      "column": "quality_score",
+      "type": "FLOAT"
+    },
+    {
+      "column": "skill_coverage_score",
+      "type": "FLOAT"
+    },
+    {
+      "column": "missing_information",
+      "type": "TEXT"
+    },
+    {
+      "column": "recommendations",
+      "type": "TEXT"
+    },
+    {
+      "column": "created_at",
+      "type": "DATETIME"
+    }
+  ],
+  "job_descriptions": [
+    {
+      "column": "id",
+      "type": "VARCHAR(36)"
+    },
+    {
+      "column": "job_code",
+      "type": "VARCHAR(50)"
+    },
+    {
+      "column": "designation",
+      "type": "VARCHAR(255)"
+    },
+    {
+      "column": "location",
+      "type": "VARCHAR(150)"
+    },
+    {
+      "column": "experience_required",
+      "type": "FLOAT"
+    },
+    {
+      "column": "created_at",
+      "type": "DATETIME"
+    }
+  ],
+  "job_skills": [
+    {
+      "column": "id",
+      "type": "VARCHAR(36)"
+    },
+    {
+      "column": "job_id",
+      "type": "VARCHAR(36)"
+    },
+    {
+      "column": "skill_name",
+      "type": "VARCHAR(150)"
+    },
+    {
+      "column": "skill_category",
+      "type": "VARCHAR(100)"
+    }
+  ],
+  "knowledge_audits": [
+    {
+      "column": "id",
+      "type": "VARCHAR"
+    },
+    {
+      "column": "knowledge_id",
+      "type": "VARCHAR"
+    },
+    {
+      "column": "action",
+      "type": "VARCHAR(100)"
+    },
+    {
+      "column": "performed_by",
+      "type": "VARCHAR(100)"
+    },
+    {
+      "column": "details",
+      "type": "TEXT"
+    },
+    {
+      "column": "created_at",
+      "type": "DATETIME"
+    }
+  ],
+  "knowledge_entries": [
+    {
+      "column": "id",
+      "type": "VARCHAR"
+    },
+    {
+      "column": "domain",
+      "type": "VARCHAR(100)"
+    },
+    {
+      "column": "category",
+      "type": "VARCHAR(100)"
+    },
+    {
+      "column": "key",
+      "type": "VARCHAR(255)"
+    },
+    {
+      "column": "value",
+      "type": "TEXT"
+    },
+    {
+      "column": "source",
+      "type": "VARCHAR(255)"
+    },
+    {
+      "column": "confidence_score",
+      "type": "FLOAT"
+    },
+    {
+      "column": "version",
+      "type": "VARCHAR(50)"
+    },
+    {
+      "column": "approved",
+      "type": "BOOLEAN"
+    },
+    {
+      "column": "active",
+      "type": "BOOLEAN"
+    },
+    {
+      "column": "created_at",
+      "type": "DATETIME"
+    },
+    {
+      "column": "updated_at",
+      "type": "DATETIME"
+    }
+  ],
+  "knowledge_graph_nodes": [
+    {
+      "column": "id",
+      "type": "VARCHAR"
+    },
+    {
+      "column": "node_type",
+      "type": "VARCHAR(100)"
+    },
+    {
+      "column": "name",
+      "type": "VARCHAR(255)"
+    },
+    {
+      "column": "metadata_json",
+      "type": "TEXT"
+    },
+    {
+      "column": "created_at",
+      "type": "DATETIME"
+    }
+  ],
+  "knowledge_graph_relations": [
+    {
+      "column": "id",
+      "type": "VARCHAR"
+    },
+    {
+      "column": "source_node_id",
+      "type": "VARCHAR"
+    },
+    {
+      "column": "target_node_id",
+      "type": "VARCHAR"
+    },
+    {
+      "column": "relation_type",
+      "type": "VARCHAR(100)"
+    },
+    {
+      "column": "confidence_score",
+      "type": "FLOAT"
+    },
+    {
+      "column": "created_at",
+      "type": "DATETIME"
+    }
+  ],
+  "knowledge_refresh_schedule": [
+    {
+      "column": "id",
+      "type": "VARCHAR"
+    },
+    {
+      "column": "domain",
+      "type": "VARCHAR(100)"
+    },
+    {
+      "column": "frequency",
+      "type": "VARCHAR(50)"
+    },
+    {
+      "column": "last_refresh",
+      "type": "DATETIME"
+    },
+    {
+      "column": "next_refresh",
+      "type": "DATETIME"
+    },
+    {
+      "column": "active",
+      "type": "BOOLEAN"
+    },
+    {
+      "column": "created_at",
+      "type": "DATETIME"
+    }
+  ],
+  "knowledge_versions": [
+    {
+      "column": "id",
+      "type": "VARCHAR"
+    },
+    {
+      "column": "knowledge_id",
+      "type": "VARCHAR"
+    },
+    {
+      "column": "version",
+      "type": "VARCHAR(50)"
+    },
+    {
+      "column": "previous_value",
+      "type": "TEXT"
+    },
+    {
+      "column": "new_value",
+      "type": "TEXT"
+    },
+    {
+      "column": "confidence_score",
+      "type": "FLOAT"
+    },
+    {
+      "column": "approved",
+      "type": "BOOLEAN"
+    },
+    {
+      "column": "created_by",
+      "type": "VARCHAR(100)"
+    },
+    {
+      "column": "created_at",
+      "type": "DATETIME"
+    }
+  ],
+  "market_intelligence": [
+    {
+      "column": "id",
+      "type": "VARCHAR"
+    },
+    {
+      "column": "domain",
+      "type": "VARCHAR(100)"
+    },
+    {
+      "column": "intelligence_type",
+      "type": "VARCHAR(100)"
+    },
+    {
+      "column": "title",
+      "type": "VARCHAR(255)"
+    },
+    {
+      "column": "information",
+      "type": "TEXT"
+    },
+    {
+      "column": "confidence_score",
+      "type": "FLOAT"
+    },
+    {
+      "column": "approved",
+      "type": "BOOLEAN"
+    },
+    {
+      "column": "created_at",
+      "type": "DATETIME"
+    }
+  ],
+  "match_results": [
+    {
+      "column": "id",
+      "type": "VARCHAR(36)"
+    },
+    {
+      "column": "candidate_id",
+      "type": "VARCHAR(36)"
+    },
+    {
+      "column": "job_id",
+      "type": "VARCHAR(36)"
+    },
+    {
+      "column": "score",
+      "type": "FLOAT"
+    },
+    {
+      "column": "recommendation",
+      "type": "VARCHAR(100)"
+    },
+    {
+      "column": "created_at",
+      "type": "DATETIME"
+    }
+  ],
+  "organizations": [
+    {
+      "column": "id",
+      "type": "VARCHAR(36)"
+    },
+    {
+      "column": "organization_name",
+      "type": "VARCHAR(255)"
+    },
+    {
+      "column": "organization_code",
+      "type": "VARCHAR(50)"
+    },
+    {
+      "column": "contact_email",
+      "type": "VARCHAR(255)"
+    },
+    {
+      "column": "created_at",
+      "type": "DATETIME"
+    }
+  ],
+  "permissions": [
+    {
+      "column": "id",
+      "type": "INTEGER"
+    },
+    {
+      "column": "name",
+      "type": "VARCHAR(150)"
+    },
+    {
+      "column": "description",
+      "type": "VARCHAR(500)"
+    },
+    {
+      "column": "module",
+      "type": "VARCHAR(100)"
+    },
+    {
+      "column": "is_active",
+      "type": "BOOLEAN"
+    }
+  ],
+  "recruiter_intelligence": [
+    {
+      "column": "id",
+      "type": "VARCHAR"
+    },
+    {
+      "column": "recruiter_id",
+      "type": "VARCHAR"
+    },
+    {
+      "column": "query",
+      "type": "TEXT"
+    },
+    {
+      "column": "recommendation",
+      "type": "TEXT"
+    },
+    {
+      "column": "confidence_score",
+      "type": "FLOAT"
+    },
+    {
+      "column": "created_at",
+      "type": "DATETIME"
+    }
+  ],
+  "recruiter_performance": [
+    {
+      "column": "id",
+      "type": "VARCHAR"
+    },
+    {
+      "column": "recruiter_id",
+      "type": "VARCHAR"
+    },
+    {
+      "column": "specialization",
+      "type": "VARCHAR(200)"
+    },
+    {
+      "column": "successful_hires",
+      "type": "FLOAT"
+    },
+    {
+      "column": "average_time_to_hire",
+      "type": "FLOAT"
+    },
+    {
+      "column": "effectiveness_score",
+      "type": "FLOAT"
+    },
+    {
+      "column": "intelligence_summary",
+      "type": "TEXT"
+    },
+    {
+      "column": "created_at",
+      "type": "DATETIME"
+    }
+  ],
+  "resume_intelligence": [
+    {
+      "column": "id",
+      "type": "VARCHAR"
+    },
+    {
+      "column": "candidate_id",
+      "type": "VARCHAR"
+    },
+    {
+      "column": "completeness_score",
+      "type": "FLOAT"
+    },
+    {
+      "column": "role_match_score",
+      "type": "FLOAT"
+    },
+    {
+      "column": "confidence_score",
+      "type": "FLOAT"
+    },
+    {
+      "column": "missing_skills",
+      "type": "TEXT"
+    },
+    {
+      "column": "recommendations",
+      "type": "TEXT"
+    },
+    {
+      "column": "created_at",
+      "type": "DATETIME"
+    }
+  ],
+  "resumes": [
+    {
+      "column": "id",
+      "type": "VARCHAR(36)"
+    },
+    {
+      "column": "candidate_id",
+      "type": "VARCHAR(36)"
+    },
+    {
+      "column": "file_name",
+      "type": "VARCHAR(300)"
+    },
+    {
+      "column": "file_path",
+      "type": "VARCHAR(500)"
+    },
+    {
+      "column": "resume_hash",
+      "type": "VARCHAR(64)"
+    },
+    {
+      "column": "file_size",
+      "type": "INTEGER"
+    },
+    {
+      "column": "mime_type",
+      "type": "VARCHAR(100)"
+    },
+    {
+      "column": "parser_version",
+      "type": "VARCHAR(50)"
+    },
+    {
+      "column": "created_at",
+      "type": "DATETIME"
+    }
+  ],
+  "role_permissions": [
+    {
+      "column": "role_id",
+      "type": "INTEGER"
+    },
+    {
+      "column": "permission_id",
+      "type": "INTEGER"
+    }
+  ],
+  "roles": [
+    {
+      "column": "id",
+      "type": "INTEGER"
+    },
+    {
+      "column": "name",
+      "type": "VARCHAR(100)"
+    },
+    {
+      "column": "description",
+      "type": "VARCHAR(500)"
+    },
+    {
+      "column": "is_active",
+      "type": "BOOLEAN"
+    }
+  ],
+  "search_history": [
+    {
+      "column": "id",
+      "type": "VARCHAR(36)"
+    },
+    {
+      "column": "user_id",
+      "type": "VARCHAR(36)"
+    },
+    {
+      "column": "search_query",
+      "type": "TEXT"
+    },
+    {
+      "column": "search_type",
+      "type": "VARCHAR(50)"
+    },
+    {
+      "column": "created_at",
+      "type": "DATETIME"
+    }
+  ],
+  "talent_marketplace": [
+    {
+      "column": "id",
+      "type": "VARCHAR"
+    },
+    {
+      "column": "candidate_id",
+      "type": "VARCHAR"
+    },
+    {
+      "column": "candidate_type",
+      "type": "VARCHAR(100)"
+    },
+    {
+      "column": "availability_status",
+      "type": "VARCHAR(100)"
+    },
+    {
+      "column": "skill_profile",
+      "type": "TEXT"
+    },
+    {
+      "column": "previous_outcome",
+      "type": "VARCHAR(100)"
+    },
+    {
+      "column": "match_score",
+      "type": "FLOAT"
+    },
+    {
+      "column": "created_at",
+      "type": "DATETIME"
+    }
+  ],
+  "users": [
+    {
+      "column": "id",
+      "type": "VARCHAR(36)"
+    },
+    {
+      "column": "username",
+      "type": "VARCHAR(100)"
+    },
+    {
+      "column": "email",
+      "type": "VARCHAR(255)"
+    },
+    {
+      "column": "password_hash",
+      "type": "VARCHAR(255)"
+    },
+    {
+      "column": "role",
+      "type": "VARCHAR(50)"
+    },
+    {
+      "column": "is_active",
+      "type": "BOOLEAN"
+    },
+    {
+      "column": "created_at",
+      "type": "DATETIME"
+    },
+    {
+      "column": "updated_at",
+      "type": "DATETIME"
+    }
+  ],
+  "whatsapp_outreach": [
+    {
+      "column": "id",
+      "type": "VARCHAR"
+    },
+    {
+      "column": "candidate_id",
+      "type": "VARCHAR"
+    },
+    {
+      "column": "template_name",
+      "type": "VARCHAR(200)"
+    },
+    {
+      "column": "message",
+      "type": "TEXT"
+    },
+    {
+      "column": "status",
+      "type": "VARCHAR(100)"
+    },
+    {
+      "column": "created_at",
+      "type": "DATETIME"
+    }
+  ]
+}

@@ -4,7 +4,7 @@ from datetime import datetime
 from typing import Optional
 from uuid import UUID
 
-from sqlalchemy import select, func
+from sqlalchemy import func, select
 from sqlalchemy.orm import Session
 
 from database.models.audit_log import AuditLog
@@ -21,11 +21,11 @@ class AuditRepository:
         self.db.refresh(audit)
         return audit
 
-    def get(self, audit_id: UUID):
-        return self.db.get(AuditLog, audit_id)
+    def get(self, audit_id: UUID | str):
+        return self.db.get(AuditLog, str(audit_id))
 
-    def delete(self, audit_id: UUID):
-        entity = self.get(audit_id)
+    def delete(self, audit_id: UUID | str):
+        entity = self.get(str(audit_id))
         if entity:
             self.db.delete(entity)
             self.db.commit()
@@ -34,7 +34,7 @@ class AuditRepository:
     def list(
         self,
         page: int = 1,
-        page_size: int = 50
+        page_size: int = 50,
     ):
         stmt = (
             select(AuditLog)
@@ -50,13 +50,13 @@ class AuditRepository:
 
     def by_user(
         self,
-        user_id: UUID,
+        user_id: UUID | str,
         page: int = 1,
-        page_size: int = 50
+        page_size: int = 50,
     ):
         stmt = (
             select(AuditLog)
-            .where(AuditLog.user_id == user_id)
+            .where(AuditLog.user_id == str(user_id))
             .order_by(AuditLog.created_at.desc())
             .offset((page - 1) * page_size)
             .limit(page_size)
@@ -74,7 +74,7 @@ class AuditRepository:
     def by_resource(
         self,
         resource_type: str,
-        resource_id: Optional[str] = None
+        resource_id: Optional[str] = None,
     ):
         stmt = select(AuditLog).where(
             AuditLog.resource_type == resource_type
@@ -95,9 +95,8 @@ class AuditRepository:
         end_date: Optional[datetime] = None,
         action: Optional[str] = None,
         status: Optional[str] = None,
-        user_id: Optional[UUID] = None,
+        user_id: Optional[UUID | str] = None,
     ):
-
         stmt = select(AuditLog)
 
         if start_date:
@@ -122,11 +121,9 @@ class AuditRepository:
 
         if user_id:
             stmt = stmt.where(
-                AuditLog.user_id == user_id
+                AuditLog.user_id == str(user_id)
             )
 
-        stmt = stmt.order_by(
-            AuditLog.created_at.desc()
-        )
+        stmt = stmt.order_by(AuditLog.created_at.desc())
 
         return self.db.scalars(stmt).all()

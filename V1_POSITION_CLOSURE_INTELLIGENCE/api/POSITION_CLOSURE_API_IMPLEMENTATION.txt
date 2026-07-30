@@ -1,0 +1,95 @@
+﻿RECRUITMENT INTELLIGENCE PLATFORM
+
+VERSION 1.0
+
+POSITION CLOSURE API IMPLEMENTATION
+
+
+ROUTES:
+
+
+POST
+
+/api/position-closure
+
+
+Purpose:
+
+Create closure record.
+
+
+
+POST
+
+/api/position-closure/{closure_id}/usage
+
+
+Purpose:
+
+Capture platform usage features.
+
+
+
+GET
+
+/api/admin/position-closure/analytics
+
+
+Purpose:
+
+Return closure analytics.
+
+
+
+GET
+
+/api/admin/position-closure/features
+
+
+Purpose:
+
+Return feature utilization.
+
+
+
+--------------------------------
+
+
+VALIDATIONS:
+
+
+Position Required
+
+Candidate Required
+
+CTC Validation
+
+Recruiter Validation
+
+Platform Usage Validation
+
+
+
+--------------------------------
+
+
+OUTPUT:
+
+
+Closure ID
+
+Success Status
+
+Analytics Update Status
+
+
+
+VERSION:
+
+v1.0
+
+
+STATUS:
+
+API IMPLEMENTATION READY
+

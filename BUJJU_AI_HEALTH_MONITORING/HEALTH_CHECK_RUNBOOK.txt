@@ -1,0 +1,39 @@
+﻿BUJJU AI HEALTH CHECK SCRIPT
+
+
+Checks:
+
+1. Application Import
+
+2. Database Status
+
+3. Core APIs
+
+4. Bujju AI Services
+
+5. Security Tests
+
+
+Expected Result:
+
+ALL SYSTEMS HEALTHY
+
+
+Failure Action:
+
+Investigate
+
+Validate
+
+Restore
+
+
+Status:
+
+READY
+
+
+Generated:
+
+07/26/2026 22:27:39
+

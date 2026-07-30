@@ -13,6 +13,7 @@ from database.base import Base
 from database.settings import DATABASE_URL
 
 import database.models
+import api.models.rbac
 
 config = context.config
 
@@ -62,3 +63,4 @@ if context.is_offline_mode():
     run_migrations_offline()
 else:
     run_migrations_online()
+

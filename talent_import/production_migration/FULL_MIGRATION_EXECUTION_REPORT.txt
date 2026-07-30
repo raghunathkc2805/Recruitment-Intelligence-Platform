@@ -1,0 +1,154 @@
+﻿RECRUITMENT INTELLIGENCE PLATFORM
+
+FULL TALENT DATABASE MIGRATION
+
+VERSION:
+
+v1.0
+
+
+
+--------------------------------
+
+MIGRATION BATCH:
+
+PROD-001
+
+
+
+--------------------------------
+
+INPUT
+
+
+Resume Files:
+
+15000
+
+
+CSV Candidate Records:
+
+4000
+
+
+
+--------------------------------
+
+PROCESS PIPELINE
+
+
+1. Source Validation
+
+STATUS:
+
+STARTED
+
+
+
+2. Resume Processing
+
+STATUS:
+
+STARTED
+
+
+
+3. CSV Processing
+
+STATUS:
+
+STARTED
+
+
+
+4. Candidate Creation
+
+STATUS:
+
+STARTED
+
+
+
+5. Candidate Update
+
+STATUS:
+
+STARTED
+
+
+
+6. Resume Mapping
+
+STATUS:
+
+STARTED
+
+
+
+7. Duplicate Detection
+
+STATUS:
+
+STARTED
+
+
+
+8. Search Index Update
+
+STATUS:
+
+STARTED
+
+
+
+--------------------------------
+
+VALIDATION OUTPUT
+
+
+Total Received:
+
+
+Processed:
+
+
+Created:
+
+
+Updated:
+
+
+Duplicates:
+
+
+Failed:
+
+
+
+--------------------------------
+
+AUDIT
+
+
+Batch ID:
+
+PROD-001
+
+
+Execution Date:
+
+07/27/2026 14:06:25
+
+
+Executed By:
+
+
+
+--------------------------------
+
+STATUS:
+
+FULL MIGRATION EXECUTION INITIATED
+
+
+

@@ -1,0 +1,92 @@
+﻿RECRUITMENT INTELLIGENCE PLATFORM
+
+RESUME INTELLIGENCE PILOT
+
+VERSION:
+
+v1.0
+
+
+INPUT:
+
+100 Resume Files
+
+
+PROCESS:
+
+
+Resume Loading
+
+↓
+
+Text Extraction
+
+↓
+
+Skill Extraction
+
+↓
+
+Experience Extraction
+
+↓
+
+Company Extraction
+
+↓
+
+Designation Extraction
+
+↓
+
+Candidate Profile Creation
+
+
+
+VALIDATION:
+
+
+Resume Read Success:
+
+
+Text Extraction:
+
+
+Skills Identified:
+
+
+Experience Identified:
+
+
+Candidate Profile Generated:
+
+
+Database Insert:
+
+
+
+OUTPUT:
+
+
+Candidate Intelligence Records
+
+
+Searchable Profiles
+
+
+Skill Index
+
+
+Experience Index
+
+
+
+STATUS:
+
+PILOT EXTRACTION READY
+
+
+Generated:
+
+07/27/2026 15:08:22
+

@@ -1,0 +1,167 @@
+﻿RECRUITMENT INTELLIGENCE PLATFORM
+
+DAILY PRODUCTION HEALTH CHECK
+
+VERSION:
+
+v1.0
+
+
+
+--------------------------------
+
+APPLICATION HEALTH
+
+
+API Service Status:
+
+
+Application Import:
+
+
+Response Status:
+
+
+Error Count:
+
+
+
+--------------------------------
+
+DATABASE HEALTH
+
+
+Database Connection:
+
+
+Migration Status:
+
+
+Query Performance:
+
+
+Connection Pool:
+
+
+
+--------------------------------
+
+SECURITY HEALTH
+
+
+Authentication:
+
+
+RBAC:
+
+
+Failed Login Attempts:
+
+
+Audit Logs:
+
+
+
+--------------------------------
+
+TALENT DATABASE HEALTH
+
+
+Candidate Records:
+
+
+Resume Records:
+
+
+Search Index:
+
+
+Duplicate Detection:
+
+
+
+--------------------------------
+
+BUJJU AI HEALTH
+
+
+Resume Intelligence:
+
+
+JD Intelligence:
+
+
+Matching Engine:
+
+
+Ranking Engine:
+
+
+
+--------------------------------
+
+ANALYTICS HEALTH
+
+
+Dashboard Status:
+
+
+Report Generation:
+
+
+Custom Date Reports:
+
+
+Export Services:
+
+
+
+--------------------------------
+
+USER ACTIVITY
+
+
+Active Recruiters:
+
+
+Search Activity:
+
+
+Candidate Views:
+
+
+Feature Usage:
+
+
+
+--------------------------------
+
+ALERT SUMMARY
+
+
+Critical:
+
+
+High:
+
+
+Medium:
+
+
+Resolved:
+
+
+
+--------------------------------
+
+FINAL HEALTH STATUS:
+
+
+HEALTHY / ACTION REQUIRED
+
+
+
+Generated:
+
+07/27/2026 12:47:40
+

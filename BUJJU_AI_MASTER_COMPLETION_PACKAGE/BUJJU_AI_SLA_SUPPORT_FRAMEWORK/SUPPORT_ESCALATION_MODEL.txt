@@ -1,0 +1,37 @@
+﻿BUJJU AI SUPPORT CONTACT MODEL
+
+
+Level 1:
+
+Application Monitoring
+
+
+Level 2:
+
+Technical Support
+
+
+Level 3:
+
+Platform Engineering
+
+
+Level 4:
+
+Architecture Review
+
+
+Escalation:
+
+Controlled Process
+
+
+Status:
+
+DEFINED
+
+
+Generated:
+
+07/26/2026 22:19:30
+

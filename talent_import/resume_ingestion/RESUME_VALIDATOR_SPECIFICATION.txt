@@ -1,0 +1,52 @@
+﻿RECRUITMENT INTELLIGENCE PLATFORM
+
+VERSION 1.0
+
+RESUME FILE VALIDATOR
+
+
+VALIDATIONS:
+
+
+File Exists
+
+Supported Extension
+
+File Size
+
+Readable Content
+
+Duplicate Filename
+
+
+SUPPORTED EXTENSIONS:
+
+
+.pdf
+
+.doc
+
+.docx
+
+
+
+FAILURE ACTION:
+
+
+Invalid File
+
+↓
+
+Error Report
+
+
+
+VERSION:
+
+v1.0
+
+
+STATUS:
+
+VALIDATOR DEFINED
+

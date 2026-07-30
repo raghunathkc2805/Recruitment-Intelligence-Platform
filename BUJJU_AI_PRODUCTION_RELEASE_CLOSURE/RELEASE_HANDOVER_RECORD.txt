@@ -1,0 +1,42 @@
+﻿RELEASE HANDOVER RECORD
+
+
+Application:
+
+Recruitment Intelligence Platform
+
+
+AI Edition:
+
+Bujju AI
+
+
+Version:
+
+v2.0.0-bujju-ai
+
+
+Deployment Status:
+
+LIVE
+
+
+Support Mode:
+
+ACTIVE
+
+
+Change Management:
+
+CONTROLLED
+
+
+Future Enhancements:
+
+Phase 22 Backlog
+
+
+Generated:
+
+07/27/2026 10:25:32
+

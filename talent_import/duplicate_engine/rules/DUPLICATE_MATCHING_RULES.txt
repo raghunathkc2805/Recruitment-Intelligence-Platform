@@ -1,0 +1,160 @@
+﻿RECRUITMENT INTELLIGENCE PLATFORM
+
+VERSION 1.0
+
+DUPLICATE MATCHING RULE ENGINE
+
+
+MATCHING PRIORITY:
+
+
+RULE 1:
+IDENTITY MATCH
+
+
+Fields:
+
+Email
+Mobile
+LinkedIn URL
+
+
+Confidence:
+
+100%
+
+
+Action:
+
+AUTO MERGE
+
+
+
+--------------------------------
+
+
+RULE 2:
+RESUME FINGERPRINT MATCH
+
+
+Fields:
+
+Resume File Hash
+
+Resume Content Hash
+
+
+Confidence:
+
+95-100%
+
+
+Action:
+
+BLOCK DUPLICATE IMPORT
+
+
+
+--------------------------------
+
+
+RULE 3:
+PROFILE SIMILARITY MATCH
+
+
+Fields:
+
+
+Candidate Name
+
+Current Company
+
+Designation
+
+Skills
+
+Experience
+
+Location
+
+Education
+
+
+Confidence:
+
+
+90-100%
+
+AUTO MERGE REVIEW
+
+
+70-90%
+
+MANUAL REVIEW
+
+
+Below 70%
+
+CREATE NEW PROFILE
+
+
+
+--------------------------------
+
+
+MERGE PRIORITY:
+
+
+Existing Candidate Data:
+
++
+New Resume Information
+
+
+Update:
+
+
+New Skills
+
+New Experience
+
+New Company
+
+Latest Resume
+
+Updated Timestamp
+
+
+
+--------------------------------
+
+
+AUDIT:
+
+
+Every duplicate action must record:
+
+
+Candidate ID
+
+Duplicate Source
+
+Matched Field
+
+Confidence Score
+
+Action Taken
+
+Timestamp
+
+
+
+VERSION:
+
+v1.0
+
+
+STATUS:
+
+MATCHING RULES DEFINED
+

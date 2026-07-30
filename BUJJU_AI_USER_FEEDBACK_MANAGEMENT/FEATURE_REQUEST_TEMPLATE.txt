@@ -1,0 +1,40 @@
+﻿BUJJU AI FEATURE REQUEST TEMPLATE
+
+
+Request ID:
+
+
+Submitted By:
+
+
+Date:
+
+
+Category:
+
+
+Business Requirement:
+
+
+Expected Benefit:
+
+
+Affected Module:
+
+
+Priority:
+
+
+Impact Assessment:
+
+
+Approval Status:
+
+
+Implementation Decision:
+
+
+Generated:
+
+07/26/2026 22:49:22
+

@@ -1,0 +1,184 @@
+﻿RECRUITMENT INTELLIGENCE PLATFORM
+
+VERSION 1.0
+
+PRODUCTION KPI BASELINE
+
+
+RELEASE:
+
+v1.0
+
+
+
+--------------------------------
+
+PLATFORM ADOPTION KPIs
+
+
+Total Recruiters Enabled:
+
+
+Active Recruiters:
+
+
+Daily Active Users:
+
+
+Monthly Active Users:
+
+
+Feature Adoption %:
+
+
+
+--------------------------------
+
+RECRUITMENT INTELLIGENCE KPIs
+
+
+Candidate Searches:
+
+
+Candidate Profiles Viewed:
+
+
+Resumes Accessed:
+
+
+Candidates Shortlisted:
+
+
+Candidate Match Requests:
+
+
+Ranking Requests:
+
+
+
+--------------------------------
+
+TALENT DATABASE KPIs
+
+
+Total Candidate Profiles:
+
+
+Total Resume Records:
+
+
+New Profiles Added:
+
+
+Profiles Updated:
+
+
+Duplicate Profiles Prevented:
+
+
+Search Index Records:
+
+
+
+--------------------------------
+
+BUJJU AI KPIs
+
+
+Resume Intelligence Usage:
+
+
+JD Analysis Usage:
+
+
+Candidate Matching Usage:
+
+
+Ranking Usage:
+
+
+AI Recommendations Generated:
+
+
+AI Recommendation Acceptance:
+
+
+
+--------------------------------
+
+BUSINESS IMPACT KPIs
+
+
+Total Positions Closed:
+
+
+Platform Assisted Closures:
+
+
+Platform Contribution %:
+
+
+Candidates Offered:
+
+
+Offers Converted:
+
+
+Total CTC Impact:
+
+
+
+--------------------------------
+
+OPERATIONAL KPIs
+
+
+System Availability:
+
+
+API Performance:
+
+
+Error Rate:
+
+
+Support Tickets:
+
+
+Resolution Time:
+
+
+
+--------------------------------
+
+REPORTING FREQUENCY:
+
+
+Daily:
+
+Operational Health
+
+
+Weekly:
+
+Adoption Review
+
+
+Monthly:
+
+Executive Business Review
+
+
+
+--------------------------------
+
+STATUS:
+
+KPI TRACKING BASELINE CREATED
+
+
+
+Generated:
+
+07/27/2026 11:57:18
+

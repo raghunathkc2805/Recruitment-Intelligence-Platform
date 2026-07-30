@@ -1,0 +1,156 @@
+﻿RECRUITMENT INTELLIGENCE PLATFORM
+
+EXECUTIVE ADOPTION SCORECARD
+
+VERSION:
+
+v1.0
+
+
+
+--------------------------------
+
+PLATFORM ADOPTION
+
+
+Total Recruiters:
+
+
+Users Activated:
+
+
+Training Completed:
+
+
+Active Users:
+
+
+Adoption Percentage:
+
+
+
+--------------------------------
+
+FEATURE UTILIZATION
+
+
+Candidate Search Usage:
+
+
+Resume Intelligence Usage:
+
+
+JD Intelligence Usage:
+
+
+Candidate Matching Usage:
+
+
+Ranking Usage:
+
+
+Analytics Usage:
+
+
+
+--------------------------------
+
+RECRUITMENT IMPACT
+
+
+Positions Supported:
+
+
+Candidates Evaluated:
+
+
+Candidates Shortlisted:
+
+
+Candidates Offered:
+
+
+Positions Closed:
+
+
+Platform Assisted Closures:
+
+
+
+--------------------------------
+
+BUSINESS IMPACT
+
+
+Recruitment Efficiency:
+
+
+Time Saved:
+
+
+Database Utilization:
+
+
+AI Contribution:
+
+
+Hiring Intelligence Improvement:
+
+
+
+--------------------------------
+
+USER EXPERIENCE
+
+
+User Satisfaction:
+
+
+Major Challenges:
+
+
+Training Gaps:
+
+
+Improvement Areas:
+
+
+
+--------------------------------
+
+EXECUTIVE REVIEW
+
+
+Platform Adoption:
+
+
+
+
+Business Value:
+
+
+
+
+Next Actions:
+
+
+
+
+--------------------------------
+
+DECISION:
+
+
+CONTINUE PRODUCTION USAGE
+
+
+STATUS:
+
+EXECUTIVE LAUNCH REVIEW READY
+
+
+
+Generated:
+
+07/27/2026 12:36:49
+

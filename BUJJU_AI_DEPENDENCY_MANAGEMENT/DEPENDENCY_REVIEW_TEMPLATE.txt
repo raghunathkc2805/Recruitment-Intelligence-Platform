@@ -1,0 +1,37 @@
+﻿DEPENDENCY REVIEW TEMPLATE
+
+
+Review Date:
+
+
+Dependency Name:
+
+
+Current Version:
+
+
+Proposed Version:
+
+
+Reason:
+
+
+Security Impact:
+
+
+Compatibility Result:
+
+
+Regression Result:
+
+
+Approval:
+
+
+Deployment Decision:
+
+
+Generated:
+
+07/26/2026 22:48:05
+

@@ -1,0 +1,179 @@
+﻿RECRUITMENT INTELLIGENCE PLATFORM
+
+SEARCH INTELLIGENCE &
+CANDIDATE MATCHING QUALITY DASHBOARD
+
+VERSION:
+
+v1.0
+
+
+
+--------------------------------
+
+SEARCH PERFORMANCE
+
+
+Total Searches:
+
+
+Unique Search Users:
+
+
+Average Search Response Time:
+
+
+Search Success Rate:
+
+
+Saved Searches:
+
+
+
+--------------------------------
+
+SEARCH INTELLIGENCE METRICS
+
+
+Skill Based Searches:
+
+
+Technology Searches:
+
+
+Designation Searches:
+
+
+Location Searches:
+
+
+Experience Searches:
+
+
+Company Searches:
+
+
+
+--------------------------------
+
+CANDIDATE MATCHING HEALTH
+
+
+Total Matching Requests:
+
+
+Successful Matches:
+
+
+Failed Matches:
+
+
+Average Match Score:
+
+
+Top Matching Skills:
+
+
+
+--------------------------------
+
+RANKING QUALITY
+
+
+Ranking Requests:
+
+
+Candidates Ranked:
+
+
+Ranking Accuracy:
+
+
+Top Ranked Candidate Selection:
+
+
+Recruiter Acceptance Rate:
+
+
+
+--------------------------------
+
+MATCH QUALITY ANALYSIS
+
+
+High Confidence Matches:
+
+
+Medium Confidence Matches:
+
+
+Low Confidence Matches:
+
+
+Manual Review Required:
+
+
+
+--------------------------------
+
+RECRUITER FEEDBACK
+
+
+Useful Matches:
+
+
+Irrelevant Matches:
+
+
+Search Improvement Requests:
+
+
+Ranking Feedback:
+
+
+
+--------------------------------
+
+OPTIMIZATION TRACKING
+
+
+Search Algorithm Improvement:
+
+
+Matching Model Improvement:
+
+
+Skill Mapping Updates:
+
+
+Ranking Improvements:
+
+
+
+--------------------------------
+
+REPORTING
+
+
+Daily Search Health Report
+
+
+Weekly Matching Quality Review
+
+
+Monthly Intelligence Performance Report
+
+
+
+--------------------------------
+
+STATUS:
+
+SEARCH & MATCHING QUALITY FRAMEWORK CREATED
+
+
+
+Generated:
+
+07/27/2026 12:52:59
+

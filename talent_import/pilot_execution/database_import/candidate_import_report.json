@@ -1,0 +1,10 @@
+{
+    "batch": "PILOT-001",
+    "total_received": 99,
+    "created_records": 99,
+    "updated_records": 0,
+    "duplicate_records": 0,
+    "failed_records": 0,
+    "search_index_records": 99,
+    "import_time": "2026-07-27 15:15:29.674660"
+}

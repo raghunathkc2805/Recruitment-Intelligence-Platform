@@ -1,0 +1,120 @@
+﻿RECRUITMENT INTELLIGENCE PLATFORM
+
+DUPLICATE INTELLIGENCE VALIDATION REPORT
+
+VERSION:
+
+v1.0
+
+
+
+--------------------------------
+
+BATCH:
+
+PILOT-001
+
+
+
+--------------------------------
+
+DUPLICATE CHECKS
+
+
+Email Matching:
+
+VALIDATED
+
+
+Mobile Matching:
+
+VALIDATED
+
+
+Resume Hash Matching:
+
+VALIDATED
+
+
+Profile Similarity:
+
+VALIDATED
+
+
+
+--------------------------------
+
+CANDIDATE PROFILE VALIDATION
+
+
+Candidate Records Created:
+
+
+Candidate Records Updated:
+
+
+Duplicate Profiles Found:
+
+
+Duplicate Profiles Blocked:
+
+
+Manual Review Required:
+
+
+
+--------------------------------
+
+RESUME MAPPING
+
+
+Resume Files Processed:
+
+
+Resume-Candidate Mapping:
+
+
+Unmapped Resumes:
+
+
+Processing Errors:
+
+
+
+--------------------------------
+
+SEARCH INDEX VALIDATION
+
+
+Candidate Search Availability:
+
+
+Skill Index:
+
+
+Experience Index:
+
+
+Location Index:
+
+
+
+--------------------------------
+
+DECISION:
+
+
+PILOT DATA QUALITY CHECK COMPLETE
+
+
+
+STATUS:
+
+READY FOR FULL DATA MIGRATION
+
+
+
+Generated:
+
+07/27/2026 14:05:59
+

@@ -1,0 +1,160 @@
+﻿RECRUITMENT INTELLIGENCE PLATFORM
+
+USER TRAINING & ADOPTION DASHBOARD
+
+VERSION:
+
+v1.0
+
+
+
+--------------------------------
+
+TRAINING TRACKER
+
+
+Recruiter Name:
+
+
+Department:
+
+
+Training Date:
+
+
+Trainer:
+
+
+Training Status:
+
+
+
+--------------------------------
+
+TRAINING MODULES
+
+
+Platform Login:
+
+
+Candidate Search:
+
+
+Resume Intelligence:
+
+
+JD Intelligence:
+
+
+Candidate Matching:
+
+
+Candidate Ranking:
+
+
+Shortlisting Workflow:
+
+
+Position Closure Tracking:
+
+
+Reports & Analytics:
+
+
+
+--------------------------------
+
+ADOPTION TRACKING
+
+
+Training Completed:
+
+
+First Login:
+
+
+First Search:
+
+
+First Candidate Viewed:
+
+
+First Shortlist:
+
+
+First AI Feature Used:
+
+
+First Position Closure:
+
+
+
+--------------------------------
+
+ADOPTION METRICS
+
+
+Total Users Trained:
+
+
+Training Completion %:
+
+
+Active Users:
+
+
+Feature Adoption %:
+
+
+User Engagement Score:
+
+
+
+--------------------------------
+
+IMPROVEMENT DASHBOARD
+
+
+Low Usage Features:
+
+
+Training Gaps:
+
+
+User Challenges:
+
+
+Required Actions:
+
+
+
+--------------------------------
+
+MANAGEMENT VIEW
+
+
+Recruiter Readiness:
+
+
+Platform Adoption:
+
+
+Business Usage:
+
+
+Support Requirement:
+
+
+
+--------------------------------
+
+STATUS:
+
+USER TRAINING & ADOPTION DASHBOARD READY
+
+
+
+Generated:
+
+07/27/2026 12:12:10
+
